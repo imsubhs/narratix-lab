@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /dashboard
+Disallow: /settings
+Disallow: /billing
+Disallow: /api/
+
+Sitemap: https://narratixlab.com/sitemap.xml

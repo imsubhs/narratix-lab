@@ -1,0 +1,244 @@
+{
+  "_profile": {
+    "id": "personal-brand",
+    "label": "Personal Brand / Authority",
+    "style": "personal_brand"
+  },
+  "intelligence": {
+    "niche": "Career & personal growth",
+    "sub_niche": "Personal development and entrepreneurship",
+    "goal": "Build authority and inbound opportunities",
+    "audience": "Professionals considering career transitions",
+    "content_type": "Story",
+    "platform": "LinkedIn",
+    "funnel_stage": "Consideration",
+    "confidence_score": 0.88,
+    "signal_assessment": "Strong signal because the script clearly indicates personal experience and actionable insights."
+  },
+  "document_intelligence": {
+    "pages": 1,
+    "words": 142,
+    "sentences": 15,
+    "reading_time_minutes": 1,
+    "estimated_spoken_seconds": 57,
+    "title": "Lessons from Quitting a Corporate Job",
+    "detected_hook": "I quit a six figure corporate job two years ago and everyone told me I was crazy.",
+    "hook_word_count": 16,
+    "detected_cta": "If you are on the edge of this decision, the fear is not a stop sign.",
+    "cta_word_count": 16,
+    "key_promise": "Betting on yourself can lead to greater rewards.",
+    "main_conflict": "The fear of leaving a corporate job vs. the fulfillment of self-employment.",
+    "core_topic": "The challenges and rewards of leaving a corporate job for entrepreneurship.",
+    "structural_arc": "HOOK → BUILD → ESCALATION → REFRAME → PAYOFF → CTA"
+  },
+  "executive_summary": {
+    "overall_score": 8,
+    "overall_verdict": "This script is publish-ready with minor adjustments. The first-person narrative provides credibility, but it can improve engagement with a stronger emotional connection.",
+    "strengths": "Lines 1-2 introduce a personal story and prime the audience for valuable lessons, establishing credibility immediately.",
+    "weaknesses": "Lines 11-12 could create more tension. The notion that 'silence' is scary can be elaborated for greater emotional impact.",
+    "recommendations": "Enhance emotional language in lines 3-4, e.g., replace 'is silence' with 'is the deafening silence of uncertainty.' Add a final summary insight in line 14 to consolidate the message and emphasize takeaway. Consider a stronger CTA in line 14 to directly encourage engagement.",
+    "priority_fixes": "Reword the description of silence in lines 3-4 to strengthen emotional engagement."
+  },
+  "hook_analysis": {
+    "score": 9,
+    "hook_type": "Authority Statement",
+    "opening_words": "I quit a six figure",
+    "second_sentence_tension": "Here is what nobody tells you about betting on yourself.",
+    "failure_reason": null,
+    "audience_curiosity_score": 7,
+    "audience_curiosity_driver": "Nobody tells you",
+    "scroll_stop_probability": "High",
+    "risk_factors": [],
+    "strengths": "Strong initial statement establishes authority and personal experience.",
+    "weaknesses": "Could create more tension with the second sentence; it can feel like a setup instead of a hook.",
+    "recommendations": "Revise the second sentence for a more immediate emotional connection, such as, 'But the reality is much harder than it sounds.'",
+    "priority_fixes": "Strengthen emotional connection right after the hook.",
+    "suggested_rewrite_1": {
+      "archetype": "Curiosity Gap",
+      "text": "I walked away from a six-figure salary, and everyone thought I was nuts. What they don’t realize is the journey is more daunting than it seems.",
+      "why_better": "This revision includes both the hook and an emotional insight that invites curiosity."
+    },
+    "suggested_rewrite_2": {
+      "archetype": "Direct Challenge",
+      "text": "Leaving a six-figure job may seem reckless, but staying silent in a 9-to-5 is more frightening.",
+      "why_better": "This variation sharpens the conflict and incites a challenge to consider the alternative."
+    },
+    "suggested_rewrite_3": {
+      "archetype": "Statistic Shock",
+      "text": "72% of people fear leaving their corporate jobs. I was one of them, until I quit my six-figure salary.",
+      "why_better": "This hook leverages a statistic that adds authority and invites curiosity regarding the decision."
+    }
+  },
+  "retention_analysis": {
+    "score": 7,
+    "estimated_script_duration_seconds": 57,
+    "timeline_analysis": [
+      {
+        "timestamp": "00:00–00:10",
+        "segment_label": "Introduction of personal experience",
+        "status": "Strong",
+        "engagement_level": "High",
+        "reason": "The opening captures attention by introducing a relatable and audacious decision.",
+        "recommended_fix": "Strengthen emotional connection right after the hook."
+      },
+      {
+        "timestamp": "00:10–00:25",
+        "segment_label": "Description of the loneliness of self-employment",
+        "status": "Attention Decline",
+        "engagement_level": "Medium",
+        "reason": "The segment starts to introduce tension but lacks vivid emotional imagery.",
+        "recommended_fix": "Add more descriptive language to enhance emotional engagement."
+      },
+      {
+        "timestamp": "00:25–00:43",
+        "segment_label": "Personal growth and lessons learned",
+        "status": "Curiosity Build",
+        "engagement_level": "Medium",
+        "reason": "The insights into building structure maintain interest but could summarize lessons better.",
+        "recommended_fix": "Consolidate insights in a succinct manner to keep engagement high."
+      },
+      {
+        "timestamp": "00:43–00:57",
+        "segment_label": "Conclusion and call to action",
+        "status": "Payoff",
+        "engagement_level": "High",
+        "reason": "The conclusion ties together the narrative and reinforces the message.",
+        "recommended_fix": "Add a stronger call to action to encourage viewer engagement."
+      }
+    ],
+    "minimum_timeline_segments": 4,
+    "retention_curve_summary": "Gradual decay with segments of high engagement.",
+    "completion_prediction_estimate": "Estimated Moderate",
+    "attention_decay_locations": [
+      "00:10 — the language describing silence feels flat; it could evoke more imagery."
+    ],
+    "recovery_points": "The conclusion effectively draws the viewer back in by summarizing the key message.",
+    "weakest_segment": "Lines 3-4 – the language about silence misses a potential emotional punch, which could result in viewer disconnection.",
+    "strongest_segment": "The conclusion (Lines 13-14) draws everything back together and appeals to those considering change.",
+    "strengths": "The overall structure builds a narrative arc that provides insight.",
+    "weaknesses": "Some areas lack emotional depth, which could impact retention.",
+    "recommendations": "Focus on enhancing emotional imagery throughout.",
+    "priority_fixes": "Revising lines 3-4 to create a more engaging emotional landscape."
+  },
+  "script_analysis": {
+    "score": 8,
+    "structure_score": 8,
+    "clarity_score": 7,
+    "authority_score": 8,
+    "audience_fit": "The language and narrative strongly match professionals exploring career changes, demonstrating relatability.",
+    "consultant_summary": "The narrative arc is well-structured, engaging the audience with a clear problem and resolution. To further enhance effectiveness, include more vivid emotional language.",
+    "structural_breakdown": {
+      "hook": "The hook introduces a bold personal choice, setting the context for the narrative.",
+      "build": "The script builds through personal insights gained during two years of self-employment.",
+      "escalation": "The narrative escalates through contrasts between fear of silence and potential rewards.",
+      "conflict_or_reframe": "The tension lies in leaving corporate security for a self-structured life.",
+      "payoff": "The resolution highlights personal growth and earned flexibility, encouraging introspection.",
+      "cta": "The CTA invites those on the edge of a decision to reconsider their fears as challenges."
+    },
+    "issues_detected": {
+      "weak_sections": [
+        "Lines 3-4: The term 'silence' is referred to, but the deeper emotional aspect is not fully explored."
+      ],
+      "strong_sections": [
+        "Lines 11-12: The phrase 'structure is not something you are given' offers an actionable insight."
+      ],
+      "missing_sections": [
+        "A more elaborate discussion of fears could deepen connection with the audience."
+      ],
+      "flow_issues": [
+        "The transition from fear to structure feels abrupt—adding a clearer pathway could enhance understanding."
+      ],
+      "narrative_gaps": [
+        "The audience may require a clearer definition of what 'betting on yourself' entails for greater relatability."
+      ]
+    },
+    "strengths": "The bold hook attracts attention, and the structure flows logically.",
+    "weaknesses": "Some emotional imagery lacks depth, risking full engagement.",
+    "recommendations": "Incorporate more vivid language that depicts emotional challenges, improving the audience's ability to connect.",
+    "priority_fixes": "Revise the emotional descriptions in lines 3-4."
+  },
+  "emotion_analysis": {
+    "score": 6,
+    "emotional_range": "Starts with a bold declaration, shifts into tension around isolation, and ends on empowerment.",
+    "curiosity_score": 7,
+    "curiosity_explanation": "Phrases like 'nobody tells you' pique interest but could be stronger.",
+    "trust_score": 8,
+    "trust_explanation": "Personal experience builds trust; specific phrases like 'I treated my own time' enhance credibility.",
+    "authority_score": 8,
+    "authority_explanation": "The creator's experience in line 1 establishes strong authority early on.",
+    "suspense_score": 5,
+    "suspense_explanation": "The script does little to build suspense; it lacks clear stakes until later.",
+    "excitement_score": 6,
+    "excitement_explanation": "The language is mostly straightforward; using more vivid words could energize the script.",
+    "empathy_score": 7,
+    "empathy_explanation": "The context addresses shared fears of career changes, engaging similar experiences, but could deepen connection.",
+    "emotional_timeline": [
+      {
+        "timestamp": "00:00",
+        "emotion": "Curiosity",
+        "trigger": "I quit a six figure corporate job"
+      },
+      {
+        "timestamp": "00:20",
+        "emotion": "Tension",
+        "trigger": "The scary part is silence"
+      },
+      {
+        "timestamp": "00:43",
+        "emotion": "Empowerment",
+        "trigger": "fear is not a stop sign"
+      }
+    ],
+    "dominant_emotion": "Empowerment",
+    "missing_emotion": "A stronger sense of urgency could be added to enhance the call to action.",
+    "strengths": "The personal journey is relatable and establishes a connection.",
+    "weaknesses": "The emotional triggers are not consistent throughout the narrative.",
+    "recommendations": "Incorporate emotional reveals and vivid imagery to sustain emotional engagement.",
+    "priority_fixes": "Strengthen emotional expressions in lines 3-4."
+  },
+  "creator_strategist": {
+    "why_fail": "This script assumes a level of understanding around corporate culture and self-employment (line 4 reveals elements of self-structure) that may alienate some viewers.",
+    "why_succeed": "The specificity in lines 11-12 builds credibility and offers actionable insights that resonate with the target audience.",
+    "audience_perception": "A first-time viewer will perceive the creator as knowledgeable and authentic, validated by personal experience.",
+    "algorithm_perception": "The platform algorithm likely sees this content as valuable due to the personal story and insights, reflecting a high engagement potential.",
+    "shareability_prediction": "Moderate — the unique personal narrative and lessons could resonate widely, especially among professionals seeking change.",
+    "comment_potential": "Moderate — the call to action invites viewers to reflect and share their own experiences or thoughts.",
+    "save_potential": "High — the actionable insights and personal narrative provide reference value for viewers contemplating similar career moves.",
+    "follower_conversion_potential": "High — the combination of authority and relatable storytelling is likely to convert viewers into followers.",
+    "growth_recommendation": "Add a more specific call to action in the concluding segment to directly encourage viewer interaction."
+  },
+  "rewrite_engine": {
+    "current_opening": "I quit a six figure corporate job two years ago and everyone told me I was crazy.",
+    "diagnosis": "While the current opening states a bold claim, it lacks an immediate emotional trigger or curiosity hook.",
+    "improved_opening": "Two years ago, I left a six-figure job that everyone said was insane. What they don’t see is the silence that follows and its real challenges.",
+    "specific_changes": [
+      "Changed 'everyone told me I was crazy' to 'What they don’t see is the silence that follows' — shifts focus from external judgment to personal struggle."
+    ],
+    "improvement_explanation": "This change introduces a stronger emotional angle from the outset, prompting curiosity and connecting more deeply with the audience."
+  },
+  "growth_analysis": {
+    "score": 8,
+    "recommended_caption": "Why I left my six-figure job: the real truths about betting on yourself.",
+    "alternative_caption": "Silence was scarier than the paycheck: here’s what I learned when I quit my job.",
+    "comment_trigger": "Have you ever considered quitting your job? What fears did you face?",
+    "cta_improvement": "The current CTA suggests contemplating fear; a shift to 'Comment below if you’ve faced similar fears' would invite engagement.",
+    "hashtag_cluster": [
+      "#CareerChange",
+      "#Entrepreneurship",
+      "#PersonalGrowth",
+      "#JobTransition",
+      "#MindsetShift",
+      "#SelfImprovement",
+      "#BetOnYourself",
+      "#WorkLifeBalance"
+    ],
+    "content_category": "Educational",
+    "audience_segment": "Professionals contemplating or undergoing career changes.",
+    "viral_trigger_type": "Identity — the content connects to a journey many professionals can relate to, invoking their personal paths.",
+    "distribution_strategy": "For LinkedIn, focus on a professional tone and include key takeaways as prominent bullet points to attract busy readers.",
+    "strengths": "The narrative approach creates an inviting feel, enhancing relatability.",
+    "weaknesses": "The emotional depth could be greater to ensure more profound engagement.",
+    "recommendations": "Increase call-to-action visibility and enhance emotional responses throughout.",
+    "priority_fixes": "Focus on expanding the emotional imagery in early sections of the script."
+  }
+}

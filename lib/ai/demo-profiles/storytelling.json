@@ -1,0 +1,228 @@
+{
+  "_profile": {
+    "id": "storytelling",
+    "label": "Narrative Storytelling",
+    "style": "storytelling"
+  },
+  "intelligence": {
+    "niche": "Entrepreneurship & comeback stories",
+    "sub_niche": "Personal growth and resilience",
+    "goal": "Build an inspired audience",
+    "audience": "Individuals interested in entrepreneurship and motivation, likely facing challenges",
+    "content_type": "Personal story",
+    "platform": "Instagram Reels",
+    "funnel_stage": "awareness",
+    "confidence_score": 0.88,
+    "signal_assessment": "Strong signal because the script clearly reveals the niche and audience through personal anecdotes and emotional resonance."
+  },
+  "document_intelligence": {
+    "pages": 1,
+    "words": 134,
+    "sentences": 12,
+    "reading_time_minutes": 1,
+    "estimated_spoken_seconds": 54,
+    "title": "From Sleeping in My Car to Million-Dollar Business",
+    "detected_hook": "Three years ago I was sleeping in my car outside the office I used to work at.",
+    "hook_word_count": 13,
+    "detected_cta": null,
+    "cta_word_count": null,
+    "key_promise": "Overcoming adversity can lead to significant success.",
+    "main_conflict": "Facing homelessness and loss of confidence while ultimately achieving growth.",
+    "core_topic": "Personal resilience and entrepreneurship",
+    "structural_arc": "HOOK → BUILD → ESCALATION → PAYOFF → CTA: Present, but lacks a clear CTA."
+  },
+  "executive_summary": {
+    "overall_score": 8,
+    "overall_verdict": "Advise publishing with minor revisions. The story is relatable and impactful but needs a stronger endpoint.",
+    "strengths": "Line 1 grabs attention with a dramatic personal situation, creating immediate empathy and curiosity.",
+    "weaknesses": "No clear CTA found; the content concludes at line 10 without directing audience action, which weakens engagement potential.",
+    "recommendations": "Add a strong CTA about sharing their own stories or motivating others (line 11). Consider emphasizing dramatic turns in the story for more engagement (line 6).",
+    "priority_fixes": "The strongest improvement would be to introduce a CTA that invites interaction or reflection from the audience."
+  },
+  "hook_analysis": {
+    "score": 9,
+    "hook_type": "Story Open",
+    "opening_words": "Three years ago I",
+    "second_sentence_tension": "I had lost the job, the apartment, and most of my confidence in the same month.",
+    "failure_reason": null,
+    "audience_curiosity_score": 8,
+    "audience_curiosity_driver": "sleeping in my car",
+    "scroll_stop_probability": "High",
+    "risk_factors": [],
+    "strengths": "The opening provides a clear personal anecdote, intriguing the audience and setting up a narrative arc.",
+    "weaknesses": "The hook could be enhanced with a stronger emotional release in the second sentence.",
+    "recommendations": "Consider rephrasing the second sentence to increase emotional tension. For example, after 'I was sleeping in my car,' add 'and felt completely lost.'",
+    "priority_fixes": "Refine the hook to achieve higher emotional engagement.",
+    "suggested_rewrite_1": {
+      "archetype": "Curiosity Gap",
+      "text": "Three years ago, I was living in my car and struggling to find hope. What happened next changed everything for me.",
+      "why_better": "This version creates a stronger emotional hook and invites curiosity about the transformation."
+    },
+    "suggested_rewrite_2": {
+      "archetype": "Contrarian",
+      "text": "Most people think losing everything means it's over. Three years ago, I found out how mistaken that belief was.",
+      "why_better": "This challenges common assumptions and pulls the audience into a new perspective."
+    },
+    "suggested_rewrite_3": {
+      "archetype": "Question",
+      "text": "What if I told you that sleeping in my car was the best thing that ever happened to me? Let me explain.",
+      "why_better": "This invites the audience to think and engage with the content directly."
+    }
+  },
+  "retention_analysis": {
+    "score": 7,
+    "estimated_script_duration_seconds": 54,
+    "timeline_analysis": [
+      {
+        "timestamp": "00:00–00:15",
+        "segment_label": "Introduction to conflict",
+        "status": "Strong",
+        "engagement_level": "High",
+        "reason": "Lines 1-2 set a personal and emotional context that draws viewers in.",
+        "recommended_fix": "Emphasize more drama in line 2."
+      },
+      {
+        "timestamp": "00:16–00:30",
+        "segment_label": "Building the story",
+        "status": "Curiosity Build",
+        "engagement_level": "Medium",
+        "reason": "Lines 3-5 build narrative tension through the progression of the business.",
+        "recommended_fix": "Add a brief emotional reflection here to sustain curiosity."
+      },
+      {
+        "timestamp": "00:31–00:54",
+        "segment_label": "Conclusion",
+        "status": "Payoff",
+        "engagement_level": "High",
+        "reason": "Lines 6-10 deliver a strong resolution to the story.",
+        "recommended_fix": "Follow this with a clear CTA to capture audience engagement."
+      }
+    ],
+    "minimum_timeline_segments": 3,
+    "retention_curve_summary": "Gradual decay, with a potential drop if no CTA present after the payoff.",
+    "completion_prediction_estimate": "Estimated Moderate",
+    "attention_decay_locations": [],
+    "recovery_points": "The script maintains engagement well through the personal story but may fail to prompt interaction.",
+    "weakest_segment": "The segment after payoff is weak (lines 10-11) as no specific action is requested.",
+    "strongest_segment": "The resolution at line 8 is strong, presenting a compelling pivot from struggle to success.",
+    "strengths": "The narrative structure effectively builds tension and payoff.",
+    "weaknesses": "Possible lack of engagement due to the absence of a CTA.",
+    "recommendations": "Include a strong call to action in the final lines.",
+    "priority_fixes": "The most critical fix is to insert a clear CTA to maintain retention."
+  },
+  "script_analysis": {
+    "score": 8,
+    "structure_score": 8,
+    "clarity_score": 7,
+    "authority_score": 7,
+    "audience_fit": "The script resonates with individuals facing setbacks, using relatable language.",
+    "consultant_summary": "The script has a clear arc and effectively conveys a personal journey. However, it lacks a call to action, which limits its structural effectiveness. Ensure there's an actionable conclusion.",
+    "structural_breakdown": {
+      "hook": "The hook introduces a vulnerable scenario, establishing an emotional connection.",
+      "build": "The script builds through the progression of the business over time, engaging with specific revenue points.",
+      "escalation": "Emotional escalation peaks when $300 is reached, creating weight.",
+      "conflict_or_reframe": "The core tension lies in the early description of loss contrasted with later success.",
+      "payoff": "The payoff is effective, concluding with a powerful shift from struggle to success.",
+      "cta": "No CTA is present, limiting potential engagement."
+    },
+    "issues_detected": {
+      "weak_sections": [],
+      "strong_sections": [
+        "Lines 6-9: The transition from struggling financially to succeeding captures audience attention sharply."
+      ],
+      "missing_sections": [
+        "Missing a clear CTA to guide audience interaction at the end."
+      ],
+      "flow_issues": [],
+      "narrative_gaps": []
+    },
+    "strengths": "Strong emotional positioning and narrative arc.",
+    "weaknesses": "Lacks a defined CTA to encourage audience interaction.",
+    "recommendations": "Incorporate a CTA for audience engagement at the end.",
+    "priority_fixes": "Add an explicit call to action to invite audience participation."
+  },
+  "emotion_analysis": {
+    "score": 8,
+    "emotional_range": "Starts with despair, shifts to hope, culminating in triumph.",
+    "curiosity_score": 8,
+    "curiosity_explanation": "Phrasing like 'sleeping in my car' draws the audience in, creating intrigue.",
+    "trust_score": 7,
+    "trust_explanation": "The personal narrative and detailed financial growth build credibility.",
+    "authority_score": 7,
+    "authority_explanation": "Sharing a personal success story enhances perceived authority on overcoming difficulty.",
+    "suspense_score": 6,
+    "suspense_explanation": "The narrative creates a suspenseful journey, though a greater sense of 'what happens next?' could be added.",
+    "excitement_score": 8,
+    "excitement_explanation": "Exciting language around achievements (e.g., 'crossed a million dollars') energizes the story.",
+    "empathy_score": 9,
+    "empathy_explanation": "Relatable struggles resonate strongly with the audience, fostering a connection.",
+    "emotional_timeline": [
+      {
+        "timestamp": "00:10",
+        "emotion": "Despair",
+        "trigger": "sleeping in my car"
+      },
+      {
+        "timestamp": "00:20",
+        "emotion": "Hope",
+        "trigger": "started my first business"
+      },
+      {
+        "timestamp": "00:54",
+        "emotion": "Triumph",
+        "trigger": "crossed a million dollars"
+      }
+    ],
+    "dominant_emotion": "Empathy",
+    "missing_emotion": "A sense of celebration or communal victory could amplify engagement.",
+    "strengths": "Strong emotional arc enhancing relatability.",
+    "weaknesses": "No celebratory tone in conclusion may miss opportunities for increased engagement.",
+    "recommendations": "Introduce celebratory language at the end, affirming the audience's potential success.",
+    "priority_fixes": "Add a celebratory element to the conclusion to enhance emotional impact."
+  },
+  "creator_strategist": {
+    "why_fail": "This script lacks a CTA to convert passive viewers into engaged participants (line 11).",
+    "why_succeed": "The narrative structure combined with emotional relatability creates high potential for audience connection (lines 6-9).",
+    "audience_perception": "First-time viewers may perceive the creator as an expert in overcoming challenges due to the shared journey.",
+    "algorithm_perception": "Algorithms likely categorize this as inspiring, which typically enhances engagement metrics if CTA is present.",
+    "shareability_prediction": "Medium; personal anecdotes resonate and may encourage sharing due to relatability.",
+    "comment_potential": "Moderate; posing a question at the end could enhance engagement.",
+    "save_potential": "High; the narrative arc provides valuable insights that audiences may reference.",
+    "follower_conversion_potential": "Moderate; a clear CTA could significantly boost follow-up interest.",
+    "growth_recommendation": "Add a CTA that prompts sharing personal stories or asking a specific question to enhance engagement."
+  },
+  "rewrite_engine": {
+    "current_opening": "Three years ago I was sleeping in my car outside the office I used to work at.",
+    "diagnosis": "The current opening sets a scene but lacks a strong immediate emotional tension.",
+    "improved_opening": "From sleeping in my car to building a million-dollar business, my journey defied all odds. Let me take you on a ride through my transformation.",
+    "specific_changes": [
+      "Shifted to an active voice to create stronger curiosity."
+    ],
+    "improvement_explanation": "These changes create immediate intrigue and engage the viewer right from the start."
+  },
+  "growth_analysis": {
+    "score": 8,
+    "recommended_caption": "From sleeping in my car to crossing a million dollars—my journey was just the beginning! What’s your story?",
+    "alternative_caption": "Ever felt like giving up? Here’s how I turned despair into triumph! Share your journey.",
+    "comment_trigger": "What challenges have you overcome in your journey? Share below!",
+    "cta_improvement": "The current script lacks a CTA; ending with a question like 'What’s your biggest challenge?' invites interaction.",
+    "hashtag_cluster": [
+      "#Entrepreneurship",
+      "#Inspiration",
+      "#ComebackStory",
+      "#Motivation",
+      "#BusinessJourney",
+      "#Resilience",
+      "#SelfGrowth",
+      "#MindsetShift"
+    ],
+    "content_category": "Inspirational",
+    "audience_segment": "Aspiring entrepreneurs and individuals seeking motivation.",
+    "viral_trigger_type": "Utility; the personal story shows practical results from perseverance.",
+    "distribution_strategy": "For Instagram Reels, prioritize visual storytelling and relatable text overlays to emphasize key points.",
+    "strengths": "Strong narrative with clear life lessons.",
+    "weaknesses": "Lack of prompting for viewer interaction decreases engagement potential.",
+    "recommendations": "Incorporate a stronger CTA and consider visuals that emphasize the emotional journey.",
+    "priority_fixes": "The most impactful change is to include a question-driven CTA that promotes audience comments."
+  }
+}

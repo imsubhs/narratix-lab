@@ -1,0 +1,238 @@
+{
+  "_profile": {
+    "id": "comedy",
+    "label": "Comedy / Relatable Humor",
+    "style": "comedy"
+  },
+  "intelligence": {
+    "niche": "Relatable lifestyle comedy",
+    "sub_niche": "Fridge humor",
+    "goal": "Go viral and grow fast",
+    "audience": "General TikTok users, likely 18-35 with an interest in humor and relatable content",
+    "content_type": "Comedy skit",
+    "platform": "TikTok",
+    "funnel_stage": "Awareness",
+    "confidence_score": 0.83,
+    "signal_assessment": "Strong signal because the script clearly reveals the humor and target audience."
+  },
+  "document_intelligence": {
+    "pages": 1,
+    "words": 94,
+    "sentences": 11,
+    "reading_time_minutes": 1,
+    "estimated_spoken_seconds": 38,
+    "title": "The Boredom of Checking the Fridge",
+    "detected_hook": "POV: you open the fridge for the 47th time hoping new food materialized since you checked 90 seconds ago.",
+    "hook_word_count": 21,
+    "detected_cta": null,
+    "cta_word_count": null,
+    "key_promise": "To highlight the humor in the mundane act of checking the fridge multiple times.",
+    "main_conflict": "The expectation of finding new food versus the reality of disappointment.",
+    "core_topic": "The relatable experience of boredom leading to checking the fridge."
+  },
+  "executive_summary": {
+    "overall_score": 8,
+    "overall_verdict": "Publish with minor adjustments. The humor lands well, but tightening the pacing can enhance retention.",
+    "strengths": "Lines 2-3 utilize vivid descriptions ('same sad yogurt', 'light like it owes you an explanation') to generate relatability and humor.",
+    "weaknesses": "Line 8 introduces a spoiler without building anticipation around what to expect, which may reduce suspense.",
+    "recommendations": "Tighten the opening by reducing the initial setup (lines 1-3) to maintain energy. Consider rephrasing the punchline for immediate impact at line 8.",
+    "priority_fixes": "Revise line 8 to increase immediate humor without dulling the previous setup."
+  },
+  "hook_analysis": {
+    "score": 9,
+    "hook_type": "Curiosity Gap",
+    "opening_words": "POV: you open the fridge",
+    "second_sentence_tension": "hoping new food materialized since you checked 90 seconds ago.",
+    "failure_reason": null,
+    "audience_curiosity_score": 8,
+    "audience_curiosity_driver": "the phrase 'hoping new food materialized'",
+    "scroll_stop_probability": "High",
+    "risk_factors": [
+      "The phrase 'since you checked 90 seconds ago' may feel verbose and dilute the hook."
+    ],
+    "strengths": "The POV hook clearly sets the stage for relatability, drawing in the audience immediately.",
+    "weaknesses": "The second half of the hook doesn’t escalate tension but rather provides context, risking viewer engagement.",
+    "recommendations": "Cut down the second sentence to enhance suspense and maintain flow throughout the first 5 seconds.",
+    "priority_fixes": "Revise the second sentence for brevity to enhance engaging momentum.",
+    "suggested_rewrite_1": {
+      "archetype": "Curiosity Gap",
+      "text": "POV: you open the fridge for the umpteenth time, expecting a miracle.",
+      "why_better": "Shorter and immediately sets a humorous tone, keeping the audience guessing."
+    },
+    "suggested_rewrite_2": {
+      "archetype": "Statistic Shock",
+      "text": "POV: you check the fridge again—because surely something new has appeared.",
+      "why_better": "This line increases curiosity about what could change in such a short time."
+    },
+    "suggested_rewrite_3": {
+      "archetype": "Direct Challenge",
+      "text": "POV: Did we really expect anything other than regret from this fridge check?",
+      "why_better": "This signals an expectation reversal, prompting immediate engagement."
+    }
+  },
+  "retention_analysis": {
+    "score": 7,
+    "estimated_script_duration_seconds": 38,
+    "timeline_analysis": [
+      {
+        "timestamp": "00:00–00:10",
+        "segment_label": "Initial Hook and Setup",
+        "status": "Strong",
+        "engagement_level": "High",
+        "reason": "The relatability of the hook generates immediate engagement.",
+        "recommended_fix": "Shorten lines 1-3 to keep energy high."
+      },
+      {
+        "timestamp": "00:11–00:20",
+        "segment_label": "Building Disappointment",
+        "status": "Attention Decline",
+        "engagement_level": "Medium",
+        "reason": "Repetition of boredom dilutes the initial humor.",
+        "recommended_fix": "Condense this section to maintain pacing."
+      },
+      {
+        "timestamp": "00:21–00:38",
+        "segment_label": "Punchline and Reflection",
+        "status": "Strong",
+        "engagement_level": "High",
+        "reason": "The quippy observation about our behavior deepens humor, drawing viewers back in.",
+        "recommended_fix": "Ensure punchline hits sooner to retain attention."
+      }
+    ],
+    "minimum_timeline_segments": 3,
+    "retention_curve_summary": "U-shaped retention curve with a brief dip during extended moments of disappointment before recovering with humor.",
+    "completion_prediction_estimate": "Estimated Moderate",
+    "attention_decay_locations": [
+      "00:11 — line 5 feels drawn out and slows engagement."
+    ],
+    "recovery_points": "Line 9 brings the focus back to humor, capturing attention toward the end.",
+    "weakest_segment": "The section between lines 4-8 drags due to repetitive setups.",
+    "strongest_segment": "Lines 9-11 provide a clever punchline that elevates previously built tensions.",
+    "strengths": "The script leverages dynamic pacing.",
+    "weaknesses": "Repetitive language detracts from the buildup of tension.",
+    "recommendations": "Focus on tighter pacing to ensure each beat lands effectively.",
+    "priority_fixes": "Condense the section around lines 4-8 to sustain engagement."
+  },
+  "script_analysis": {
+    "score": 6,
+    "structure_score": 6,
+    "clarity_score": 7,
+    "authority_score": 5,
+    "audience_fit": "This script connects with audiences familiar with relatable humor around mundane activities.",
+    "consultant_summary": "The script’s structure conveys humor through relatable scenarios but suffers from extended beats that may drain engagement. Shortening these can enhance clarity.",
+    "structural_breakdown": {
+      "hook": "The hook sets up a relatable situational context that engages the audience.",
+      "build": "The build reinforces a shared experience of disappointment in common activities which supports relatability.",
+      "escalation": "The core tension arises from the repeated disappointment.",
+      "conflict_or_reframe": "The humor lies in the reframing of boredom as an amusing event.",
+      "payoff": "The punchline offers a relatable insight that deepens the humor.",
+      "cta": "No CTA is present; an invitation to comment or share would enhance engagement."
+    },
+    "issues_detected": {
+      "weak_sections": [
+        "Lines 4-8 — some sections over-explain humor, losing the pace of the joke."
+      ],
+      "strong_sections": [
+        "Lines 9-11, where the realization of boredom solidifies the punch."
+      ],
+      "missing_sections": [
+        "No clear call to action at the end can encourage engagement."
+      ],
+      "flow_issues": [
+        "Line 5 repeats boredom which weakens pacing."
+      ],
+      "narrative_gaps": [
+        "A clear resolution could enhance the connection with viewers."
+      ]
+    },
+    "strengths": "The relatability of the content captures humorous observations.",
+    "weaknesses": "The pacing and repetition impede the flow of humor.",
+    "recommendations": "Shorten verbose sections to enhance comedic timing.",
+    "priority_fixes": "Revise lines 4-8 for brevity."
+  },
+  "emotion_analysis": {
+    "score": 7,
+    "emotional_range": "Starts with anticipation, shifts to humor, then settles on relatability.",
+    "curiosity_score": 6,
+    "curiosity_explanation": "Phrases like 'hoping new food materialized' create intrigue.",
+    "trust_score": 6,
+    "trust_explanation": "Utilizes relatable language without strong credibility but does not mislead.",
+    "authority_score": 5,
+    "authority_explanation": "Lacks external references, but personality is evident.",
+    "suspense_score": 5,
+    "suspense_explanation": "No real suspense, just humor built upon expectation of check, but engages anyway.",
+    "excitement_score": 6,
+    "excitement_explanation": "Language like 'same sad yogurt' imparts humor and energy.",
+    "empathy_score": 8,
+    "empathy_explanation": "Strong connection through shared experiences of boredom.",
+    "emotional_timeline": [
+      {
+        "timestamp": "00:00",
+        "emotion": "Anticipation",
+        "trigger": "The opening hook sets up the scenario."
+      },
+      {
+        "timestamp": "00:20",
+        "emotion": "Humor",
+        "trigger": "Realization of the absurdity of checking the fridge."
+      },
+      {
+        "timestamp": "00:38",
+        "emotion": "Relatability",
+        "trigger": "Final reflection on boredom."
+      }
+    ],
+    "dominant_emotion": "Humor",
+    "missing_emotion": "A stronger emotional anchor around disappointment would elevate the connection.",
+    "strengths": "The humor plays well into relatable experiences.",
+    "weaknesses": "Less emotional depth among single experiences.",
+    "recommendations": "Integrate deeper reflections on moments of boredom for relatability.",
+    "priority_fixes": "Include a callout to viewer experiences around boredom in the CTA."
+  },
+  "creator_strategist": {
+    "why_fail": "This script may lose casual viewers due to slight redundancy in humor setup, particularly in lines 4-8.",
+    "why_succeed": "The relatability in lines 2-3 allows shared experiences to increase engagement and potential virality.",
+    "audience_perception": "First-time viewers will perceive the creator as humorous and relatable.",
+    "algorithm_perception": "Content is likely categorized as humorous, potentially boosting engagement if hook timing is optimized.",
+    "shareability_prediction": "High - the humor resonates with a universal experience, encouraging recreation of the scenario.",
+    "comment_potential": "High — specific scenarios in fridge checking can invite a conversation.",
+    "save_potential": "Moderate, as it’s a unique take but lacks actionable tips.",
+    "follower_conversion_potential": "High, as relatability adds value, making viewers want to follow for more content.",
+    "growth_recommendation": "Add a specific question at the end to prompt comments and interactions for viewer engagement."
+  },
+  "rewrite_engine": {
+    "current_opening": "POV: you open the fridge for the 47th time hoping new food materialized since you checked 90 seconds ago.",
+    "diagnosis": "The current opening is overly detailed and may cause initial disengagement.",
+    "improved_opening": "POV: you open the fridge again, secretly hoping for a miracle.",
+    "specific_changes": [
+      "Changed 'for the 47th time' to 'again' to speed up attention.",
+      "Replaced 'hoping new food materialized since you checked 90 seconds ago.' with 'hoping for a miracle.' to simplify and heighten humor."
+    ],
+    "improvement_explanation": "The improved opening hastens to the emotional core, simplifying language and sharpening humor."
+  },
+  "growth_analysis": {
+    "score": 8,
+    "recommended_caption": "Ever check the fridge hoping for new options? Yeah, same.",
+    "alternative_caption": "Is anyone else battling the boredom of the fridge? Let’s commiserate!",
+    "comment_trigger": "What do you check the fridge for—even if you know it’ll be the same?",
+    "cta_improvement": "The script lacks a CTA; adding a question about viewer experiences with boredom can encourage interaction.",
+    "hashtag_cluster": [
+      "#FridgeHumor",
+      "#RelatableComedy",
+      "#BoredomBusters",
+      "#DailyLife",
+      "#FunnyTikTok",
+      "#ComedySkits",
+      "#POV",
+      "#RelatableContent"
+    ],
+    "content_category": "Entertainment",
+    "audience_segment": "Young adults experiencing daily life challenges.",
+    "viral_trigger_type": "Identity — invokes shared cultural experiences with humor.",
+    "distribution_strategy": "Emphasize TikTok trends and relatable humor to maximize engagement with current audiences. Ensure punchy edits.",
+    "strengths": "Content is rooted in everyday experiences which boosts relatability.",
+    "weaknesses": "Lacks a direct call to action or mention of community engagement.",
+    "recommendations": "Integrate more concise pacing and a question for audience engagement at the end.",
+    "priority_fixes": "Add a clear prompt at the end to enhance viewer interaction."
+  }
+}

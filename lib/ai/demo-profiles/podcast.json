@@ -1,0 +1,223 @@
+{
+  "_profile": {
+    "id": "podcast",
+    "label": "Podcast Clip / Conversational",
+    "style": "podcast"
+  },
+  "intelligence": {
+    "niche": "Health & Fitness",
+    "sub_niche": "Fitness advice and recovery",
+    "goal": "Repurpose podcast clips for reach",
+    "audience": "Fitness enthusiasts seeking effective workout and recovery strategies",
+    "content_type": "Informative commentary",
+    "platform": "Instagram Reels",
+    "funnel_stage": "Awareness",
+    "confidence_score": 0.75,
+    "signal_assessment": "Moderate signal due to the focused content but some inference required regarding audience familiarity."
+  },
+  "document_intelligence": {
+    "pages": 1,
+    "words": 142,
+    "sentences": 13,
+    "reading_time_minutes": 1,
+    "estimated_spoken_seconds": 57,
+    "title": "The Critical Role of Recovery in Fitness",
+    "detected_hook": "So here is the thing nobody talks about in fitness.",
+    "hook_word_count": 10,
+    "detected_cta": null,
+    "cta_word_count": null,
+    "key_promise": "Understanding the importance of recovery over workout intensity.",
+    "main_conflict": "Misconception that workouts alone determine fitness results.",
+    "core_topic": "Fitness recovery and its impact on results.",
+    "structural_arc": "HOOK → BUILD → ESCALATION → REFRAME → PAYOFF → CTA - All segments present except for explicit CTA."
+  },
+  "executive_summary": {
+    "overall_score": 6,
+    "overall_verdict": "Revise this script for improved engagement. The lack of a clear call to action is the primary weakness.",
+    "strengths": "Lines 5-6 emphasize the crucial role of recovery, making it clear that it's overlooked and providing a compelling contrast to workout intensity.",
+    "weaknesses": "Line 12 lacks a clear CTA, concluding on a strong note without encouraging next steps for the audience.",
+    "recommendations": "1. Add a CTA at the end — encourage viewers to comment on their recovery practices (line 12). 2. Enhance emotional engagement in the opening — start with a question or strong statement (line 1). 3. Shorten complex sentences — consider breaking down line 8 for clarity.",
+    "priority_fixes": "Incorporate a direct CTA in line 12 to drive engagement."
+  },
+  "hook_analysis": {
+    "score": 9,
+    "hook_type": "Contrarian",
+    "opening_words": "So here is the thing",
+    "second_sentence_tension": "Everyone obsesses over the workout, but the workout is maybe 20 percent of the result.",
+    "failure_reason": "The second sentence follows a somewhat generic start without creating strong urgency or curiosity.",
+    "audience_curiosity_score": 6,
+    "audience_curiosity_driver": "The phrase 'the thing nobody talks about' adds intrigue.",
+    "scroll_stop_probability": "Moderate",
+    "risk_factors": [
+      "'So here is the thing' is a common phrase that may cause the audience to tune out quickly."
+    ],
+    "strengths": "The phrase 'nobody talks about' creates a sense of exclusivity around the information.",
+    "weaknesses": "'So here is the thing' is a weak lead-in that dilutes the hook's potential; it doesn't immediately signal distinct knowledge compared to typical fitness content.",
+    "recommendations": "Change the hook to a direct statement or question that highlights the common misconception in fitness, like 'Why are you wasting your workouts?' This will create immediate curiosity about the contrasting information.",
+    "priority_fixes": "Rewrite the opening for clearer intrigue and urgency.",
+    "suggested_rewrite_1": {
+      "archetype": "Curiosity Gap",
+      "text": "Are you wasting your time in the gym? The truth is, fitness isn’t just about the workout.",
+      "why_better": "This opening directly challenges the audience's assumptions, immediately creating curiosity."
+    },
+    "suggested_rewrite_2": {
+      "archetype": "Statistic Shock",
+      "text": "Did you know that 80% of your fitness results happen outside the gym?",
+      "why_better": "This uses a shocking statistic to immediately engage the audience."
+    },
+    "suggested_rewrite_3": {
+      "archetype": "Question",
+      "text": "What if I told you that your sleep is more important than your workouts?",
+      "why_better": "This question directly addresses a common misconception and invites curiosity."
+    }
+  },
+  "retention_analysis": {
+    "score": 6,
+    "estimated_script_duration_seconds": 57,
+    "timeline_analysis": [
+      {
+        "timestamp": "00:00–00:10",
+        "segment_label": "Introduction of overlooked topic",
+        "status": "Strong",
+        "engagement_level": "High",
+        "reason": "The hook introduces a hot topic, creating initial interest.",
+        "recommended_fix": "Make the hook more impactful (line 1)."
+      },
+      {
+        "timestamp": "00:11–00:40",
+        "segment_label": "Detailing workout results versus recovery",
+        "status": "Attention Decline",
+        "engagement_level": "Medium",
+        "reason": "Information is solid but lacks emotional engagement that could captivate viewers longer.",
+        "recommended_fix": "Enhance emotional connection by sharing a personal anecdote (lines 6-9)."
+      },
+      {
+        "timestamp": "00:41–00:57",
+        "segment_label": "Concluding the importance of recovery",
+        "status": "Payoff",
+        "engagement_level": "Medium",
+        "reason": "The conclusion reinforces the main idea but ends abruptly without actionable steps.",
+        "recommended_fix": "Add a call-to-action to maintain engagement after the key message (line 12)."
+      }
+    ],
+    "minimum_timeline_segments": 3,
+    "retention_curve_summary": "Progressive decline in attention, particularly as the content becomes informational without emotional weight.",
+    "completion_prediction_estimate": "Estimated Moderate",
+    "attention_decay_locations": [
+      "00:21 — The explanation slows down without invoking emotional connection."
+    ],
+    "recovery_points": "No strong recovery noted in the conclusion due to absence of CTA.",
+    "weakest_segment": "00:11-00:40 — Transitions to factual content that may not engage viewers as effectively.",
+    "strongest_segment": "00:00-00:10 — The build-up of the hook generates initial interest and curiosity.",
+    "strengths": "Strong framing of recovery importance early on.",
+    "weaknesses": "Weak transition into detailed facts without emotional engagement.",
+    "recommendations": "Integrate an emotional story or anecdote in the middle section to enhance viewer connection.",
+    "priority_fixes": "Add a clear call to action at the end to drive viewer engagement."
+  },
+  "script_analysis": {
+    "score": 6,
+    "structure_score": 5,
+    "clarity_score": 6,
+    "authority_score": 7,
+    "audience_fit": "This script effectively targets fitness enthusiasts, employing familiar language and ideas that resonate with their experiences.",
+    "consultant_summary": "The script addresses common misconceptions in fitness. However, the lack of a clear CTA limits engagement potential. To improve effectiveness, consider adding compelling emotional narratives.",
+    "structural_breakdown": {
+      "hook": "The hook sets up curiosity but is somewhat weakened by the common phrasing.",
+      "build": "The script builds upon the hook by explaining the importance of recovery, but lacks emotional depth.",
+      "escalation": "Tension could be heightened with anecdotes or contrasting examples that engage the audience.",
+      "conflict_or_reframe": "The insight shifts from workout intensity to recovery needs, creating a thoughtful contrast.",
+      "payoff": "The conclusion reinforces the main idea but could encourage action.",
+      "cta": "None detected — the script ends without guiding the viewer on next steps."
+    },
+    "issues_detected": {
+      "weak_sections": [
+        "Lines 11-12: The ending lacks a CTA which could prompt viewer interaction."
+      ],
+      "strong_sections": [
+        "Lines 5-6: Clear emphasis on the contrast between workout and recovery, engaging the audience."
+      ],
+      "missing_sections": [
+        "No distinct call-to-action: encourages viewer participation or follow-up."
+      ],
+      "flow_issues": [
+        "Line 8 uses complex phrasing which may dilute clarity."
+      ],
+      "narrative_gaps": [
+        "The script could benefit from a real-life example or story to strengthen the argument in line 9."
+      ]
+    },
+    "strengths": "Clear insights on recovery, compelling enough to engage the target audience.",
+    "weaknesses": "Lacks urgency and clearer direction at the conclusion, which could prevent full viewer retention.",
+    "recommendations": "Integrate emotional narratives throughout and introduce a CTA to drive viewer interaction.",
+    "priority_fixes": "Add an actionable statement or question at the end to encourage viewer responses."
+  },
+  "emotion_analysis": {
+    "score": 5,
+    "emotional_range": "Starts with curiosity, dips into informational tone, and ends flat.",
+    "curiosity_score": 7,
+    "curiosity_explanation": "The phrase 'thing nobody talks about' (line 1) piques interest effectively.",
+    "trust_score": 7,
+    "trust_explanation": "Lines 7-9 demonstrate authority through client experience share, which cultivates trust.",
+    "authority_score": 6,
+    "authority_explanation": "Specific advice provided indicates a level of expertise but lacks personal credential sharing.",
+    "suspense_score": 4,
+    "suspense_explanation": "The audience is not left wondering what happens next; information is delivered but without tension.",
+    "excitement_score": 5,
+    "excitement_explanation": "The language remains factual without energizing phrases to enhance engagement.",
+    "empathy_score": 4,
+    "empathy_explanation": "While the script connects fitness struggles, a personal touch is missing to forge a deeper connection.",
+    "emotional_timeline": [],
+    "dominant_emotion": "Curiosity",
+    "missing_emotion": "Empathy — a personal touch or relatable story would strengthen emotional engagement.",
+    "strengths": "Effective establishment of curiosity around typical fitness discussions.",
+    "weaknesses": "Lacks emotional depth and urgency in delivery.",
+    "recommendations": "Use relatable experiences or stories to heighten emotional resonance with the audience.",
+    "priority_fixes": "Incorporate a brief personal anecdote or vivid details to create empathy and maintain engagement."
+  },
+  "creator_strategist": {
+    "why_fail": "This script assumes the audience understands fitness recovery deeply (lines 5-12) without clarifying its importance clearly enough.",
+    "why_succeed": "The contrasting idea that recovery is more critical than workouts (lines 5-6) can draw viewers who are seeking deeper insights.",
+    "audience_perception": "First-time viewers may perceive the creator as knowledgeable but could benefit from clearer engagement strategies.",
+    "algorithm_perception": "The platform likely categorizes this content as informative but may downrank due to the absence of user engagement cues.",
+    "shareability_prediction": "Medium — while informative, it lacks a strong emotional pull or CTA that would prompt sharing.",
+    "comment_potential": "Moderate — questions about personal recovery practices could generate comments if explicitly asked.",
+    "save_potential": "Low — while the content is worthwhile, it doesn't offer easily digestible, memorable takeaways.",
+    "follower_conversion_potential": "Medium — the unique insight could foster follows, but engagement cues are missing.",
+    "growth_recommendation": "Add a compelling CTA or question at the end to encourage user interaction, increasing potential follow-through."
+  },
+  "rewrite_engine": {
+    "current_opening": "So here is the thing nobody talks about in fitness. Everyone obsesses over the workout, but the workout is maybe 20 percent of the result.",
+    "diagnosis": "The current opening does not create immediate intrigue and relies on common phrasing.",
+    "improved_opening": "What if I told you that 80% of your fitness results happen outside the gym? The truth is, recovery is often overlooked.",
+    "specific_changes": [
+      "Changed 'So here is the thing' to 'What if I told you' to create a more direct inquiry and deepen curiosity.",
+      "Enhanced clarity by breaking down the facts into digestible sentences."
+    ],
+    "improvement_explanation": "This revised hook immediately provokes curiosity and directly involves the viewer by posing a question, following successful patterns seen in attention-grabbing content."
+  },
+  "growth_analysis": {
+    "score": 6,
+    "recommended_caption": "Are you wasting your time at the gym? Discover why recovery is your secret weapon.",
+    "alternative_caption": "80% of success comes from recovery! Are you paying attention to your rest?",
+    "comment_trigger": "What’s your go-to recovery strategy? Share in the comments!",
+    "cta_improvement": "The current script lacks an effective CTA. A suggestion could be, 'Let me know your recovery tips below!' This invites interaction.",
+    "hashtag_cluster": [
+      "#FitnessRecovery",
+      "#WorkoutTips",
+      "#HealthAndWellness",
+      "#GymLife",
+      "#FitnessMotivation",
+      "#RecoveryIsKey",
+      "#Nutrition",
+      "#SleepForFitness"
+    ],
+    "content_category": "Educational",
+    "audience_segment": "Fitness enthusiasts and casual gym-goers who may not understand the role of recovery.",
+    "viral_trigger_type": "Utility — the content provides valuable insights that directly affect fitness results.",
+    "distribution_strategy": "Tailor the pacing and add engaging visuals or overlays for TikTok and Instagram Reels to catch attention faster.",
+    "strengths": "Informative content that addresses common misconceptions directly.",
+    "weaknesses": "Lacks interactive elements to drive engagement, limiting potential reach.",
+    "recommendations": "Incorporate engagement tactics, including clear instructions for audience participation within the content.",
+    "priority_fixes": "Introduce a strong call-to-action that encourages viewers to interact."
+  }
+}

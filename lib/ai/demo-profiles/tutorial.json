@@ -1,0 +1,230 @@
+{
+  "_profile": {
+    "id": "tutorial",
+    "label": "Step-by-Step Tutorial",
+    "style": "tutorial"
+  },
+  "intelligence": {
+    "niche": "Video editing",
+    "sub_niche": "Reel creation",
+    "goal": "Teach a skill and gain subscribers",
+    "audience": "Aspiring video editors and content creators seeking to improve engagement",
+    "content_type": "Tutorial",
+    "platform": "YouTube Shorts",
+    "funnel_stage": "Consideration",
+    "confidence_score": 0.75,
+    "signal_assessment": "MODERATE signal because the script provides clear actionable steps but lacks deep engagement techniques."
+  },
+  "document_intelligence": {
+    "pages": 1,
+    "words": 121,
+    "sentences": 12,
+    "reading_time_minutes": 1,
+    "estimated_spoken_seconds": 48,
+    "title": "Five Essential Steps to Edit Engaging Reels",
+    "detected_hook": "Here is how to edit a reel that keeps people watching, in five steps.",
+    "hook_word_count": 17,
+    "detected_cta": "Save this so you have it for your next edit.",
+    "cta_word_count": 11,
+    "key_promise": "Improved viewer engagement through effective editing techniques.",
+    "main_conflict": "How to maintain viewer attention while editing reels.",
+    "core_topic": "Editing techniques to enhance viewer retention in video reels.",
+    "structural_arc": "HOOK → BUILD → ESCALATION → PAYOFF → CTA"
+  },
+  "executive_summary": {
+    "overall_score": 6,
+    "overall_verdict": "This script should be published with minor revisions. The structure is clear, but it could benefit from stronger engagement hooks.",
+    "strengths": "Line 3 — the phrase 'cut the first three seconds ruthlessly' introduces a strong action-oriented imperative.",
+    "weaknesses": "Line 10 — 'Do these five and your average watch time will climb this week' lacks specificity that would enhance trust.",
+    "recommendations": "1. Enhance the hook (lines 1-2) to create more intrigue. 2. Add a statistic or evidence to support the claims made in step five (line 11). 3. Reduce jargon for clearer communication, particularly in line 6 where terms may confuse novices.",
+    "priority_fixes": "Revise the hook to better capture attention and signal specific value."
+  },
+  "hook_analysis": {
+    "score": 9,
+    "hook_type": "Promise",
+    "opening_words": "Here is how to edit",
+    "second_sentence_tension": "The second sentence states 'in five steps,' which adds clarity but does not build tension.",
+    "failure_reason": null,
+    "audience_curiosity_score": 6,
+    "audience_curiosity_driver": "The phrase 'keeps people watching' raises questions about viewer retention techniques.",
+    "scroll_stop_probability": "Moderate",
+    "risk_factors": [
+      "The phrase 'five steps' is common and does not differentiate from other tutorials."
+    ],
+    "strengths": "The specificity in the promise creates initial interest.",
+    "weaknesses": "Lacks a compelling hook that invites deeper exploration.",
+    "recommendations": "Consider starting with a statistic about viewer drop-off rates to hook the audience. For example, change to 'Did you know that 60% of viewers stop watching in the first three seconds?'",
+    "priority_fixes": "Enhance the hook to create more curiosity and urgency.",
+    "suggested_rewrite_1": {
+      "archetype": "Statistic Shock",
+      "text": "Did you know that 60% of viewers stop watching in the first three seconds? Here’s how to grab their attention.",
+      "why_better": "This opening addresses viewer pain points and promises a solution."
+    },
+    "suggested_rewrite_2": {
+      "archetype": "Curiosity Gap",
+      "text": "Ever wondered how some reels keep audiences glued? Let’s dive into five powerful editing tricks.",
+      "why_better": "This version creates curiosity by addressing a common question."
+    },
+    "suggested_rewrite_3": {
+      "archetype": "Powerful Question",
+      "text": "What’s the secret behind reels that go viral? Here are five editing steps that never fail.",
+      "why_better": "This engages viewers by making them think about the success of others."
+    }
+  },
+  "retention_analysis": {
+    "score": 6,
+    "estimated_script_duration_seconds": 48,
+    "timeline_analysis": [
+      {
+        "timestamp": "00:00–00:10",
+        "segment_label": "Introduction of editing concept",
+        "status": "Curiosity Build",
+        "engagement_level": "High",
+        "reason": "The hook directly addresses viewer retention, encouraging curiosity about techniques.",
+        "recommended_fix": "Enhance interest by including a hook statistic (lines 1-2)."
+      },
+      {
+        "timestamp": "00:10–00:38",
+        "segment_label": "Steps for editing",
+        "status": "Strong",
+        "engagement_level": "Medium",
+        "reason": "The actionable steps are clear and direct but lack deeper engagement.",
+        "recommended_fix": "Add examples to enhance relatability (steps 1-5)."
+      },
+      {
+        "timestamp": "00:38–00:48",
+        "segment_label": "Conclusion and CTA",
+        "status": "Payoff",
+        "engagement_level": "High",
+        "reason": "Strong CTA encourages saving the video but needs more urgency.",
+        "recommended_fix": "Introduce urgency in the CTA (line 12)."
+      }
+    ],
+    "minimum_timeline_segments": 3,
+    "retention_curve_summary": "The retention is expected to gradually decline as the script progresses but recovers towards the end.",
+    "completion_prediction_estimate": "Estimated Moderate",
+    "attention_decay_locations": [
+      "00:10 — Content might feel repetitive without unique examples.",
+      "00:38 — The script switches to soft closure without powerful end engagement."
+    ],
+    "recovery_points": "The strong CTA at the end (line 12) has the potential to regain attention.",
+    "weakest_segment": "Line 4 has potential drop-off as it loses specifics without greater detail.",
+    "strongest_segment": "The concluding CTA invites interaction, likely retaining viewers.",
+    "strengths": "The structure clearly delineates steps for editing, making it engaging.",
+    "weaknesses": "Insufficient examples or emotional hooks may reduce the impact of core points.",
+    "recommendations": "Include examples and create a sense of urgency where appropriate.",
+    "priority_fixes": "Enhance each step with relatable examples."
+  },
+  "script_analysis": {
+    "score": 6,
+    "structure_score": 6,
+    "clarity_score": 7,
+    "authority_score": 6,
+    "audience_fit": "The script targets aspiring video editors effectively, addressing their common pain points.",
+    "consultant_summary": "The script has a clear structure but lacks emotional and illustrative detail. It should include case studies or examples to further engage viewers. Moreover, the authority on the topic could be enhanced by mentioning specific editing tools or references.",
+    "structural_breakdown": {
+      "hook": "The hook clearly states the value proposition and what will be covered.",
+      "build": "Each step builds logically from the previous one without excessive detail.",
+      "escalation": "Tension might be created by emphasizing the importance of each step.",
+      "conflict_or_reframe": "Not sufficiently addressed; no tension is created around common editing mistakes.",
+      "payoff": "Conclusion restates core steps but lacks a strong motivating factor.",
+      "cta": "The CTA effectively encourages saving the video but could be made more urgent."
+    },
+    "issues_detected": {
+      "weak_sections": [
+        "Line 6 lacks specific examples to illustrate the importance of captioning."
+      ],
+      "strong_sections": [
+        "Line 3 emphasizes a key step of urgency in keeping the best content."
+      ],
+      "missing_sections": [
+        "No escalation beat—content moves swiftly without building suspense."
+      ],
+      "flow_issues": [
+        "Lines 1-3 are strong but lead to a generic outline format that might not engage fully."
+      ],
+      "narrative_gaps": [
+        "Line 8 assumes familiarity with technical jargon that may confuse novices."
+      ]
+    },
+    "strengths": "Clear structure in presenting five actionable editing steps.",
+    "weaknesses": "Lacks vivid examples or anecdotes to increase relatability.",
+    "recommendations": "Integrate examples that illustrate each editing step clearly.",
+    "priority_fixes": "Add relatable examples to enhance user connection."
+  },
+  "emotion_analysis": {
+    "score": 5,
+    "emotional_range": "Starts with urgency, moves through practical advice, and ends with an encouraging CTA.",
+    "curiosity_score": 6,
+    "curiosity_explanation": "The use of the phrase 'keeps people watching' provokes thought about viewer retention.",
+    "trust_score": 5,
+    "trust_explanation": "The steps are practical, but specific examples or statistics would bolster credibility.",
+    "authority_score": 6,
+    "authority_explanation": "Lines detailing specific cuts and edits suggest expertise but lack supporting evidence.",
+    "suspense_score": 4,
+    "suspense_explanation": "The lack of tension-building prevents a sense of 'what's next?' that keeps viewers glued.",
+    "excitement_score": 5,
+    "excitement_explanation": "The language is action-oriented but could use more energizing verbs to evoke excitement.",
+    "empathy_score": 5,
+    "empathy_explanation": "Addresses common pain points of editors but does not deeply connect on a personal level.",
+    "emotional_timeline": [
+      {
+        "timestamp": "00:00",
+        "emotion": "Curiosity",
+        "trigger": "The promise of gaining skills from the outset"
+      },
+      {
+        "timestamp": "00:25",
+        "emotion": "Empowerment",
+        "trigger": "Detailed editing steps suggesting ease of implementation"
+      }
+    ],
+    "dominant_emotion": "Curiosity created by the initial promise of viewer engagement strategies.",
+    "missing_emotion": "More storytelling or personal anecdotes could enhance emotional engagement.",
+    "strengths": "Establishes an engaging premise of viewer retention.",
+    "weaknesses": "Lacks personal connection or anecdotes to deepen emotional resonance.",
+    "recommendations": "Include personal anecdotes or examples of successful edits to enhance empathy.",
+    "priority_fixes": "Add personal stories that reflect the editing journey."
+  },
+  "creator_strategist": {
+    "why_fail": "This script assumes a level of editing knowledge that may alienate beginners, as seen in lines such as 'cut the first three seconds ruthlessly', which might intimidate novice creators.",
+    "why_succeed": "The structure provides clear steps that any aspiring video editor can follow, particularly lines like 'add a jump cut every time you pause for breath,' which are action-oriented and easy to grasp.",
+    "audience_perception": "First-time viewers will see the creator as knowledgeable and direct but may feel overwhelmed by the absence of foundational context.",
+    "algorithm_perception": "The algorithm will likely classify this content as educational, with a strong potential for viewer engagement due to actionable steps.",
+    "shareability_prediction": "Moderate — while the content is useful, it would need compelling visuals or examples to encourage sharing.",
+    "comment_potential": "Moderate — inviting viewers to share their editing experiences could boost comments.",
+    "save_potential": "High — the actionable steps encourage viewers to save for future reference.",
+    "follower_conversion_potential": "Medium — without more personality or engagement strategies, it may not convert casual viewers to followers.",
+    "growth_recommendation": "Enhance viewer engagement by integrating personal stories or relatable examples from past editing experiences."
+  },
+  "rewrite_engine": {
+    "current_opening": "Here is how to edit a reel that keeps people watching, in five steps.",
+    "diagnosis": "The current opening is straightforward but lacks urgency or an emotional hook that could better captivate the audience.",
+    "improved_opening": "Did you know that 60% of viewers drop off in the first three seconds? Here’s how you can captivate your audience with five editing steps.",
+    "specific_changes": [
+      "Changed 'Here is how' to 'Did you know? Here’s how to grab attention' — introduces a curiosity gap."
+    ],
+    "improvement_explanation": "This opening now hooks the viewer's interest with a surprising statistic, setting the stage for the practical advice that follows."
+  },
+  "growth_analysis": {
+    "score": 6,
+    "recommended_caption": "Learn five simple steps to edit reels that keep viewers hooked and increase engagement!",
+    "alternative_caption": "Are you tired of losing viewers on your videos? Try these editing tricks to boost your retention!",
+    "comment_trigger": "What editing techniques have you found most effective for keeping viewers engaged?",
+    "cta_improvement": "The current CTA invites saving, but could be rephrased to create urgency such as 'Save this right now for your next edit!'",
+    "hashtag_cluster": [
+      "#VideoEditing",
+      "#Reels",
+      "#ContentCreation",
+      "#EditingTips",
+      "#YouTubeShorts",
+      "#Engagement",
+      "#VideoTips",
+      "#ViralReels"
+    ],
+    "content_category": "Educational",
+    "audience_segment": "Aspiring video editors and content creators seeking more effective editing techniques.",
+    "viral_trigger_type": "Utility — the script offers practical skills that can be directly applied, enhancing shareability.",
+    "distribution_strategy": "For TikTok, highlight a key editing tip with a trending sound; for YouTube Shorts, ensure the thumbnail visually conveys the editing strategies featured."
+  }
+}

@@ -1,0 +1,244 @@
+{
+  "_profile": {
+    "id": "emotional",
+    "label": "Emotional Narrative",
+    "style": "emotional"
+  },
+  "intelligence": {
+    "niche": "Family & life reflection",
+    "sub_niche": "Loss and remembrance",
+    "goal": "Connect deeply with an audience",
+    "audience": "Individuals reflecting on family connections and mortality",
+    "content_type": "Personal narrative",
+    "platform": "Instagram Reels",
+    "funnel_stage": "Awareness",
+    "confidence_score": 0.88,
+    "signal_assessment": "Strong signal due to clear emotional narrative and audience targeting."
+  },
+  "document_intelligence": {
+    "pages": 1,
+    "words": 130,
+    "sentences": 16,
+    "reading_time_minutes": 1,
+    "estimated_spoken_seconds": 52,
+    "title": "Lessons from Grandma: Don't Wait",
+    "detected_hook": "The last thing my grandmother said to me was do not wait.",
+    "hook_word_count": 10,
+    "detected_cta": "Not next month. Today.",
+    "cta_word_count": 4,
+    "key_promise": "Live a more proactive life in memory of a loved one.",
+    "main_conflict": "The tension between procrastination and the need to express love.",
+    "core_topic": "The importance of acting on our feelings before it's too late.",
+    "structural_arc": "HOOK → BUILD → ESCALATION → CONFLICT → PAYOFF → CTA"
+  },
+  "executive_summary": {
+    "overall_score": 8,
+    "overall_verdict": "This script is compelling and impactful. Publish it with minor tweaks.",
+    "strengths": "Lines 1-3 present a strong emotional hook ('do not wait'), drawing the audience in with immediacy and relatability.",
+    "weaknesses": "Line 10 introduces a slight generalization ('someday is not on the calendar') which may dilute the personal connection.",
+    "recommendations": "1. Rephrase line 10 for more specificity about what 'someday' means; it could enhance relatability. 2. Add an intro that sets the context of 'waiting' before the grandmother story for clarity (lines 1-2). 3. Enhance the CTA by framing it as an invitation to take immediate action.",
+    "priority_fixes": "Revise line 10 to deepen emotional impact, providing a clearer, more personal perspective."
+  },
+  "hook_analysis": {
+    "score": 9,
+    "hook_type": "Authority Statement",
+    "opening_words": "The last thing my grandmother said",
+    "second_sentence_tension": "I was 22, rushing out the door, promising I would visit properly next month when things calmed down.",
+    "failure_reason": null,
+    "audience_curiosity_score": 8,
+    "audience_curiosity_driver": "The phrase 'do not wait' creates urgency and intrigue about the story.",
+    "scroll_stop_probability": "Very High",
+    "risk_factors": [],
+    "strengths": "The hook is personal and relatable, tapping into universal feelings about family and regret.",
+    "weaknesses": "Some readers may need a quicker turn to the primary message.",
+    "recommendations": "Streamline the opening for faster tension presentation, possibly omitting the rush detail (line 2).",
+    "priority_fixes": "Enhance the hook's urgency by minimizing introductory context.",
+    "suggested_rewrite_1": {
+      "archetype": "Curiosity Gap",
+      "text": "Have you ever regretted not saying what you feel? My grandmother always told me, 'Do not wait.'",
+      "why_better": "It directly engages the audience's sense of urgency and provokes self-reflection."
+    },
+    "suggested_rewrite_2": {
+      "archetype": "Contrast",
+      "text": "At 22, I thought I had time. But my grandmother's last words taught me otherwise: 'Do not wait.'",
+      "why_better": "It sets up a conflict between youth and the lessons of experience, enhancing relatability."
+    },
+    "suggested_rewrite_3": {
+      "archetype": "Direct Challenge",
+      "text": "What are you waiting for? My grandmother's last message was clear: 'Do not wait.'",
+      "why_better": "It directly challenges the audience's own procrastination and prompts immediate action."
+    }
+  },
+  "retention_analysis": {
+    "score": 8,
+    "estimated_script_duration_seconds": 52,
+    "timeline_analysis": [
+      {
+        "timestamp": "00:00–00:10",
+        "segment_label": "Introduction of grandmother's wisdom",
+        "status": "Strong",
+        "engagement_level": "High",
+        "reason": "The hook is emotionally impactful and immediately relatable. Lines 1-2 build anticipation.",
+        "recommended_fix": "None needed in this segment."
+      },
+      {
+        "timestamp": "00:10–00:25",
+        "segment_label": "Reflections on procrastination",
+        "status": "Strong",
+        "engagement_level": "Medium",
+        "reason": "Information is consistent but lacks a direct connection to action.",
+        "recommended_fix": "Add a personal anecdote or vivid imagery to enhance engagement."
+      },
+      {
+        "timestamp": "00:25–00:42",
+        "segment_label": "Call to action",
+        "status": "Strong",
+        "engagement_level": "High",
+        "reason": "The direct action discussed (calling someone every Sunday) is practical and easy to relate to.",
+        "recommended_fix": "Keep this strong call to action clear and concise; no changes needed."
+      },
+      {
+        "timestamp": "00:42–00:52",
+        "segment_label": "Conclusion with emotional impact",
+        "status": "Strong",
+        "engagement_level": "Medium",
+        "reason": "Closing reflects on personal growth but needs a stronger emotional tie-in.",
+        "recommended_fix": "End with a more potent emotional sentiment linked back to the grandmother’s voice."
+      }
+    ],
+    "minimum_timeline_segments": 4,
+    "retention_curve_summary": "U-shaped: initial strong engagement followed by a slight dip before a strong conclusion.",
+    "completion_prediction_estimate": "Estimated Moderate",
+    "attention_decay_locations": [
+      "00:10 - The shift from immediate story to reflection causes a slight disengagement."
+    ],
+    "recovery_points": "Attention might recover at the call to action (00:25) which is more actionable.",
+    "weakest_segment": "Line 10 - The generalization around 'someday' can lose clarity and connection.",
+    "strongest_segment": "Lines 25-38 - The actionable suggestion to call someone creates high relevance.",
+    "strengths": "Good pacing and clear call to action.",
+    "weaknesses": "Some sections dilute the emotional intent.",
+    "recommendations": "Focus on maintaining emotional clarity throughout.",
+    "priority_fixes": "Revise line 10 for clearer emotional ties."
+  },
+  "script_analysis": {
+    "score": 7,
+    "structure_score": 8,
+    "clarity_score": 7,
+    "authority_score": 6,
+    "audience_fit": "This script concerns individuals grappling with familial connections and regrets, using accessible yet emotionally resonant language.",
+    "consultant_summary": "The structure is mostly effective, but some segments risk losing emotional engagement. Streamlining reflection will enhance clarity.",
+    "structural_breakdown": {
+      "hook": "The hook establishes authority and urgency right away, but it could benefit from immediate context.",
+      "build": "The build describes past patterns of behavior, but is slightly generalized in its reflections.",
+      "escalation": "Escalation occurs through a shift in focus towards actionable steps, enhancing engagement.",
+      "conflict_or_reframe": "Conflict lies in the struggles between 'waiting' and 'acting', which is effectively conveyed.",
+      "payoff": "The payoff links the narrative back to the grandmother's lesson, closing the loop.",
+      "cta": "The CTA is present and strong, urging immediate action."
+    },
+    "issues_detected": {
+      "weak_sections": [
+        "Line 10 - The phrase 'someday is not on the calendar' lacks specificity and could create disconnection."
+      ],
+      "strong_sections": [
+        "Lines 1-3 - The hook directly ties to personal loss and urgency, effectively capturing attention."
+      ],
+      "missing_sections": [
+        "There are no escalation beats—midway prompts are needed to build on previous engagement."
+      ],
+      "flow_issues": [
+        "The transition from reflecting on 'someday' (line 10) slows momentum."
+      ],
+      "narrative_gaps": [
+        "More vivid imagery would enhance emotional connection, particularly in the reflection phase."
+      ]
+    },
+    "strengths": "Emotional engagement is high, particularly in the hook, which draws viewers in effectively.",
+    "weaknesses": "Pacing could be improved with better transitions.",
+    "recommendations": "Flesh out sections that feel diluted and tighten overall structure to maximize emotional urgency.",
+    "priority_fixes": "Adjust line 10 for clarity and emotional specificity."
+  },
+  "emotion_analysis": {
+    "score": 8,
+    "emotional_range": "Starts with urgency, shifts to bittersweet reflection, settles into proactive motivation by the end.",
+    "curiosity_score": 7,
+    "curiosity_explanation": "Lines 1-2 establish a poignant question of time right away, invoking reflective curiosity.",
+    "trust_score": 6,
+    "trust_explanation": "The mention of a personal story builds trust, but the lack of specific examples weakens it.",
+    "authority_score": 7,
+    "authority_explanation": "Lines 1-3 establish authority through a relatable, emotional narrative structure.",
+    "suspense_score": 6,
+    "suspense_explanation": "While the narrative voice is personal, there is minimal tension to drive suspense.",
+    "excitement_score": 5,
+    "excitement_explanation": "The pacing is steady but doesn't incorporate energetic language or uplifting messages.",
+    "empathy_score": 9,
+    "empathy_explanation": "Lines 4-11 connect emotionally through shared experiences of regret and nostalgia.",
+    "emotional_timeline": [
+      {
+        "timestamp": "00:01",
+        "emotion": "Urgency",
+        "trigger": "Opening message from grandmother."
+      },
+      {
+        "timestamp": "00:10",
+        "emotion": "Bittersweet reflection",
+        "trigger": "Realization that time cannot be reclaimed."
+      },
+      {
+        "timestamp": "00:42",
+        "emotion": "Proactive motivation",
+        "trigger": "Call to action at the end."
+      }
+    ],
+    "dominant_emotion": "Empathy",
+    "missing_emotion": "A sense of joy or gratitude could enrich the narrative.",
+    "strengths": "The emotional trajectory aligns well with common human experiences.",
+    "weaknesses": "A lack of exciting language lowers overall emotional engagement.",
+    "recommendations": "Incorporate moments of joy or gratitude to balance bittersweet tones.",
+    "priority_fixes": "Add energetic language or uplifting points to enhance excitement."
+  },
+  "creator_strategist": {
+    "why_fail": "This script risks alienating viewers who may feel overwhelmed by the sadness in the tone (line 10's generalization creates emotional dilution).",
+    "why_succeed": "The specificity in lines 1-3 about the grandmother's words creates high relatability and reflects shared sentiments on regret and familial connections.",
+    "audience_perception": "A first-time viewer will likely perceive the creator as reflective and emotionally mature, resonating well with individuals reflecting on family bonds.",
+    "algorithm_perception": "The platform algorithm will likely classify this content as Emotional/Inspirational, boosting engagement signals because of the personal narrative structure.",
+    "shareability_prediction": "Moderate - the specific and relatable content has the potential to trigger shares, especially among audiences reminiscing about loved ones.",
+    "comment_potential": "High - the narrative may invite others to share their experiences of loss or lessons learned.",
+    "save_potential": "Moderate - while it presents good life lessons, the lack of actionable insights might reduce save-worthiness.",
+    "follower_conversion_potential": "High - the emotional resonance and clear call to action can drive follows from those valuing family connections.",
+    "growth_recommendation": "Narrow the emotional focus and add more vibrant language to captivate broader audiences without compromising depth."
+  },
+  "rewrite_engine": {
+    "current_opening": "The last thing my grandmother said to me was do not wait.",
+    "diagnosis": "The opening lacks immediate context or direct engagement; it requires a more vibrant hook to capture attention.",
+    "improved_opening": "What would you do if you had no time left? My grandmother's last message—to 'not wait'—still echoes in my life.",
+    "specific_changes": [
+      "Replaced 'The last thing my grandmother said to me was do not wait' with 'What would you do if you had no time left?' - invites immediate reflection."
+    ],
+    "improvement_explanation": "This change heightens the urgency of the message, immediately inviting viewers to assess their own lives against the speaker's experience."
+  },
+  "growth_analysis": {
+    "score": 7,
+    "recommended_caption": "Don't let time slip away. Cherish your loved ones today—share your stories and your lessons.",
+    "alternative_caption": "Every moment counts. What would you say to those you love if you had no more time?",
+    "comment_trigger": "What's a lesson a loved one taught you that changed your perspective?",
+    "cta_improvement": "The current CTA ('Not next month. Today.') is direct yet could be more inviting. Consider rephrasing to: 'Take a moment today to reach out to someone you love.'",
+    "hashtag_cluster": [
+      "#FamilyLove",
+      "#LifeLessons",
+      "#DontWait",
+      "#CherishEveryMoment",
+      "#EmotionalGrowth",
+      "#Reflections",
+      "#Memory",
+      "#PersonalNarrative"
+    ],
+    "content_category": "Emotional and Inspirational",
+    "audience_segment": "Individuals reflecting on familial bonds and personal growth",
+    "viral_trigger_type": "Empathy - the relatability of these feelings will resonate broadly due to shared lived experiences.",
+    "distribution_strategy": "For TikTok, ensure the opening is fast-paced, while for a Facebook audience, perhaps extend the reflective elements for a deeper engagement.",
+    "strengths": "The content addresses a universal theme, boosting its relatability.",
+    "weaknesses": "Some sections may feel too heavy, potentially limiting reach among lighter content preferers.",
+    "recommendations": "Balance emotional depth with uplifting or light-hearted elements to appeal to different audience segments.",
+    "priority_fixes": "Incorporate lighter language or anecdotes to broaden potential audience appeal."
+  }
+}

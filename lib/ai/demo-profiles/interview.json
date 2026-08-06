@@ -1,0 +1,232 @@
+{
+  "_profile": {
+    "id": "interview",
+    "label": "Interview / Q&A Clip",
+    "style": "interview"
+  },
+  "intelligence": {
+    "niche": "Wealth & Mindset Interviews",
+    "sub_niche": "Entrepreneurship Advice",
+    "goal": "Clip that drives channel growth",
+    "audience": "Aspiring entrepreneurs and business-minded individuals",
+    "content_type": "Story",
+    "platform": "YouTube Shorts",
+    "funnel_stage": "Awareness",
+    "confidence_score": 0.88,
+    "signal_assessment": "Strong signal because the script clearly delivers an engaging and valuable lesson from a credible source with emotional undertones."
+  },
+  "document_intelligence": {
+    "pages": 1,
+    "words": 118,
+    "sentences": 11,
+    "reading_time_minutes": 1,
+    "estimated_spoken_seconds": 47,
+    "title": "Lessons from a Serial Entrepreneur",
+    "detected_hook": "I asked a man who built and sold three companies what he would do differently if",
+    "hook_word_count": 19,
+    "detected_cta": null,
+    "cta_word_count": null,
+    "key_promise": "Learning the value of being useful over being right.",
+    "main_conflict": "The contrast between youthful ambition to win every argument versus the mature approach of providing value.",
+    "core_topic": "Business mindset and experiential learning",
+    "structural_arc": "HOOK → BUILD → ESCALATION → CONFLICT → PAYOFF — All essential beats are present."
+  },
+  "executive_summary": {
+    "overall_score": 7,
+    "overall_verdict": "This script has strong elements but should be revised to include a CTA for better engagement. The lack of a clear action prompt at the end may limit its growth potential.",
+    "strengths": "Line 3 — the phrase 'stop trying to be right and start trying to be useful' captures a powerful insight that resonates well with viewers.",
+    "weaknesses": "The script concludes without prompting viewer engagement, specifically lacking a CTA after the concluding statement in line 10, which could lead to missed opportunities to grow the channel.",
+    "recommendations": "Incorporate a clear CTA at the end of the script encouraging viewers to engage, such as liking or subscribing for more insights, preferably added after line 10.",
+    "priority_fixes": "The most impactful change would be to add a closing CTA to enhance viewer engagement and promote channel growth."
+  },
+  "hook_analysis": {
+    "score": 9,
+    "hook_type": "Curiosity Gap",
+    "opening_words": "I asked a man who built",
+    "second_sentence_tension": "He did not hesitate.",
+    "failure_reason": null,
+    "audience_curiosity_score": 8,
+    "audience_curiosity_driver": "what he would do differently if",
+    "scroll_stop_probability": "High",
+    "risk_factors": [],
+    "strengths": "The opening establishes immediate credibility by referencing a successful entrepreneur in line 1.",
+    "weaknesses": "The context of who this man is could enrich the hook but isn't provided explicitly.",
+    "recommendations": "Consider adding a powerful descriptor for the entrepreneur (e.g., 'a successful tech entrepreneur') to build immediate relevance.",
+    "priority_fixes": "Enhancing the description of the interviewee will create a stronger initial hook.",
+    "suggested_rewrite_1": {
+      "archetype": "Curiosity Gap",
+      "text": "I asked a successful tech entrepreneur who built and sold three companies what he would do differently if he had to start over.",
+      "why_better": "Adding 'successful tech entrepreneur' establishes credibility from the outset."
+    },
+    "suggested_rewrite_2": {
+      "archetype": "Authority Statement",
+      "text": "I asked a seasoned entrepreneur with a track record of building and selling multiple companies what he would do if he started over.",
+      "why_better": "This version positions the speaker as an authority, enhancing trust and engagement."
+    },
+    "suggested_rewrite_3": {
+      "archetype": "Promise",
+      "text": "I asked a man who built and sold three companies for advice on how to find real success if he had to start from scratch.",
+      "why_better": "This frames the message as a promise of insightful advice, enhancing click-through appeal."
+    }
+  },
+  "retention_analysis": {
+    "score": 6,
+    "estimated_script_duration_seconds": 47,
+    "timeline_analysis": [
+      {
+        "timestamp": "00:00–00:10",
+        "segment_label": "Introduction of the interviewee's insights",
+        "status": "Strong",
+        "engagement_level": "High",
+        "reason": "The combination of an intriguing question and the mention of experience draws viewers in.",
+        "recommended_fix": "Consider expanding this segment slightly to build more intrigue before detailing the insights."
+      },
+      {
+        "timestamp": "00:10–00:30",
+        "segment_label": "Explanation of the mindset shift",
+        "status": "Curiosity Build",
+        "engagement_level": "Medium",
+        "reason": "The narrative about being useful vs. right creates an interesting conflict but could be paced more dynamically.",
+        "recommended_fix": "Introduce a personal anecdote or example during this explanation to maintain attention (e.g., a relatable story or scenario)."
+      },
+      {
+        "timestamp": "00:30–00:47",
+        "segment_label": "Conclusion and lesson",
+        "status": "Payoff",
+        "engagement_level": "Medium",
+        "reason": "The punchy conclusion provides valuable advice but lacks actionable insight for the viewer to act upon.",
+        "recommended_fix": "Add a brief recap or actionable tip at the end to prompt reflection."
+      }
+    ],
+    "minimum_timeline_segments": 3,
+    "retention_curve_summary": "A gradual decay is predicted as the script moves from the initial curiosity to a conclusive lesson without concluding remarks.",
+    "completion_prediction_estimate": "Estimated Moderate",
+    "attention_decay_locations": [
+      "00:30 - The pacing slows down significantly as it approaches the conclusion, which may lead to disengagement."
+    ],
+    "recovery_points": "The script does eventually renew interest with valuable content but could do better with a dynamic CTA.",
+    "weakest_segment": "00:30–00:47 — The initial impactful message loses momentum due to a lack of an engaging conclusion.",
+    "strongest_segment": "00:00–00:10 — This segment effectively establishes the premise and captures interest.",
+    "strengths": "Clear narrative flow and valuable insights.",
+    "weaknesses": "Conciseness and lack of actionable elements weaken retention.",
+    "recommendations": "Incorporate concrete examples and a strong CTA.",
+    "priority_fixes": "Focus on the conclusive segment to include an actionable statement or a CTA."
+  },
+  "script_analysis": {
+    "score": 7,
+    "structure_score": 8,
+    "clarity_score": 8,
+    "authority_score": 7,
+    "audience_fit": "Addresses the desires of aspiring entrepreneurs but could strengthen direct engagement.",
+    "consultant_summary": "The script is well-structured and clear, flowing smoothly from insight to explanation. However, the lack of a CTA diminishes its potential impact. Emphasizing viewer takeaways or actions would improve value.",
+    "structural_breakdown": {
+      "hook": "The hook effectively introduces the main character and poses an intriguing question, piquing interest.",
+      "build": "The build offers a clear description of the mindset shift based on experience.",
+      "escalation": "Tension escalates through contrasts between being useful and being right.",
+      "conflict_or_reframe": "The core tension lies in conflicting approaches to business success.",
+      "payoff": "Resolving insight provided but lacks enhancement regarding viewer action.",
+      "cta": "No call-to-action is presented at the end."
+    },
+    "issues_detected": {
+      "weak_sections": [
+        "The absence of a CTA leaves the conclusion flat."
+      ],
+      "strong_sections": [
+        "Line 3 effectively communicates a key mindset shift."
+      ],
+      "missing_sections": [
+        "The script would benefit from an escalation beat or recap before concluding."
+      ],
+      "flow_issues": [
+        "Transitions between personal insights feel abrupt, potentially breaking engagement."
+      ],
+      "narrative_gaps": [
+        "No actionable takeaway presented, which could help viewers apply the insight."
+      ]
+    },
+    "strengths": "Strong narrative with clear flow and structure.",
+    "weaknesses": "Lack of a CTA and actionable insights weaken overall effectiveness.",
+    "recommendations": "Incorporate a strong ending with a direct takeaway for viewers.",
+    "priority_fixes": "Implement a CTA to solidify the ending and encourage viewer interaction."
+  },
+  "emotion_analysis": {
+    "score": 6,
+    "emotional_range": "Starts with curiosity, shifts to realization, settling into reflection by the end.",
+    "curiosity_score": 7,
+    "curiosity_explanation": "The phrases 'stop trying to be right' and 'start trying to be useful' create intrigue and resonate emotionally with the audience.",
+    "trust_score": 6,
+    "trust_explanation": "The portrayal of a seasoned entrepreneur adds credibility, but a lack of personal anecdotes weakens connection.",
+    "authority_score": 7,
+    "authority_explanation": "The mention of business success indicates experience, contributing positively to perceived authority.",
+    "suspense_score": 5,
+    "suspense_explanation": "While there is a defined conflict, it concludes somewhat predictably, lacking suspense in the resolution.",
+    "excitement_score": 6,
+    "excitement_explanation": "Challenging conventional thinking energizes the content, though delivery pace could elevate enthusiasm.",
+    "empathy_score": 7,
+    "empathy_explanation": "The narrative connects through relatable challenges of entrepreneurs, particularly when discussing failures.",
+    "emotional_timeline": [
+      {
+        "timestamp": "00:00",
+        "emotion": "Curiosity",
+        "trigger": "Asking the question of the experienced entrepreneur."
+      },
+      {
+        "timestamp": "00:20",
+        "emotion": "Realization",
+        "trigger": "The lesson about being useful."
+      },
+      {
+        "timestamp": "00:45",
+        "emotion": "Reflection",
+        "trigger": "The closing remark about saving oneself the tuition."
+      }
+    ],
+    "dominant_emotion": "Curiosity",
+    "missing_emotion": "A sense of urgency or a stronger call to action would elevate engagement.",
+    "strengths": "Curiosity is cultivated through engagement with a relatable expert.",
+    "weaknesses": "Conclusion lacks urgency or drive for action.",
+    "recommendations": "Incorporate more emotional language in the conclusion to elevate viewer connection.",
+    "priority_fixes": "Embed a stronger, personal call to action to enhance emotional engagement."
+  },
+  "creator_strategist": {
+    "why_fail": "This script assumes viewers know the weight of the entrepreneur's insights without establishing who they are (line 1), which may lose casual scrollers.",
+    "why_succeed": "The specificity in line 3 creates a compelling lesson that could resonate with aspiring entrepreneurs and drive shares.",
+    "audience_perception": "A first-time viewer may perceive the creator as knowledgeable but lacking a clear call to engage, which could impact subscription potential.",
+    "algorithm_perception": "The platform's algorithm likely classifies this content as educational, but the lack of engagement signals (like a CTA) may reduce visibility.",
+    "shareability_prediction": "Moderate due to relatable insights that can be applied practically, but would benefit from an evocative ending.",
+    "comment_potential": "Moderate — a question or prompt at the end would invite responses and stimulate dialogue.",
+    "save_potential": "Moderate, as the content provides valuable lessons but lacks concrete, actionable takeaways to encourage saving.",
+    "follower_conversion_potential": "Moderate, contingent on subsequent calls for audience action.",
+    "growth_recommendation": "Enhance audience engagement by adding an impactful CTA and making it actionable at the end."
+  },
+  "rewrite_engine": {
+    "current_opening": "I asked a man who built and sold three companies what he would do differently if",
+    "diagnosis": "The current opening lacks context about the interviewee’s credibility, which may hinder immediate viewer interest.",
+    "improved_opening": "I asked a successful tech entrepreneur who built and sold three companies what he would do differently if he had to start over.",
+    "specific_changes": [
+      "Changed 'a man who built' to 'a successful tech entrepreneur who built' to immediately establish authority."
+    ],
+    "improvement_explanation": "This change adds necessary context, making the hook more engaging by immediately positioning the speaker as someone with valuable insights."
+  },
+  "growth_analysis": {
+    "score": 6,
+    "recommended_caption": "What would you do differently if you had to start over? A successful entrepreneur shares his wisdom!",
+    "alternative_caption": "Stop trying to be right. Start being useful! Key advice from a seasoned entrepreneur.",
+    "comment_trigger": "What’s one piece of advice you wish you had when starting your journey?",
+    "cta_improvement": "The current CTA lacks. Recommend adding a phrase like 'If you found this valuable, hit like and subscribe for more insights!' at the end.",
+    "hashtag_cluster": [
+      "#Entrepreneurship",
+      "#BusinessTips",
+      "#Mindset",
+      "#WealthBuilding",
+      "#StartupAdvice",
+      "#SuccessMindset",
+      "#PersonalGrowth",
+      "#LearningFromFailure"
+    ],
+    "content_category": "Educational",
+    "audience_segment": "Aspiring entrepreneurs looking for advice and mindset shifts.",
+    "viral_trigger_type": "Utility — Content provides practical advice that viewers can apply, encouraging sharing among peer groups.",
+    "distribution_strategy": "For YouTube Shorts, ensure the content is punchy and engaging, focusing heavily on ramification and audience reflection on the insights shared."
+  }
+}

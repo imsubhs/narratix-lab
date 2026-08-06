@@ -1,0 +1,245 @@
+{
+  "_profile": {
+    "id": "educational",
+    "label": "Educational Explainer",
+    "style": "educational"
+  },
+  "intelligence": {
+    "niche": "Study & productivity science",
+    "sub_niche": "Cognitive techniques for learning",
+    "goal": "Grow an educational channel",
+    "audience": "Students and lifelong learners interested in enhancing memory retention",
+    "content_type": "Educational tutorial",
+    "platform": "YouTube Shorts",
+    "funnel_stage": "Consideration",
+    "confidence_score": 0.88,
+    "signal_assessment": "Strong signal due to clear educational intent and targeted techniques."
+  },
+  "document_intelligence": {
+    "pages": 1,
+    "words": 114,
+    "sentences": 13,
+    "reading_time_minutes": 1,
+    "estimated_spoken_seconds": 46,
+    "title": "Three Techniques to Improve Memory Retention",
+    "detected_hook": "Your brain forgets 70 percent of what you learn within 24 hours.",
+    "hook_word_count": 10,
+    "detected_cta": "Which one are you trying first?",
+    "cta_word_count": 6,
+    "key_promise": "To provide three cognitive techniques to enhance memory retention.",
+    "main_conflict": "The struggle of forgetting learned information.",
+    "core_topic": "Cognitive techniques to improve learning retention.",
+    "structural_arc": "HOOK → BUILD → ESCALATION → REFRAME → PAYOFF → CTA"
+  },
+  "executive_summary": {
+    "overall_score": 8,
+    "overall_verdict": "This script is strong and ready for publication, with clear techniques and a solid hook. However, minor pacing adjustments could improve retention.",
+    "strengths": "Line 1 presents a surprising statistic about forgetting, immediately establishing relevance. Lines 2-5 clearly lay out actionable techniques, enhancing viewer engagement.",
+    "weaknesses": "Line 10 introduces a CTA that could be more compelling; as it currently stands, it does not create urgency or curiosity about the options presented.",
+    "recommendations": "1. Enhance the closing question (line 10) to create more urgency. Example: 'Which of these life-changing techniques will you start using today?' 2. Consider pacing between techniques to maintain interest. 3. Add a visual example to illustrate active recall in practice.",
+    "priority_fixes": "Revise the CTA to elevate viewer curiosity about the techniques presented."
+  },
+  "hook_analysis": {
+    "score": 9,
+    "hook_type": "Statistic Shock",
+    "opening_words": "Your brain forgets 70",
+    "second_sentence_tension": "Here are three techniques backed by cognitive science that fix that.",
+    "failure_reason": null,
+    "audience_curiosity_score": 8,
+    "audience_curiosity_driver": "the statistic about forgetting creates immediate concern and prompts further interest.",
+    "scroll_stop_probability": "Very High",
+    "risk_factors": [],
+    "strengths": "The opening statistic is specific and creates an immediate interest in solutions.",
+    "weaknesses": "The transition to the techniques could include more context to heighten curiosity.",
+    "recommendations": "Consider rephrasing the second sentence to enhance intrigue, e.g., 'But what if I told you there are proven ways to combat this?'",
+    "priority_fixes": "Provide more context before delving into the techniques.",
+    "suggested_rewrite_1": {
+      "archetype": "Curiosity Gap",
+      "text": "Did you know that most of what you learn is gone in just 24 hours? Here are three powerful techniques that can help you remember more for longer.",
+      "why_better": "This rewrite engages curiosity about both the statistic and potential solutions."
+    },
+    "suggested_rewrite_2": {
+      "archetype": "Authority Statement",
+      "text": "Research shows that your brain forgets up to 70% of what you learn in just a day. Here’s how to remember crucial information better.",
+      "why_better": "This establishes credibility and authority from the start, motivating viewers to listen."
+    },
+    "suggested_rewrite_3": {
+      "archetype": "Question",
+      "text": "Want to remember what you learn? Did you know your brain loses 70% of it within a day? Here are three techniques you need to try!",
+      "why_better": "This formulation directly engages the audience by addressing their need for retention."
+    }
+  },
+  "retention_analysis": {
+    "score": 7,
+    "estimated_script_duration_seconds": 46,
+    "timeline_analysis": [
+      {
+        "timestamp": "00:00–00:10",
+        "segment_label": "Hook with statistic",
+        "status": "Strong",
+        "engagement_level": "High",
+        "reason": "The surprising statistic captures attention immediately.",
+        "recommended_fix": "N/A"
+      },
+      {
+        "timestamp": "00:10–00:20",
+        "segment_label": "Introduction of techniques",
+        "status": "Curiosity Build",
+        "engagement_level": "Medium",
+        "reason": "The mention of techniques creates anticipation.",
+        "recommended_fix": "Consider adding a brief teaser of each technique."
+      },
+      {
+        "timestamp": "00:20–00:35",
+        "segment_label": "Explaining spaced repetition",
+        "status": "Attention Decline",
+        "engagement_level": "Low",
+        "reason": "Explanations may become too technical without visual support.",
+        "recommended_fix": "Incorporate visual examples or anecdotes."
+      },
+      {
+        "timestamp": "00:35–00:46",
+        "segment_label": "Concluding techniques and CTA",
+        "status": "Payoff",
+        "engagement_level": "Medium",
+        "reason": "Provides closure with a call to action, but lacks urgency.",
+        "recommended_fix": "Revise the closing to instill a sense of urgency."
+      }
+    ],
+    "minimum_timeline_segments": 5,
+    "retention_curve_summary": "Gradual decay with slight recoveries indicated by the structured techniques.",
+    "completion_prediction_estimate": "Estimated Moderate",
+    "attention_decay_locations": [
+      "00:20 – The explanation of spaced repetition lacks visual engagement, causing attention to drop."
+    ],
+    "recovery_points": "Attention may recover during the explanation of the third technique due to its relatable nature.",
+    "weakest_segment": "The segment explaining spaced repetition is most likely to cause drop-off because it becomes too technical without visual context.",
+    "strongest_segment": "The hook featuring the statistic is most likely to retain viewers due to its surprising nature.",
+    "strengths": "The structured technique explanations provide value.",
+    "weaknesses": "Pacing and lack of visual engagement may hinder retention.",
+    "recommendations": "Incorporate visual aids and anecdotes to maintain interest through technical explanations.",
+    "priority_fixes": "Add visuals to the explanation of spaced repetition to maintain viewer engagement."
+  },
+  "script_analysis": {
+    "score": 8,
+    "structure_score": 8,
+    "clarity_score": 8,
+    "authority_score": 7,
+    "audience_fit": "This script appeals to students and educators who seek practical learning strategies, matching the language to a general audience's knowledge.",
+    "consultant_summary": "The overall structure is clear with an effective hook and promising techniques, important for learner engagement. However, some segments would benefit from enhanced visuals to support the explanations. Consider pacing adjustments to strengthen the script further.",
+    "structural_breakdown": {
+      "hook": "The hook effectively captures attention with a compelling statistic, setting the stage for the techniques.",
+      "build": "The build transitions smoothly into each technique, though it could benefit from deeper context between ideas.",
+      "escalation": "The escalation is less pronounced; while techniques are introduced, tension could be heightened.",
+      "conflict_or_reframe": "The conflict revolves around the challenge of forgetting, a relatable issue for viewers.",
+      "payoff": "The payoff offers actionable techniques, though it lacks a strong emotional or immediate callback.",
+      "cta": "The CTA is present but could increase urgency to motivate viewer action."
+    },
+    "issues_detected": {
+      "weak_sections": [
+        "Line 7: The explanation of spaced repetition could be more digestible with examples."
+      ],
+      "strong_sections": [
+        "Lines 1-2: The hook sets a strong foundation with a surprising fact."
+      ],
+      "missing_sections": [
+        "No escalation beat; techniques could have more buildup to enhance excitement."
+      ],
+      "flow_issues": [
+        "Line 5's explanation could flow better with a relatable example."
+      ],
+      "narrative_gaps": [
+        "The script lacks a visual reference to reinforce memory techniques throughout."
+      ]
+    },
+    "strengths": "The structure is clear with a strong hook and actionable content.",
+    "weaknesses": "Technical explanations may lose the audience without supportive visuals.",
+    "recommendations": "Incorporate visuals and relative anecdotes for each technique to strengthen clarity and engagement.",
+    "priority_fixes": "Add relevant visuals to the explanation of spaced repetition."
+  },
+  "emotion_analysis": {
+    "score": 6,
+    "emotional_range": "Starts with concern, transitions to practical motivation as techniques are shared.",
+    "curiosity_score": 7,
+    "curiosity_explanation": "Lines 1-2 create curiosity through the surprising statistic and promise of solutions to a common problem.",
+    "trust_score": 6,
+    "trust_explanation": "The mention of 'cognitive science' adds credibility, but specific references to studies could enhance trust.",
+    "authority_score": 6,
+    "authority_explanation": "Phrases like 'techniques backed by cognitive science' indicate expertise, though more specificity about the techniques would strengthen authority.",
+    "suspense_score": 5,
+    "suspense_explanation": "The structure provides a clear progression of techniques but lacks anticipation about their effectiveness.",
+    "excitement_score": 5,
+    "excitement_explanation": "Language is mostly instructional; a more energetic tone could enhance excitement.",
+    "empathy_score": 7,
+    "empathy_explanation": "Lines addressing common learning struggles resonate well with the audience.",
+    "emotional_timeline": [
+      {
+        "timestamp": "00:00",
+        "emotion": "Concern",
+        "trigger": "Line 1's statistic about forgetting."
+      },
+      {
+        "timestamp": "00:10",
+        "emotion": "Curiosity",
+        "trigger": "Lines introducing three techniques."
+      },
+      {
+        "timestamp": "00:35",
+        "emotion": "Motivation",
+        "trigger": "Encouragement to try the techniques."
+      }
+    ],
+    "dominant_emotion": "Concern over forgetting creates initial engagement.",
+    "missing_emotion": "Stronger excitement through dynamic language and energy is absent.",
+    "strengths": "The opening statistic effectively triggers concern, motivating viewers.",
+    "weaknesses": "Overall tone could be more dynamic to sustain interest.",
+    "recommendations": "Incorporate language that elevates excitement and empathy, providing relatable anecdotes.",
+    "priority_fixes": "Enhance the excitement by adding more energetic language and anecdotes."
+  },
+  "creator_strategist": {
+    "why_fail": "This script risks losing viewers during technical explanations (line 7) without visual elements to illustrate the techniques; technical jargon can alienate casual viewers.",
+    "why_succeed": "The statistic at the beginning (line 1) effectively hooks the audience, prompting them to care about finding a solution.",
+    "audience_perception": "First-time viewers will perceive the creator as knowledgeable but may feel the content lacks energy; the tone is instructional and factual.",
+    "algorithm_perception": "YouTube's algorithm will likely classify this content as educational, but retention issues may negatively impact visibility due to viewer drop-off.",
+    "shareability_prediction": "Moderate - content provides valuable techniques, but lacks compelling emotional engagement for sharing.",
+    "comment_potential": "Medium - the question at the end invites responses, though it could be more provocative.",
+    "save_potential": "High - the three techniques are practical and actionable, encouraging viewers to return for reference.",
+    "follower_conversion_potential": "Medium - while the information is valuable, the lack of a strong emotional hook limits conversion opportunities.",
+    "growth_recommendation": "Integrate visual aids for each technique to keep viewers engaged and polish the delivery for increased excitement."
+  },
+  "rewrite_engine": {
+    "current_opening": "Your brain forgets 70 percent of what you learn within 24 hours. Here are three",
+    "diagnosis": "The current opening is effective but lacks immediate engagement and suspense about the solutions.",
+    "improved_opening": "Did you know your brain forgets up to 70% of what you learn in just 24 hours? This shocking fact means you need effective strategies to combat forgetfulness. Here are three techniques to enhance your memory retention, backed by cognitive science.",
+    "specific_changes": [
+      "Changed \"Your brain forgets 70 percent of what you learn\" to \"Did you know your brain forgets up to 70% of what you learn?\" to initiate curiosity.",
+      "Added a sentence emphasizing the need for effective strategies, creating urgency."
+    ],
+    "improvement_explanation": "These changes create a more enticing hook that compels viewers to watch for solutions rather than just presentations. Engaging curiosity about the high percentage heightens viewer interest immediately."
+  },
+  "growth_analysis": {
+    "score": 7,
+    "recommended_caption": "Learn the top three techniques to retain 70% more of what you study! #MemoryTechniques #LearningScience #StudyTips",
+    "alternative_caption": "Are you tired of forgetting what you learn? Discover 3 expert techniques for better retention! #Education #CognitiveScience #StudyHacks",
+    "comment_trigger": "Which technique will you try first, and why?",
+    "cta_improvement": "The CTA lacks urgency; revise it to incite immediate action. Instead of 'Which one are you trying first?', use 'Start using these proven techniques today and watch your memory soar!'",
+    "hashtag_cluster": [
+      "#MemoryTechniques",
+      "#CognitiveScience",
+      "#Learning",
+      "#Education",
+      "#StudyTips",
+      "#ActiveRecall",
+      "#FeynmanTechnique",
+      "#SpacedRepetition"
+    ],
+    "content_category": "Educational",
+    "audience_segment": "Students and educators looking to enhance learning methods.",
+    "viral_trigger_type": "Utility - presenting valuable, actionable techniques for viewers.",
+    "distribution_strategy": "For YouTube Shorts, ensure strong visuals accompany brief explanations to maintain engagement; include subtitled highlights to emphasize key points visually.",
+    "strengths": "The content is structured clearly and includes actionable techniques.",
+    "weaknesses": "Lack of urgency and emotional connection may reduce overall engagement.",
+    "recommendations": "Enhance the tone and pacing, and incorporate visual aids to amplify viewer retention.",
+    "priority_fixes": "Add visual examples to support content delivery for better viewer engagement."
+  }
+}

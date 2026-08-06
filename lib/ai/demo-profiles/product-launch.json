@@ -1,0 +1,246 @@
+{
+  "_profile": {
+    "id": "product-launch",
+    "label": "Product Launch Announcement",
+    "style": "product_launch"
+  },
+  "intelligence": {
+    "niche": "Tech",
+    "sub_niche": "SaaS launch",
+    "goal": "Announce a launch and drive signups",
+    "audience": "Content creators and marketers interested in efficient workflow solutions",
+    "content_type": "Announcement",
+    "platform": "LinkedIn",
+    "funnel_stage": "Conversion",
+    "confidence_score": 0.88,
+    "signal_assessment": "Strong signal because the script explicitly addresses the problem faced by the target audience and clearly outlines the solution."
+  },
+  "document_intelligence": {
+    "pages": 1,
+    "words": 125,
+    "sentences": 12,
+    "reading_time_minutes": 1,
+    "estimated_spoken_seconds": 50,
+    "title": "Introducing Our All-in-One Content Creation Workspace",
+    "detected_hook": "Today we are launching something we have been building quietly for 14 months.",
+    "hook_word_count": 15,
+    "detected_cta": "We are giving the first thousand signups lifetime founder pricing.",
+    "cta_word_count": 13,
+    "key_promise": "A seamless workspace that connects scripting, analysis, and publishing.",
+    "main_conflict": "The struggle of creators with fragmented tools and processes.",
+    "core_topic": "The launch of a SaaS tool for content creation.",
+    "structural_arc": "HOOK → BUILD → ESCALATION → PAYOFF → CTA — all beats present."
+  },
+  "executive_summary": {
+    "overall_score": 8,
+    "overall_verdict": "The creator should publish this script with minor tweaks for clarity and impact. The script successfully communicates the product's value proposition but can benefit from a stronger framing of urgency.",
+    "strengths": "Lines 3-5 effectively outline the problem faced by content creators and clearly present the solution, making the script relatable and engaging.",
+    "weaknesses": "Line 12 introduces the offer, but could create a greater sense of urgency or exclusivity to drive faster action.",
+    "recommendations": "Enhance urgency in line 12 by specifying a time limit for the founder pricing offer. Consider rewriting line 11 to include a direct invitation for immediate action.",
+    "priority_fixes": "Reframe line 12 to invoke urgency, e.g., \"Sign up today, as the first thousand will be the only ones to enjoy our lifetime founder pricing!\""
+  },
+  "hook_analysis": {
+    "score": 9,
+    "hook_type": "Direct Announcement",
+    "opening_words": "Today we are launching",
+    "second_sentence_tension": "It started with a frustration every creator knows.",
+    "failure_reason": null,
+    "audience_curiosity_score": 6,
+    "audience_curiosity_driver": "frustration every creator knows",
+    "scroll_stop_probability": "Moderate",
+    "risk_factors": [
+      "The phrase 'we have been building quietly' suggests a lack of engagement before the launch."
+    ],
+    "strengths": "The specificity in the first line establishes context immediately.",
+    "weaknesses": "The opening lacks a provocative question or statement that could further heighten curiosity.",
+    "recommendations": "Add a question or statistic after the hook to enhance curiosity, such as, 'Ever struggled with juggling multiple tools while creating content?'",
+    "priority_fixes": "Integrate a curiosity-driven question right after the hook.",
+    "suggested_rewrite_1": {
+      "archetype": "Curiosity Gap",
+      "text": "Have you ever felt overwhelmed with too many tools? Today, we are launching something that solves this issue.",
+      "why_better": "This opening directly addresses a common pain point, increasing viewer engagement."
+    },
+    "suggested_rewrite_2": {
+      "archetype": "Statistic Shock",
+      "text": "Did you know 70% of creators feel frustrated by their current tools? Today, we are launching a solution that simplifies this!",
+      "why_better": "Using a statistic taps into common emotions of frustration, elevating urgency."
+    },
+    "suggested_rewrite_3": {
+      "archetype": "Direct Challenge",
+      "text": "Are you tired of juggling multiple apps for your content creation? Our new launch will change that today!",
+      "why_better": "Challenges the audience's experience directly, prompting them to reconsider their current workflow."
+    }
+  },
+  "retention_analysis": {
+    "score": 7,
+    "estimated_script_duration_seconds": 50,
+    "timeline_analysis": [
+      {
+        "timestamp": "00:00–00:10",
+        "segment_label": "Launch Announcement",
+        "status": "Strong",
+        "engagement_level": "High",
+        "reason": "The opening statement clearly announces the launch, capturing attention.",
+        "recommended_fix": "Ensure the tone conveys excitement; consider enhancing the emotional language."
+      },
+      {
+        "timestamp": "00:11–00:30",
+        "segment_label": "Problem Framing",
+        "status": "Strong",
+        "engagement_level": "Medium",
+        "reason": "The transition to discussing creator frustrations could use a more compelling narrative.",
+        "recommended_fix": "Reinforce the connection to the audience's pain points."
+      },
+      {
+        "timestamp": "00:31–00:40",
+        "segment_label": "Product Introduction",
+        "status": "Strong",
+        "engagement_level": "High",
+        "reason": "Clear explanation of benefits keeps engagement high.",
+        "recommended_fix": "Emphasize unique features."
+      },
+      {
+        "timestamp": "00:41–00:50",
+        "segment_label": "Call to Action",
+        "status": "Strong",
+        "engagement_level": "Medium",
+        "reason": "The offer is introduced but lacks urgency.",
+        "recommended_fix": "Reframe to create more urgency."
+      }
+    ],
+    "minimum_timeline_segments": 5,
+    "retention_curve_summary": "Gradual decay predicted; initial interest may fade as details about the product are provided.",
+    "completion_prediction_estimate": "Estimated Moderate",
+    "attention_decay_locations": [
+      "00:11 — the focus shifts to the problems discussed, which may lose some early viewers."
+    ],
+    "recovery_points": "The product introduction regains attention with clear benefits outlined.",
+    "weakest_segment": "The transition between outlining the problem and presenting the solution (00:11-00:30) lacks engagement.",
+    "strongest_segment": "The product introduction (00:31-00:40) effectively communicates the solution.",
+    "strengths": "Engaging product introduction that clearly articulates benefits.",
+    "weaknesses": "The problem section doesn't create enough tension to hold viewers' attention.",
+    "recommendations": "Amend the problem framing to better encapsulate the emotional experience.",
+    "priority_fixes": "Prioritize reworking the timeline transition from problem statement to solution for smoother engagement."
+  },
+  "script_analysis": {
+    "score": 7,
+    "structure_score": 6,
+    "clarity_score": 7,
+    "authority_score": 6,
+    "audience_fit": "This script resonates well with content creators feeling overwhelmed by their tools.",
+    "consultant_summary": "The script provides a clear problem and solution but requires tightening for better efficacy. Enhancing urgency in the CTA could drive conversion.",
+    "structural_breakdown": {
+      "hook": "The hook grabs attention by announcing a launch after 14 months of work.",
+      "build": "Beginning builds by showing empathy for common creator challenges.",
+      "escalation": "Tension increases before the solution is presented, but could be stronger.",
+      "conflict_or_reframe": "Core challenge of using multiple tools is identified well.",
+      "payoff": "Resolution comes from presenting the product as a seamless solution.",
+      "cta": "The action requested is clear, but lacks urgency."
+    },
+    "issues_detected": {
+      "weak_sections": [
+        "Lines 8-10: The transition to discussing product features is a bit flat, lacking emotional weight."
+      ],
+      "strong_sections": [
+        "Lines 5-7: Clearly articulate the pain point faced by the audience."
+      ],
+      "missing_sections": [
+        "No strong escalation beat; tension could be increased before unveiling the product."
+      ],
+      "flow_issues": [
+        "Line 12 would benefit from urgency to drive signups."
+      ],
+      "narrative_gaps": [
+        "The mention of '14 months' could hint at the effort but doesn't connect strongly with the final call to action."
+      ]
+    },
+    "strengths": "The explicit detailing of the product's benefits creates a clear value proposition.",
+    "weaknesses": "Lack of urgency in the CTA diminishes its impact.",
+    "recommendations": "Integrate emotional language earlier and enhance the urgency toward the conclusion.",
+    "priority_fixes": "Revise line 12 for stronger urgency to encourage prompt signups."
+  },
+  "emotion_analysis": {
+    "score": 6,
+    "emotional_range": "Starts with excitement, shifts to frustration, builds anticipation, and ends with an invitation.",
+    "curiosity_score": 6,
+    "curiosity_explanation": "The phrase 'we have been building quietly for 14 months' piques interest but doesn't push further.",
+    "trust_score": 5,
+    "trust_explanation": "References to beta users imply credibility, but more specific metrics could enhance it.",
+    "authority_score": 6,
+    "authority_explanation": "The overall tone suggests expertise but lacks concrete qualifications or testimonials.",
+    "suspense_score": 4,
+    "suspense_explanation": "There is little suspense created beyond the initial launch announcement.",
+    "excitement_score": 6,
+    "excitement_explanation": "The phrase 'cut their production time in half' is engaging but could use more powerful emotional words.",
+    "empathy_score": 6,
+    "empathy_explanation": "The mention of shared frustrations creates connection, but more personalization is needed.",
+    "emotional_timeline": [
+      {
+        "timestamp": "00:00",
+        "emotion": "Excitement",
+        "trigger": "The announcement of the launch"
+      },
+      {
+        "timestamp": "00:10",
+        "emotion": "Frustration",
+        "trigger": "Acknowledging the struggle with tools"
+      },
+      {
+        "timestamp": "00:30",
+        "emotion": "Anticipation",
+        "trigger": "Introducing the product"
+      }
+    ],
+    "dominant_emotion": "Excitement",
+    "missing_emotion": "Urgency; including more emotional language around the offer would enhance this further.",
+    "strengths": "Creating relatability through shared struggles evokes emotional connection.",
+    "weaknesses": "The ending lacks urgency which is essential in a promotional context.",
+    "recommendations": "Foster urgency and excitement in the call to action to incentivize signups.",
+    "priority_fixes": "Revamp the closing section for added emotional impact."
+  },
+  "creator_strategist": {
+    "why_fail": "The script lacks a strong emotional and urgency component in the CTA (line 12), which is crucial for driving conversions on a launch day.",
+    "why_succeed": "Lines 5-7 resonate well with the audience's pain points, creating a relatable context that invites engagement.",
+    "audience_perception": "First-time viewers will perceive the creator as knowledgeable yet lacking urgency in driving immediate action.",
+    "algorithm_perception": "The platform is likely to classify this as a promotional piece but may underperform due to the weak CTA.",
+    "shareability_prediction": "Moderate; while informative, the lack of a strong hook or emotional appeal may limit sharing.",
+    "comment_potential": "Moderate; a specific question about audience tools could prompt discussion.",
+    "save_potential": "High; the content's actionable information provides a good reference for future content creation.",
+    "follower_conversion_potential": "Medium; unique value is presented but strong motivation to follow for updates is missing.",
+    "growth_recommendation": "Enhance urgency and emotional language in both the hook and CTA to bolster engagement metrics."
+  },
+  "rewrite_engine": {
+    "current_opening": "Today we are launching something we have been building quietly for 14 months. It started with a frustration every creator knows.",
+    "diagnosis": "The current opening introduces a frustrating concept but does not immediately stake a strong emotional claim.",
+    "improved_opening": "Have you ever been bogged down by multiple tools while trying to create? Today, we're launching something that will change your workflow forever.",
+    "specific_changes": [
+      "Replaced 'we have been building quietly for 14 months' with 'change your workflow forever' — introduces urgency from the start."
+    ],
+    "improvement_explanation": "This change sets an immediate emotional tone and promises substantial value upfront, enhancing retention."
+  },
+  "growth_analysis": {
+    "score": 7,
+    "recommended_caption": "Exciting news! 🚀 After 14 months of hard work, we are thrilled to announce a game-changing workspace for creators. Join us for lifetime founder pricing—just for the first thousand signups! #SaaS #ContentCreation #Launch",
+    "alternative_caption": "Tired of juggling multiple tools? Today, we unveil a solution that connects your workflow seamlessly. Sign up now to be among the first with exclusive founder pricing! #Tech #CreatorTools",
+    "comment_trigger": "What tools do you currently use for your content creation?",
+    "cta_improvement": "The current CTA could be enhanced by adding a limited-time urgency element. Rewrite to: 'Join us today and secure your lifetime founder pricing before it’s gone!'",
+    "hashtag_cluster": [
+      "#TechLaunch",
+      "#SaaS",
+      "#ContentCreation",
+      "#CreatorCommunity",
+      "#Workspace",
+      "#Efficiency",
+      "#Productivity",
+      "#LaunchDay"
+    ],
+    "content_category": "Promotional",
+    "audience_segment": "Content creators looking for streamlined solutions.",
+    "viral_trigger_type": "Utility; provides a direct answer to a common pain point.",
+    "distribution_strategy": "For LinkedIn, emphasize professional benefits, while for Twitter, use brevity and impactful language.",
+    "strengths": "Strong promotion of unique value and immediate benefits.",
+    "weaknesses": "Lacks strong emotional engagement and urgency in the message.",
+    "recommendations": "Add emotional language to heighten urgency and excitement across distribution channels.",
+    "priority_fixes": "Reconstruct the call to action for enhanced emotional urgency."
+  }
+}

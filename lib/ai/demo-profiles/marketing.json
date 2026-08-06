@@ -1,0 +1,239 @@
+{
+  "_profile": {
+    "id": "marketing",
+    "label": "Direct-Response Marketing",
+    "style": "marketing"
+  },
+  "intelligence": {
+    "niche": "Creator tools & software",
+    "sub_niche": "Video editing tools",
+    "goal": "Drive clicks and sales",
+    "audience": "Content creators looking for efficient editing solutions",
+    "content_type": "Promotional script",
+    "platform": "Instagram Reels",
+    "funnel_stage": "Conversion",
+    "confidence_score": 0.88,
+    "signal_assessment": "Strong signal because the script clearly reveals its niche, audience, and promotional intent."
+  },
+  "document_intelligence": {
+    "pages": 1,
+    "words": 116,
+    "sentences": 11,
+    "reading_time_minutes": 1,
+    "estimated_spoken_seconds": 46,
+    "title": "Efficient Video Editing with One Tool",
+    "detected_hook": "Stop wasting three hours editing every video.",
+    "hook_word_count": 9,
+    "detected_cta": "Link in bio.",
+    "cta_word_count": 4,
+    "key_promise": "This tool significantly reduces editing time.",
+    "main_conflict": "Creators spend too much time editing videos.",
+    "core_topic": "A video editing tool that enhances productivity.",
+    "structural_arc": "HOOK → BUILD → ESCALATION → PAYOFF → CTA : All beats are present."
+  },
+  "executive_summary": {
+    "overall_score": 8,
+    "overall_verdict": "Publish this script with minor adjustments. It effectively communicates the value of the tool while addressing efficiency.",
+    "strengths": "Lines 2-3 deliver a strong value proposition by stating 'cut my editing time by 80 percent' which builds credibility.",
+    "weaknesses": "Line 8's phrase 'costs less than one coffee a week' attempts humor but undermines urgency with casual language.",
+    "recommendations": "1) Replace 'do not sleep on this one' (line 11) with an urgent call to action like 'Act fast—only 100 free spots!'. 2) Clarify the exact benefits in the elevator pitch (line 2). 3) Consider emphasizing the time-saving aspect more directly in the opening hook.",
+    "priority_fixes": "Replace the casual language in lines 10-11 to enhance urgency."
+  },
+  "hook_analysis": {
+    "score": 9,
+    "hook_type": "Direct Challenge",
+    "opening_words": "Stop wasting three hours",
+    "second_sentence_tension": "This one tool cut my editing time by 80 percent and I am never going back.",
+    "failure_reason": null,
+    "audience_curiosity_score": 6,
+    "audience_curiosity_driver": "cut my editing time by 80 percent",
+    "scroll_stop_probability": "Moderate",
+    "risk_factors": [
+      "The phrase 'wasting three hours' is too common and lacks specificity."
+    ],
+    "strengths": "The urgency in 'Stop wasting...' immediately addresses a common pain point.",
+    "weaknesses": "Shifts quickly to a technical description without drawing in the audience initially.",
+    "recommendations": "Make the hook more personal by stating who this specifically benefits, e.g., 'As a busy content creator, stop wasting...'.",
+    "priority_fixes": "Refine the phrasing to increase personal connection.",
+    "suggested_rewrite_1": {
+      "archetype": "Curiosity Gap",
+      "text": "Are you tired of spending hours on video editing? There's a tool that will change that.",
+      "why_better": "This rewrite directly engages the viewer's pain point and sets up curiosity."
+    },
+    "suggested_rewrite_2": {
+      "archetype": "Statistic Shock",
+      "text": "Did you know the average creator spends up to three hours on editing? Cut that down to minutes with this tool!",
+      "why_better": "This introduces an unexpected fact that highlights the tool's effectiveness."
+    },
+    "suggested_rewrite_3": {
+      "archetype": "Direct Challenge",
+      "text": "Stop losing precious hours! Discover the tool that slashes your editing time by 80%!",
+      "why_better": "It maintains urgency while integrating the benefit into the hook."
+    }
+  },
+  "retention_analysis": {
+    "score": 7,
+    "estimated_script_duration_seconds": 46,
+    "timeline_analysis": [
+      {
+        "timestamp": "00:00–00:15",
+        "segment_label": "Introduction of time wasted",
+        "status": "Strong",
+        "engagement_level": "High",
+        "reason": "The initial challenge resonates well with target audiences.",
+        "recommended_fix": "Consider a stronger pivot to benefits sooner."
+      },
+      {
+        "timestamp": "00:15–00:30",
+        "segment_label": "Tool description",
+        "status": "Attention Decline",
+        "engagement_level": "Medium",
+        "reason": "It shifts to technical details too quickly, risking viewer drop-off.",
+        "recommended_fix": "Use anecdotes or testimonials to illustrate effectiveness more vividly."
+      },
+      {
+        "timestamp": "00:30–00:46",
+        "segment_label": "Pricing and offer",
+        "status": "Payoff",
+        "engagement_level": "High",
+        "reason": "The offer of three months free creates urgency.",
+        "recommended_fix": "Make it more compelling; emphasize limited availability earlier."
+      }
+    ],
+    "minimum_timeline_segments": 3,
+    "retention_curve_summary": "Gradual decay after strong initial engagement, particularly in technical segments.",
+    "completion_prediction_estimate": "Estimated Moderate",
+    "attention_decay_locations": [
+      "00:15 when transitioning to the tool's functionality."
+    ],
+    "recovery_points": "Strong payoff at the end with free offer but could be positioned earlier for maximum impact.",
+    "weakest_segment": "00:15–00:30 - the shift to description loses some viewers who may not relate to technical details.",
+    "strongest_segment": "00:30–00:46 as it emphasizes value and urgency with the free offer.",
+    "strengths": "The promise of saving time and money resonates well.",
+    "weaknesses": "Quick technical shifts may confuse or disinterest potential users.",
+    "recommendations": "Make technical aspects more relatable and prioritize storytelling.",
+    "priority_fixes": "Integrate anecdotes to illustrate tool effectiveness rather than just listing features."
+  },
+  "script_analysis": {
+    "score": 7,
+    "structure_score": 6,
+    "clarity_score": 7,
+    "authority_score": 6,
+    "audience_fit": "The script targets busy content creators who need efficiency.",
+    "consultant_summary": "The structure features a well-defined arc but lacks emotional engagement in the body. A more narrative approach to showcase the tool's impact could increase receptivity.",
+    "structural_breakdown": {
+      "hook": "The hook effectively communicates the problem of wasted time.",
+      "build": "Describes the tool's features but risks losing viewers during explanation.",
+      "escalation": "The urgency builds towards the offer.",
+      "conflict_or_reframe": "Identifies the common struggle consistent with the editing process.",
+      "payoff": "Promising a free trial compels action.",
+      "cta": "The CTA is present and encourages quick action, but could be rephrased for greater urgency."
+    },
+    "issues_detected": {
+      "weak_sections": [
+        "Lines 4-9 describe features that could be streamlined or summarized."
+      ],
+      "strong_sections": [
+        "Lines 2-3 present a strong value proposition."
+      ],
+      "missing_sections": [
+        "No storytelling aspects—personal anecdotes could illustrate the tool's capabilities."
+      ],
+      "flow_issues": [
+        "Several technical explanations stall momentum and risk disengagement."
+      ],
+      "narrative_gaps": [
+        "Assumption that all viewers know what 'b-roll' and 'auto-removing silence' entails."
+      ]
+    },
+    "strengths": "The opening hook delivers a clear problem addressed by the solution.",
+    "weaknesses": "The technical shift lacks narrative impact and can confuse.",
+    "recommendations": "Shorten technical details and replace them with user experiences.",
+    "priority_fixes": "Incorporate personal anecdotes or examples to enhance relatability."
+  },
+  "emotion_analysis": {
+    "score": 6,
+    "emotional_range": "Starts with frustration, shifts to relief when describing the tool's effectiveness, ends with urgency.",
+    "curiosity_score": 7,
+    "curiosity_explanation": "The phrase 'one tool cut my editing time by 80 percent' invites intrigue.",
+    "trust_score": 5,
+    "trust_explanation": "The specificity in 'costs less than one coffee a week' builds some trust but may sound marketing-centric.",
+    "authority_score": 5,
+    "authority_explanation": "Implied authority through time savings but lacks personal credentials or testimonials.",
+    "suspense_score": 4,
+    "suspense_explanation": "Lacks true suspense; instead, it informs without building enough tension prior to the payoff.",
+    "excitement_score": 6,
+    "excitement_explanation": "While the language is mostly energizing, it becomes technical and dull at points.",
+    "empathy_score": 6,
+    "empathy_explanation": "Connects with creators sharing the struggle of long editing times but lacks warmth.",
+    "emotional_timeline": [
+      {
+        "timestamp": "00:00",
+        "emotion": "Frustration",
+        "trigger": "Wasting three hours editing"
+      },
+      {
+        "timestamp": "00:20",
+        "emotion": "Relief",
+        "trigger": "Automatically removes every silence"
+      },
+      {
+        "timestamp": "00:40",
+        "emotion": "Urgency",
+        "trigger": "Link in bio."
+      }
+    ],
+    "dominant_emotion": "Relief from efficient editing.",
+    "missing_emotion": "Warmth and personal connection could strengthen engagement.",
+    "strengths": "Opening accurately identifies driver frustration.",
+    "weaknesses": "The emotional transition could be smoother; current phrasing is too transactional.",
+    "recommendations": "Integrate relatable scenarios or personal anecdotes to evoke stronger emotions.",
+    "priority_fixes": "Incorporate an emotional storytelling element before detailing the tool's functionalities."
+  },
+  "creator_strategist": {
+    "why_fail": "The script's more technical sections could alienate less experienced creators who might struggle to fully grasp the benefits.",
+    "why_succeed": "Strong opening directly addresses key pain points, establishing immediate relevance.",
+    "audience_perception": "Viewers will likely see the creator as knowledgeable about video editing tools but could feel the script is sales-heavy.",
+    "algorithm_perception": "The platform is likely to view this as promotional content, affecting its organic reach due to perceived salesiness.",
+    "shareability_prediction": "Moderate—while the content has potential value, the sales-heavy tone could deter shares.",
+    "comment_potential": "Moderate; encouraging feedback on users' experiences with editing tools could generate dialogue.",
+    "save_potential": "High; creators may save this for later reference on time-saving tools.",
+    "follower_conversion_potential": "Moderate; effectiveness hinges on how well the content resonates emotionally with the audience’s struggles.",
+    "growth_recommendation": "Enhance emotional resonance and relatability to improve engagement and conversions."
+  },
+  "rewrite_engine": {
+    "current_opening": "Stop wasting three hours editing every video. This one tool cut my editing time by 80 percent",
+    "diagnosis": "The current opening tackles the problem but the phrasing diminishes urgency and personal connection.",
+    "improved_opening": "As a content creator, you know the pain of editing for hours. What if I told you there's a tool that can give you back those hours?",
+    "specific_changes": [
+      "Changed 'Stop wasting' to 'As a content creator, you know the pain' for increased relatability.",
+      "Introduced a curiosity element with 'What if I told you', enhancing engagement."
+    ],
+    "improvement_explanation": "These changes foster personal connection, increase curiosity levels, and enhance relatability, crucial for initial engagement."
+  },
+  "growth_analysis": {
+    "score": 6,
+    "recommended_caption": "Cut your editing time by 80% with this tool! Check the link in my bio for an exclusive offer!",
+    "alternative_caption": "Are you tired of spending hours on video edits? Unlock efficiency now by clicking the link!",
+    "comment_trigger": "What has been your biggest struggle with video editing?",
+    "cta_improvement": "The current CTA 'Link in bio' lacks urgency; rewrite to 'Don't miss out—grab your three months free while it lasts!'",
+    "hashtag_cluster": [
+      "#videoediting",
+      "#contentcreation",
+      "#editingtools",
+      "#creatorlife",
+      "#productivityhacks",
+      "#makevideos",
+      "#editingsoftware",
+      "#videomakers"
+    ],
+    "content_category": "Educational",
+    "audience_segment": "Creators looking to streamline their video editing process.",
+    "viral_trigger_type": "Utility – The time-saving aspect provides clear functional value.",
+    "distribution_strategy": "For Instagram, consider using story highlights to create a quick walkthrough of the tool's abilities.",
+    "strengths": "Directly addresses common pain points of video creators with practicality.",
+    "weaknesses": "The promotional tone may deter engagement levels.",
+    "recommendations": "Refine language to focus on community rather than sales to enhance shareability and engagement.",
+    "priority_fixes": "Improve the urgency of the calls to action to drive better performance."
+  }
+}

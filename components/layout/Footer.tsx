@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import BrandMark from '@/components/brand/BrandMark';
 
 export default function Footer() {
   const pathname = usePathname() || '';
@@ -173,11 +174,7 @@ export default function Footer() {
           {/* Brand Identity */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', gridColumn: 'span 2' }}>
             <Link href="/" className="logo">
-              <div className="logo-box">
-                <svg width="13" height="13" viewBox="0 0 20 20" style={{ marginLeft: '1px' }}>
-                  <polygon points="4,2 18,10 4,18" fill="#fff" />
-                </svg>
-              </div>
+              <BrandMark size={26} />
               <span
                 style={{
                   fontSize: '15px',
@@ -250,7 +247,7 @@ export default function Footer() {
           }}
         >
           <p style={{ fontSize: '12px', color: 'rgba(255,255,255,0.25)' }}>
-            © {new Date().getFullYear()} Narratix Lab. All rights reserved.
+            © {new Date().getFullYear()} Narratix Labs. All rights reserved.
           </p>
           <div style={{ display: 'flex', gap: '16px', fontSize: '12px' }}>
             <Link href="/privacy" style={{ color: 'rgba(255,255,255,0.25)' }}>Privacy Policy</Link>

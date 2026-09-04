@@ -5,11 +5,84 @@ export const metadata = {
   description: 'Simple, honest pricing. Start free during our early beta launch.',
 };
 
+/**
+ * Plan data — names, prices and feature strings are unchanged from Beta V1.
+ * `available` drives presentation only; it introduces no billing behaviour.
+ */
+const PLANS = [
+  {
+    id: 'free',
+    name: 'Free',
+    tagline: 'Perfect for creators getting started',
+    price: '$0',
+    period: '/mo',
+    note: 'Forever free during Beta',
+    available: true,
+    badge: 'Available now',
+    featuresLabel: null,
+    features: [
+      '3 analyses per month',
+      'PDF uploads',
+      'DOCX uploads',
+      'TXT uploads',
+      '6 Creator Intelligence Modules',
+      'Report History',
+      'Demo AI Analysis',
+      'Professional Report Export',
+      'Interactive Dashboard',
+      'Community Support',
+    ],
+  },
+  {
+    id: 'pro',
+    name: 'Pro',
+    tagline: 'For serious creators',
+    price: '$10',
+    period: '/mo',
+    note: 'Available after Beta launch',
+    available: false,
+    badge: 'Coming soon',
+    featuresLabel: 'Everything in Free, plus',
+    features: [
+      'Unlimited analyses',
+      'Live AI Analysis',
+      'Priority AI Queue',
+      'Faster processing',
+      'Higher AI limits',
+      'Advanced recommendations',
+      'Report comparison',
+      'Early access features',
+      'Custom branding',
+    ],
+  },
+  {
+    id: 'team',
+    name: 'Team',
+    tagline: 'For agencies and creator teams',
+    price: '$15',
+    period: '/mo',
+    note: 'Available after Beta launch',
+    available: false,
+    badge: 'Coming soon',
+    featuresLabel: 'Everything in Pro, plus',
+    features: [
+      'Multi-user workspace',
+      'Shared reports',
+      'Team analytics',
+      'Client folders',
+      'Role permissions',
+      'Collaboration comments',
+      'Organization dashboard',
+      'Team billing',
+    ],
+  },
+] as const;
+
 export default function PricingPage() {
   return (
     <div style={{ padding: '110px 48px 80px' }}>
       <div className="wsm" style={{ maxWidth: '1150px', margin: '0 auto' }}>
-        
+
         {/* Section Header */}
         <div className="sec-lbl" style={{ justifyContent: 'center', marginBottom: '14px' }}>
           <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#a78bfa', display: 'block' }} />
@@ -21,7 +94,7 @@ export default function PricingPage() {
         {/* Beta Offer Banner */}
         <div style={{
           background: 'linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(79, 70, 229, 0.1))',
-          border: '1px solid rgba(124, 58, 237, 0.25)',
+          border: '1px solid var(--accent-border)',
           borderRadius: '16px',
           padding: '16px 24px',
           marginBottom: '48px',
@@ -38,118 +111,78 @@ export default function PricingPage() {
             letterSpacing: '0.05em',
             textTransform: 'uppercase',
             display: 'inline-block',
-            verticalAlign: 'middle'
+            verticalAlign: 'middle',
           }}>
             Narratix Lab Beta V1
           </span>
-          <span style={{ fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)', display: 'inline-block', verticalAlign: 'middle', fontWeight: 500 }}>
+          <span style={{ fontSize: '14px', color: 'var(--text-secondary)', display: 'inline-block', verticalAlign: 'middle', fontWeight: 500 }}>
             Early Access Beta: All script and document analysis modules are free to use.
           </span>
         </div>
 
         {/* Pricing Cards Grid */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '24px', alignItems: 'stretch' }}>
-          
-          {/* Free */}
-          <div className="pc pc-free" style={{ display: 'flex', flexDirection: 'column', height: '100%', border: '1px solid rgba(255,255,255,0.1)' }}>
-            <div style={{ marginBottom: 'auto' }}>
-              <h3 style={{ fontSize: '22px', fontWeight: 800, color: '#fff', textAlign: 'center', marginBottom: '5px' }}>Free</h3>
-              <p style={{ fontSize: '13px', color: 'rgba(255,255,255,.32)', textAlign: 'center', marginBottom: '22px' }}>Perfect for creators getting started</p>
-              <p style={{ fontSize: '42px', fontWeight: 800, color: '#fff', textAlign: 'center', marginBottom: '4px' }}>$0<span style={{ fontSize: '15px', color: 'rgba(255,255,255,.26)', fontWeight: 400 }}>/mo</span></p>
-              <p style={{ fontSize: '12px', color: 'rgba(255,255,255,.28)', textAlign: 'center', marginBottom: '26px' }}>Forever free during Beta</p>
-              
-              <div style={{ borderTop: '1px solid rgba(255,255,255,.07)', paddingTop: '20px', marginBottom: '26px' }}>
-                {[
-                  '3 analyses per month',
-                  'PDF uploads',
-                  'DOCX uploads',
-                  'TXT uploads',
-                  '6 Creator Intelligence Modules',
-                  'Report History',
-                  'Demo AI Analysis',
-                  'Professional Report Export',
-                  'Interactive Dashboard',
-                  'Community Support'
-                ].map((f, i) => (
-                  <div key={i} className="pck"><span style={{ color: '#a78bfa' }}>✓</span>{f}</div>
-                ))}
+        <div className="pricing-grid">
+          {PLANS.map((plan) => (
+            <article
+              key={plan.id}
+              className={`pc ${plan.available ? 'pc-lead' : 'pc-upcoming'}`}
+              aria-labelledby={`plan-${plan.id}-name`}
+            >
+              <span className={`plan-badge${plan.available ? ' plan-badge-lead' : ''}`}>{plan.badge}</span>
+
+              <div className="plan-head">
+                <h2 className="plan-name" id={`plan-${plan.id}-name`}>{plan.name}</h2>
+                <p className="plan-tagline">{plan.tagline}</p>
+                <p className="plan-price">
+                  <strong>{plan.price}</strong>
+                  <span>{plan.period}</span>
+                </p>
+                <p className="plan-note">{plan.note}</p>
               </div>
-            </div>
-            <Link href="/analyze" className="btn bo full" style={{ padding: '14px', textAlign: 'center' }}>Start Free</Link>
-          </div>
 
-          {/* Pro */}
-          <div className="pc pc-pro" style={{ display: 'flex', flexDirection: 'column', height: '100%', border: '1px solid rgba(255, 255, 255, 0.05)', opacity: 0.8 }}>
-            <div style={{ textAlign: 'center', marginBottom: '16px', paddingTop: '6px' }}>
-              <span style={{ background: 'rgba(255,255,255,0.06)', color: 'rgba(255,255,255,0.5)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '100px', padding: '4px 14px', fontSize: '11px', fontWeight: 800, letterSpacing: '.06em' }}>COMING SOON</span>
-            </div>
-            <div style={{ marginBottom: 'auto' }}>
-              <h3 style={{ fontSize: '22px', fontWeight: 800, color: 'rgba(255,255,255,0.6)', textAlign: 'center', marginBottom: '5px' }}>Pro</h3>
-              <p style={{ fontSize: '13px', color: 'rgba(255,255,255,.24)', textAlign: 'center', marginBottom: '22px' }}>For serious creators</p>
-              <p style={{ fontSize: '42px', fontWeight: 800, color: 'rgba(255,255,255,0.4)', textAlign: 'center', marginBottom: '4px' }}>$10<span style={{ fontSize: '15px', color: 'rgba(255,255,255,.15)', fontWeight: 400 }}>/mo</span></p>
-              <p style={{ fontSize: '12px', color: 'rgba(255,255,255,0.25)', textAlign: 'center', marginBottom: '26px' }}>Available after Beta launch</p>
-
-              <div style={{ borderTop: '1px solid rgba(255,255,255,.07)', paddingTop: '20px', marginBottom: '26px' }}>
-                <p style={{ fontSize: '11px', fontWeight: 800, color: 'var(--text-muted)', letterSpacing: '.05em', textTransform: 'uppercase', marginBottom: '12px' }}>Everything in Free, plus</p>
-                {[
-                  'Unlimited analyses',
-                  'Live AI Analysis',
-                  'Priority AI Queue',
-                  'Faster processing',
-                  'Higher AI limits',
-                  'Advanced recommendations',
-                  'Report comparison',
-                  'Early access features',
-                  'Custom branding'
-                ].map((f, i) => (
-                  <div key={i} className="pck" style={{ opacity: 0.6 }}><span style={{ color: 'rgba(255,255,255,0.3)' }}>✓</span>{f}</div>
+              {plan.featuresLabel && <p className="plan-feats-label">{plan.featuresLabel}</p>}
+              <ul className="plan-feats" aria-label={`${plan.name} plan features`}>
+                {plan.features.map((feature) => (
+                  <li key={feature} className="pck">
+                    <span className="pck-mark" aria-hidden="true">✓</span>
+                    <span>{feature}</span>
+                  </li>
                 ))}
-              </div>
-            </div>
-            <button disabled className="btn bo full" style={{ padding: '14px', width: '100%', opacity: 0.5, cursor: 'not-allowed' }}>
-              Coming Soon
-            </button>
-            <p style={{ fontSize: '11.5px', color: 'rgba(255,255,255,.25)', textAlign: 'center', marginTop: '8px', marginBottom: 0 }}>Available After Beta Launch</p>
-          </div>
+              </ul>
 
-          {/* Team */}
-          <div className="pc pc-free" style={{ display: 'flex', flexDirection: 'column', height: '100%', border: '1px solid rgba(255,255,255,0.05)', opacity: 0.7 }}>
-            <div style={{ textAlign: 'center', marginBottom: '16px', paddingTop: '6px' }}>
-              <span style={{ background: 'rgba(255,255,255,0.05)', color: 'rgba(255,255,255,0.4)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '100px', padding: '4px 14px', fontSize: '11px', fontWeight: 800, letterSpacing: '.06em' }}>COMING SOON</span>
-            </div>
-            <div style={{ marginBottom: 'auto' }}>
-              <h3 style={{ fontSize: '22px', fontWeight: 800, color: 'rgba(255,255,255,0.5)', textAlign: 'center', marginBottom: '5px' }}>Team</h3>
-              <p style={{ fontSize: '13px', color: 'rgba(255,255,255,.24)', textAlign: 'center', marginBottom: '22px' }}>For agencies and creator teams</p>
-              <p style={{ fontSize: '42px', fontWeight: 800, color: 'rgba(255,255,255,0.4)', textAlign: 'center', marginBottom: '4px' }}>$15<span style={{ fontSize: '15px', color: 'rgba(255,255,255,.15)', fontWeight: 400 }}>/mo</span></p>
-              <p style={{ fontSize: '12px', color: 'rgba(255,255,255,0.2)', textAlign: 'center', marginBottom: '26px' }}>Available after Beta launch</p>
-
-              <div style={{ borderTop: '1px solid rgba(255,255,255,.07)', paddingTop: '20px', marginBottom: '26px' }}>
-                <p style={{ fontSize: '11px', fontWeight: 800, color: 'rgba(255,255,255,0.3)', letterSpacing: '.05em', textTransform: 'uppercase', marginBottom: '12px' }}>Everything in Pro, plus</p>
-                {[
-                  'Multi-user workspace',
-                  'Shared reports',
-                  'Team analytics',
-                  'Client folders',
-                  'Role permissions',
-                  'Collaboration comments',
-                  'Organization dashboard',
-                  'Team billing'
-                ].map((f, i) => (
-                  <div key={i} className="pck" style={{ opacity: 0.4 }}><span style={{ color: 'rgba(255,255,255,0.2)' }}>✓</span>{f}</div>
-                ))}
-              </div>
-            </div>
-            <button disabled className="btn bo full" style={{ padding: '14px', width: '100%', opacity: 0.5, cursor: 'not-allowed' }}>
-              Coming Soon
-            </button>
-            <p style={{ fontSize: '11.5px', color: 'rgba(255,255,255,.25)', textAlign: 'center', marginTop: '8px', marginBottom: 0 }}>Available After Beta Launch</p>
-          </div>
+              {plan.available ? (
+                <Link href="/analyze" className="btn bp plan-cta">
+                  Start Free
+                </Link>
+              ) : (
+                <>
+                  <button
+                    type="button"
+                    disabled
+                    aria-disabled="true"
+                    aria-describedby={`plan-${plan.id}-cta-note`}
+                    className="btn bo plan-cta"
+                  >
+                    Coming Soon
+                  </button>
+                  <p className="plan-cta-note" id={`plan-${plan.id}-cta-note`}>Available After Beta Launch</p>
+                </>
+              )}
+            </article>
+          ))}
         </div>
 
-        <div style={{ marginTop: '48px', background: 'rgba(255,255,255,.034)', border: '1px solid rgba(255,255,255,.07)', borderRadius: '18px', padding: '32px', textAlign: 'center' }}>
-          <h3 style={{ fontSize: '20px', fontWeight: 800, color: '#fff', marginBottom: '10px' }}>🎁 Early Access Beta Phase</h3>
-          <p style={{ fontSize: '15px', color: 'rgba(255,255,255,.48)', marginBottom: '22px', maxWidth: '400px', marginLeft: 'auto', marginRight: 'auto' }}>All public Creator Intelligence features are completely free during our Beta V1 stage.</p>
-          <Link href="/analyze" className="btn bp lg-btn">Start Free Analysis →</Link>
+        <div style={{
+          marginTop: '48px',
+          background: 'var(--bg-secondary)',
+          border: '1px solid var(--card-border)',
+          borderRadius: '18px',
+          padding: '32px',
+          textAlign: 'center',
+        }}>
+          <h2 style={{ fontSize: '20px', fontWeight: 800, color: 'var(--text-primary)', marginBottom: '10px' }}>🎁 Early Access Beta Phase</h2>
+          <p style={{ fontSize: '15px', color: 'var(--text-secondary)', marginBottom: '22px', maxWidth: '400px', marginLeft: 'auto', marginRight: 'auto' }}>All public Creator Intelligence features are completely free during our Beta V1 stage.</p>
+          <Link href="/analyze" className="btn bg-btn lg-btn">Start Free Analysis →</Link>
         </div>
       </div>
     </div>

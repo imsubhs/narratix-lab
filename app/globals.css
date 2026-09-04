@@ -737,14 +737,143 @@ body {
    AUTH
    ═══════════════════════════════════════════════════════ */
 
+/* ─── Auth backdrop (Phase 0.5B, Component #1) ─────
+   `.grid-bg` was referenced by the auth screens but had no rule, so the
+   login page rendered on a flat background. It is now a static, purple-only
+   ambient wash — Narratix accent at low alpha, no drift animation, no
+   secondary hues. Sits behind the card and is inert to pointer events. */
+.grid-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(46% 40% at 22% 18%, rgba(124, 58, 237, 0.20), transparent 70%),
+    radial-gradient(40% 38% at 82% 26%, rgba(67, 56, 202, 0.16), transparent 72%),
+    radial-gradient(52% 44% at 62% 92%, rgba(124, 58, 237, 0.12), transparent 74%);
+}
+.grid-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--border-secondary) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border-secondary) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(70% 60% at 50% 45%, #000, transparent 78%);
+  -webkit-mask-image: radial-gradient(70% 60% at 50% 45%, #000, transparent 78%);
+  opacity: 0.7;
+}
+[data-theme="light"] .grid-bg {
+  background-image:
+    radial-gradient(46% 40% at 22% 18%, rgba(124, 58, 237, 0.12), transparent 70%),
+    radial-gradient(40% 38% at 82% 26%, rgba(67, 56, 202, 0.09), transparent 72%),
+    radial-gradient(52% 44% at 62% 92%, rgba(124, 58, 237, 0.08), transparent 74%);
+}
+/* High contrast gets no ambient wash and no grid — a flat, unambiguous field. */
+[data-theme="high-contrast"] .grid-bg { background-image: none; }
+[data-theme="high-contrast"] .grid-bg::after { display: none; }
+
+/* ─── Auth card ─────────────────────────────────────
+   The material the login experiment earned: a single self-contained card as
+   the viewport's subject. Blur reduced 22px -> 18px, the accent restricted to
+   Narratix purple, and the drifting rainbow mesh dropped entirely. */
 .auth-card {
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
+  position: relative;
+  background: var(--auth-card-bg, var(--card-bg));
+  border: 1px solid var(--auth-card-border, var(--card-border));
   border-radius: var(--radius-xl);
   padding: var(--space-8);
   width: 100%; max-width: 420px;
-  box-shadow: var(--shadow-lg);
+  box-shadow:
+    inset 0 1px 0 var(--auth-card-highlight, transparent),
+    var(--shadow-xl);
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
 }
+
+:root {
+  --auth-card-bg: rgba(20, 20, 22, 0.72);
+  --auth-card-border: rgba(255, 255, 255, 0.10);
+  --auth-card-highlight: rgba(255, 255, 255, 0.07);
+}
+[data-theme="light"] {
+  --auth-card-bg: rgba(255, 255, 255, 0.78);
+  --auth-card-border: rgba(28, 25, 23, 0.10);
+  --auth-card-highlight: rgba(255, 255, 255, 0.85);
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]):not([data-theme="high-contrast"]) {
+    --auth-card-bg: rgba(255, 255, 255, 0.78);
+    --auth-card-border: rgba(28, 25, 23, 0.10);
+    --auth-card-highlight: rgba(255, 255, 255, 0.85);
+  }
+}
+/* High contrast: the card is opaque with a hard border and no material. */
+[data-theme="high-contrast"] .auth-card {
+  background: var(--card-bg);
+  border-color: var(--text-primary);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+/* Browsers without backdrop-filter get an opaque card rather than a washed-out
+   translucent one. */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .auth-card { background: var(--card-bg); }
+}
+
+/* Fields lift on focus-within — the one behaviour worth keeping from the
+   experiment, retimed to the system's tokens. */
+.auth-card .fw { position: relative; }
+.auth-card .finput {
+  background: var(--auth-input-bg, var(--input-bg));
+  transition: border-color var(--duration-fast) var(--ease-default),
+              box-shadow var(--duration-fast) var(--ease-default),
+              background-color var(--duration-fast) var(--ease-default);
+}
+:root { --auth-input-bg: rgba(255, 255, 255, 0.04); }
+[data-theme="light"] { --auth-input-bg: rgba(255, 255, 255, 0.7); }
+[data-theme="high-contrast"] { --auth-input-bg: var(--input-bg); }
+.auth-card .fw:focus-within .flbl { color: var(--accent); }
+.auth-card .finput:focus {
+  background: var(--card-hover-bg);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-light);
+}
+.auth-card .finput[aria-invalid="true"] {
+  border-color: var(--danger-border);
+}
+.auth-card .finput[aria-invalid="true"]:focus {
+  border-color: var(--danger-color);
+  box-shadow: 0 0 0 3px var(--danger-bg);
+}
+.auth-error {
+  display: flex; align-items: flex-start; gap: var(--space-2);
+  padding: 11px var(--space-3);
+  background: var(--danger-bg);
+  border: 1px solid var(--danger-border);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+  color: var(--danger-color);
+  margin: var(--space-3) 0;
+}
+.auth-pw-toggle {
+  position: absolute;
+  right: 6px;
+  top: 26px;
+  min-width: 44px; min-height: 34px;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: none; border: none;
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  letter-spacing: var(--letter-spacing-wide);
+  transition: color var(--duration-fast) var(--ease-default);
+}
+.auth-pw-toggle:hover { color: var(--text-primary); }
 .sso-btn {
   width: 100%; padding: var(--space-3);
   background: var(--bg-secondary);
@@ -788,20 +917,164 @@ body {
    PRICING
    ═══════════════════════════════════════════════════════ */
 
+/* Plan surfaces — Phase 0.5B, Component #2.
+   Keeps the experiment's three-column comparison and its one distinguished
+   plan; drops the rotating conic border, the pulsing badge and the glass. The
+   accent marks the plan you can actually buy, not the one that is loudest. */
 .pc {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   border-radius: var(--radius-xl);
   padding: var(--space-8);
-  flex: 1; min-width: 280px;
-  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--card-border);
   background: var(--card-bg);
+  box-shadow: inset 0 1px 0 var(--plan-highlight, transparent), var(--shadow-sm);
+  transition: transform var(--duration-normal) var(--ease-spring),
+              border-color var(--duration-normal) var(--ease-default),
+              box-shadow var(--duration-normal) var(--ease-default);
+}
+:root { --plan-highlight: rgba(255, 255, 255, 0.05); }
+[data-theme="light"] { --plan-highlight: rgba(255, 255, 255, 0.9); }
+[data-theme="high-contrast"] { --plan-highlight: transparent; }
+
+.pc:hover {
+  border-color: var(--border-primary);
+  box-shadow: inset 0 1px 0 var(--plan-highlight, transparent), var(--shadow-lg);
 }
 .pc-free { border: 1px solid var(--card-border); }
-.pc-pro { border: 1.5px solid var(--accent); position: relative; }
+
+/* The lead plan: the one that is available. Elevated surface, accent border,
+   and a lift that only applies where there is room for it. */
+.pc-lead {
+  border: 1.5px solid var(--accent);
+  background: var(--card-hover-bg);
+  box-shadow: inset 0 1px 0 var(--plan-highlight, transparent), var(--shadow-lg);
+}
+.pc-lead:hover {
+  border-color: var(--accent);
+  box-shadow: inset 0 1px 0 var(--plan-highlight, transparent), var(--shadow-xl);
+}
+@media (min-width: 900px) {
+  .pc-lead { transform: translateY(-10px); }
+  .pc-lead:hover { transform: translateY(-14px); }
+}
+
+/* Plans that are not yet purchasable recede, but stay readable — they are
+   dimmed by token choice, not by an opacity that also kills their contrast. */
+.pc-upcoming { background: var(--bg-secondary); }
+.pc-upcoming .plan-name,
+.pc-upcoming .plan-price strong { color: var(--text-secondary); }
+
+.plan-badge {
+  position: absolute;
+  top: calc(var(--space-4) * -1);
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  padding: 5px var(--space-3);
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-primary);
+  background: var(--bg-elevated);
+  color: var(--text-secondary);
+  font-size: var(--font-size-xs);
+  font-weight: 800;
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+}
+.plan-badge-lead {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #FFFFFF;
+}
+
+.plan-head { text-align: center; margin-bottom: var(--space-6); }
+.plan-name {
+  font-size: var(--font-size-2xl);
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: var(--letter-spacing-tight);
+  margin-bottom: var(--space-1);
+}
+.plan-tagline {
+  font-size: var(--font-size-sm);
+  color: var(--text-muted);
+  margin-bottom: var(--space-5);
+}
+.plan-price { line-height: 1; margin-bottom: var(--space-2); }
+.plan-price strong {
+  font-size: 42px;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: var(--letter-spacing-tight);
+}
+.plan-price span {
+  font-size: var(--font-size-md);
+  font-weight: 400;
+  color: var(--text-muted);
+}
+.plan-note { font-size: var(--font-size-xs); color: var(--text-muted); }
+
+.plan-feats-label {
+  font-size: var(--font-size-xs);
+  font-weight: 800;
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: var(--space-3);
+}
+/* Feature rows sit on a fixed gutter so the three plans can be read across. */
+.plan-feats {
+  list-style: none;
+  margin: 0 0 var(--space-6);
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--border-secondary);
+  flex: 1;
+}
 .pck {
-  display: flex; align-items: flex-start; gap: 9px;
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  align-items: start;
+  gap: var(--space-2);
   font-size: var(--font-size-base);
   color: var(--text-secondary);
   margin-bottom: var(--space-3);
+}
+.pck-mark { color: var(--accent); font-weight: 800; line-height: 1.4; }
+.pc-upcoming .pck { color: var(--text-muted); }
+.pc-upcoming .pck-mark { color: var(--text-muted); }
+
+.plan-cta { width: 100%; padding: var(--space-3); text-align: center; }
+/* A disabled CTA should recede without becoming unreadable: the default
+   `opacity: .4` on `.btn:disabled` drops it below the contrast floor, so the
+   upcoming plans mute by token instead. */
+.pc-upcoming .plan-cta {
+  opacity: 1;
+  cursor: not-allowed;
+  color: var(--text-secondary);
+  border-color: var(--border-primary);
+  background: transparent;
+}
+.plan-cta-note {
+  font-size: var(--font-size-xs);
+  color: var(--text-muted);
+  text-align: center;
+  margin-top: var(--space-2);
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-6);
+  align-items: stretch;
+}
+@media (max-width: 640px) {
+  .pricing-grid { grid-template-columns: 1fr; gap: var(--space-8); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pc, .pc-lead, .pc-lead:hover { transition: none; }
 }
 
 /* ═══════════════════════════════════════════════════════
@@ -1323,24 +1596,104 @@ body {
 .stg-status-dot.disconnected { color: var(--text-muted); }
 .stg-status-dot.disconnected::before { background: var(--text-muted); }
 
+/* Toggle — Phase 0.5B, Component #4.
+   Takes the tactile *ambition* of the neumorphic experiment (a control that
+   responds physically to a press) without its visual language. Neumorphism
+   encodes state as shadow direction, so on and off share the same contrast and
+   the control vanishes in high-contrast mode; Narratix keeps the accent fill,
+   adds a text ON/OFF signal, and spends the borrowed idea on press physics. */
+.stg-toggle-control {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-shrink: 0;
+}
+.stg-toggle-state {
+  min-width: 26px;
+  font-size: var(--font-size-xs);
+  font-weight: 800;
+  letter-spacing: var(--letter-spacing-wide);
+  color: var(--text-muted);
+  transition: color var(--duration-fast) var(--ease-default);
+}
+.stg-toggle.on + .stg-toggle-state { color: var(--accent); }
+
 .stg-toggle {
+  /* 40x22 visual, with padding taking the hit area past the 44px touch floor. */
   width: 40px; height: 22px;
+  padding: 0;
+  border: none;
+  background: none;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  flex-shrink: 0;
+  display: inline-flex; align-items: center;
+  -webkit-tap-highlight-color: transparent;
+}
+.stg-toggle::before {
+  content: '';
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px; height: 44px;
+}
+.stg-toggle-track {
+  position: relative;
+  display: block;
+  width: 100%; height: 100%;
   border-radius: var(--radius-full);
   background: var(--bg-tertiary);
   border: 1px solid var(--border-primary);
-  position: relative; cursor: pointer;
-  transition: background-color var(--duration-normal);
-  outline: none; flex-shrink: 0;
+  /* A single hairline groove — depth as a hint, never as the state signal. */
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.22);
+  transition: background-color var(--duration-normal) var(--ease-default),
+              border-color var(--duration-normal) var(--ease-default),
+              transform var(--duration-fast) var(--ease-default);
 }
 .stg-toggle-thumb {
-  width: 16px; height: 16px; border-radius: 50%;
+  width: 16px; height: 16px; border-radius: var(--radius-full);
   background: #FFFFFF;
   position: absolute; top: 2px; left: 2px;
-  transition: transform var(--duration-normal) var(--ease-spring);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  transform-origin: center;
+  transition: transform var(--duration-normal) var(--ease-spring),
+              width var(--duration-fast) var(--ease-default);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.25);
 }
-.stg-toggle.on { background: var(--accent); border-color: transparent; }
+.stg-toggle.on .stg-toggle-track { background: var(--accent); border-color: var(--accent); }
 .stg-toggle.on .stg-toggle-thumb { transform: translateX(18px); }
+
+/* Press physics: the track compresses and the thumb stretches toward its
+   travel direction, then releases. 120ms — fast enough to read as mechanical
+   rather than sluggish. */
+.stg-toggle:active .stg-toggle-track { transform: scale(0.96); }
+.stg-toggle:active .stg-toggle-thumb { width: 20px; }
+.stg-toggle.on:active .stg-toggle-thumb { transform: translateX(14px); }
+
+.stg-toggle:focus-visible { outline: none; }
+.stg-toggle:focus-visible .stg-toggle-track {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* High contrast: state reads from a hard border and the text signal, with no
+   reliance on fill alone. */
+[data-theme="high-contrast"] .stg-toggle-track {
+  border: 2px solid var(--text-primary);
+  box-shadow: none;
+}
+[data-theme="high-contrast"] .stg-toggle.on .stg-toggle-track {
+  background: var(--accent);
+  border-color: var(--text-primary);
+}
+[data-theme="high-contrast"] .stg-toggle-state { color: var(--text-primary); }
+
+@media (prefers-reduced-motion: reduce) {
+  .stg-toggle-track, .stg-toggle-thumb { transition: none; }
+  .stg-toggle:active .stg-toggle-track { transform: none; }
+  .stg-toggle:active .stg-toggle-thumb { width: 16px; }
+  .stg-toggle.on:active .stg-toggle-thumb { transform: translateX(18px); }
+}
 .stg-toggle-row { display: flex; justify-content: space-between; align-items: center; gap: var(--space-5); }
 .stg-toggle-label { display: block; font-size: var(--font-size-base); font-weight: 700; color: var(--text-primary); }
 .stg-toggle-desc { display: block; font-size: var(--font-size-sm); color: var(--text-secondary); margin-top: 2px; line-height: var(--line-height-normal); }
@@ -1385,25 +1738,48 @@ body {
 }
 .stg-plan-header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-4); }
 
+/* ─── MCP (Settings → MCP) ─── */
+.stg-mcp-intro { display: flex; flex-direction: column; gap: var(--space-2); }
+.stg-mcp-intro-head { display: flex; align-items: center; gap: var(--space-3); flex-wrap: wrap; }
+.stg-status-pill {
+  font-size: var(--font-size-xs); font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.06em;
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+  border-radius: 100px; padding: 3px 10px; white-space: nowrap;
+}
+.stg-mcp-group-title {
+  font-size: var(--font-size-xs); font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin: 0 0 var(--space-3);
+}
+.stg-mcp-note {
+  font-size: var(--font-size-sm); color: var(--text-muted);
+  line-height: 1.6; margin-top: var(--space-4); max-width: 62ch;
+}
+
 .stg-integrations-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: var(--space-4); }
+@media (max-width: 420px) { .stg-integrations-grid { grid-template-columns: 1fr; } }
 .stg-integration-card {
   background: var(--card-bg); border: 1px solid var(--card-border);
   border-radius: var(--radius-lg);
-  padding: var(--space-6);
+  padding: var(--space-5);
   text-align: center; position: relative;
   box-shadow: var(--shadow-xs);
   display: flex; flex-direction: column; align-items: center;
+  min-width: 0;
 }
-.stg-integration-icon {
-  width: 40px; height: 40px;
-  border-radius: var(--radius-md);
-  border: 1px solid var(--border-primary);
+/* Fixed container, free logo. Every mark gets the same optical area while
+   object-fit: contain preserves its own aspect ratio. */
+.stg-integration-logo {
+  width: 44px; height: 44px;
   display: flex; align-items: center; justify-content: center;
-  font-size: 16px; margin-bottom: var(--space-3);
+  margin-bottom: var(--space-3);
 }
 .stg-integration-name { font-size: var(--font-size-base); font-weight: 700; color: var(--text-primary); margin-bottom: var(--space-1); }
 .stg-coming-soon { font-size: var(--font-size-xs); font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.04em; }
-.stg-integration-locked { position: absolute; inset: 0; border-radius: var(--radius-lg); pointer-events: none; }
 
 .stg-theme-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-3); margin-top: var(--space-2); }
 @media (max-width: 480px) { .stg-theme-grid { grid-template-columns: 1fr; } }
@@ -1819,3 +2195,247 @@ select:focus-visible, button:focus-visible, a:focus-visible,
 }
 
 
+
+/* ═══════════════════════════════════════════════════════
+   APPLICATION SHELL — Phase 0.5B, Component #3
+   Persistent rail for /dashboard, /analyze, /history,
+   /billing, /settings. Desktop only (>=1024px); below
+   that the existing Navbar behaviour is unchanged.
+   ═══════════════════════════════════════════════════════ */
+
+:root {
+  --rail-w: 236px;
+  --rail-w-collapsed: 76px;
+  /* Restrained material: a translucent lift over the page, not a glass slab.
+     Navigation must never blur what sits behind it, so there is no
+     backdrop-filter here — only a low-alpha overlay on an opaque base. */
+  --rail-surface: linear-gradient(180deg, rgba(255,255,255,0.030), rgba(255,255,255,0.012));
+  --rail-base: var(--bg-secondary);
+  --rail-highlight: rgba(255, 255, 255, 0.06);
+}
+
+[data-theme="light"] {
+  --rail-surface: linear-gradient(180deg, rgba(28,25,23,0.022), rgba(28,25,23,0.008));
+  --rail-highlight: rgba(255, 255, 255, 0.9);
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]):not([data-theme="high-contrast"]) {
+    --rail-surface: linear-gradient(180deg, rgba(28,25,23,0.022), rgba(28,25,23,0.008));
+    --rail-highlight: rgba(255, 255, 255, 0.9);
+  }
+}
+
+[data-theme="high-contrast"] {
+  /* No material at all — the rail is a flat panel with a hard edge. */
+  --rail-surface: none;
+  --rail-highlight: transparent;
+}
+
+.shell-rail { display: none; }
+.shell-main { min-height: calc(100vh - 56px); }
+
+/* Shell breakpoint is 1000px, not 1024px, on purpose. Media queries resolve
+   against the layout viewport, which excludes a classic scrollbar: desktop
+   WebKit reports 1018px for a 1024px-wide window, so a 1024px query would leave
+   Safari on the top-bar layout at exactly iPad-portrait width. 1000px absorbs
+   that reservation while still leaving 764px of content beside the 236px rail.
+   Every rule below must move together, or the rail and the top-bar links would
+   both show and duplicate the navigation. */
+@media (min-width: 1000px) {
+  /* The rail owns navigation here, so the top bar drops its link row. */
+  .nav--app .nav-links { display: none; }
+
+  .shell-rail {
+    position: fixed;
+    top: 56px;
+    left: 0;
+    bottom: 0;
+    z-index: 850;
+    width: var(--rail-w);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--space-6);
+    padding: var(--space-5) var(--space-3);
+    background-color: var(--rail-base);
+    background-image: var(--rail-surface);
+    border-right: 1px solid var(--border-secondary);
+    box-shadow: inset -1px 0 0 var(--rail-highlight);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    transition: width var(--duration-normal) var(--ease-default);
+  }
+  .shell-rail.is-collapsed { width: var(--rail-w-collapsed); }
+
+  .shell-main {
+    padding-left: var(--rail-w);
+    transition: padding-left var(--duration-normal) var(--ease-default);
+  }
+  [data-rail="collapsed"] .shell-main { padding-left: var(--rail-w-collapsed); }
+}
+
+.shell-rail-nav { display: flex; flex-direction: column; gap: 2px; }
+.shell-rail-heading {
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  letter-spacing: var(--letter-spacing-wider);
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding: 0 var(--space-3) var(--space-2);
+  white-space: nowrap;
+  overflow: hidden;
+}
+.shell-rail.is-collapsed .shell-rail-heading { opacity: 0; height: 0; padding: 0; }
+
+.shell-rail-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  width: 100%;
+  min-height: 40px;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  background: transparent;
+  font-family: inherit;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color var(--duration-fast) var(--ease-default),
+              color var(--duration-fast) var(--ease-default),
+              border-color var(--duration-fast) var(--ease-default);
+}
+.shell-rail.is-collapsed .shell-rail-item { justify-content: center; padding-left: 0; padding-right: 0; }
+
+.shell-rail-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  flex-shrink: 0;
+  color: var(--text-muted);
+  transition: color var(--duration-fast) var(--ease-default);
+}
+.shell-rail-label { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.shell-rail-item:hover {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+}
+.shell-rail-item:hover .shell-rail-icon { color: var(--text-primary); }
+
+/* Active state carries three independent signals — a tinted capsule, an accent
+   left marker, and aria-current — so it survives high-contrast and does not
+   depend on colour alone. */
+.shell-rail-item.active {
+  background: var(--accent-light);
+  border-color: var(--accent-border);
+  color: var(--text-primary);
+  font-weight: 700;
+}
+.shell-rail-item.active .shell-rail-icon { color: var(--accent); }
+.shell-rail-item.active::before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 18px;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  background: var(--accent);
+}
+
+.shell-rail-foot {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--border-secondary);
+}
+
+.shell-rail-account {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-height: 44px;
+  padding: var(--space-2) var(--space-3);
+  margin-bottom: var(--space-1);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  transition: background-color var(--duration-fast) var(--ease-default);
+}
+.shell-rail-account:hover { background: var(--bg-tertiary); }
+.shell-rail.is-collapsed .shell-rail-account { justify-content: center; padding-left: 0; padding-right: 0; }
+
+.shell-rail-avatar {
+  width: 32px; height: 32px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent);
+  color: #FFFFFF;
+  font-size: var(--font-size-xs);
+  font-weight: 800;
+}
+.shell-rail-avatar img { width: 100%; height: 100%; object-fit: cover; }
+
+.shell-rail-identity { min-width: 0; display: block; }
+.shell-rail-identity strong {
+  display: block;
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  color: var(--text-primary);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.shell-rail-identity small {
+  display: block;
+  font-size: var(--font-size-xs);
+  color: var(--text-muted);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+
+.shell-rail-signout { color: var(--text-muted); }
+.shell-rail-signout:hover { background: var(--danger-bg); color: var(--danger-color); }
+.shell-rail-signout:hover .shell-rail-icon { color: var(--danger-color); }
+.shell-rail-collapse { color: var(--text-muted); }
+
+.shell-rail-item:focus-visible,
+.shell-rail-account:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shell-rail, .shell-main { transition: none; }
+}
+
+/* The rail is shown from 1024px up, which includes touch tablets. On a coarse
+   pointer the 40px rows fall just under the 44px touch-target guideline, so the
+   rail relaxes its density there. Mouse-driven desktops keep the tighter rhythm. */
+@media (min-width: 1000px) and (pointer: coarse) {
+  .shell-rail-item { min-height: 44px; }
+  .shell-rail-account { min-height: 48px; }
+  .shell-rail-nav { gap: 4px; }
+  .shell-rail-foot { gap: 4px; }
+}
+
+/* Settings keeps its own section nav inside the shell. The shell rail already
+   shows who is signed in, so the section nav drops its duplicate identity
+   header, and narrows on smaller desktops so two rails plus content still fit. */
+@media (min-width: 1000px) {
+  .shell-main .stg-sidebar-header { display: none; }
+  .shell-main .stg-sidebar { padding-top: var(--space-5); }
+}
+@media (min-width: 1000px) and (max-width: 1279px) {
+  .shell-main .stg-sidebar { width: 200px; }
+  .shell-main .stg-content { padding-left: var(--space-8); padding-right: var(--space-8); }
+}

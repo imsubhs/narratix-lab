@@ -1,7 +1,6 @@
 import { Suspense } from 'react';
 import AnalyzerClient from '@/components/analyzer/AnalyzerClient';
-import Navbar from '@/components/layout/Navbar';
-import Footer from '@/components/layout/Footer';
+import AppShell from '@/components/layout/AppShell';
 
 export const metadata = {
   title: 'Creator Intelligence — Narratix Lab',
@@ -10,14 +9,12 @@ export const metadata = {
 
 export default function AnalyzePage() {
   return (
-    <>
-      <Navbar />
+    <AppShell>
       <div style={{ minHeight: '100vh', paddingTop: '90px', paddingBottom: '80px' }}>
         <Suspense>
           <AnalyzerClient />
         </Suspense>
       </div>
-      <Footer />
-    </>
+    </AppShell>
   );
 }

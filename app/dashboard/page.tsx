@@ -2,8 +2,7 @@ import { createClient } from '@/lib/supabase-server';
 import { redirect } from 'next/navigation';
 import { Suspense } from 'react';
 import DashboardContent from '@/components/dashboard/DashboardContent';
-import Navbar from '@/components/layout/Navbar';
-import Footer from '@/components/layout/Footer';
+import AppShell from '@/components/layout/AppShell';
 
 export const metadata = {
   title: 'Dashboard — Narratix Lab',
@@ -21,8 +20,7 @@ export default async function DashboardPage() {
   }
 
   return (
-    <>
-      <Navbar />
+    <AppShell>
       <Suspense fallback={
         <div style={{ minHeight: '80vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#0b0c20' }}>
           <div className="pulse-ring" style={{ width: '40px', height: '40px', border: '2px solid rgba(124,58,237,.3)', borderTopColor: '#7c3aed', borderRadius: '50%', animation: 'spin 1s linear infinite' }} />
@@ -30,8 +28,6 @@ export default async function DashboardPage() {
       }>
         <DashboardContent />
       </Suspense>
-      <Footer />
-    </>
+    </AppShell>
   );
 }
-

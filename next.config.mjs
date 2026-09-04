@@ -18,7 +18,7 @@ const nextConfig = {
     ],
   },
   async headers() {
-    const appOrigin = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000';
+    const appOrigin = process.env.NEXT_PUBLIC_APP_URL || 'https://narratix-lab.vercel.app';
     const isDev = process.env.NODE_ENV !== 'production';
     const csp = [
       "default-src 'self'",

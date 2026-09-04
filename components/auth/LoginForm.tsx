@@ -7,6 +7,7 @@ import { useAuth } from '@/components/auth/AuthProvider';
 import { createClient } from '@/lib/supabase-browser';
 import { FEATURES } from '@/lib/features';
 import GoogleIcon from './GoogleIcon';
+import BrandMark from '@/components/brand/BrandMark';
 
 export default function LoginForm() {
   const router = useRouter();
@@ -96,18 +97,8 @@ export default function LoginForm() {
       >
         {/* Header */}
         <div style={{ textAlign: 'center', marginBottom: '30px' }}>
-          <div
-            className="logo-box"
-            style={{
-              width: '48px',
-              height: '48px',
-              borderRadius: '14px',
-              margin: '0 auto 16px',
-            }}
-          >
-            <svg width="20" height="20" viewBox="0 0 20 20" style={{ marginLeft: '2px' }}>
-              <polygon points="4,2 18,10 4,18" fill="#fff" />
-            </svg>
+          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '16px' }}>
+            <BrandMark size={48} priority />
           </div>
           <h1
             style={{
@@ -157,44 +148,44 @@ export default function LoginForm() {
           {/* Form */}
           <form onSubmit={handleLogin}>
             <div className="fw">
-              <label className="flbl">EMAIL</label>
+              <label className="flbl" htmlFor="login-email">
+                EMAIL
+              </label>
               <input
+                id="login-email"
                 className="finput"
                 type="email"
                 placeholder="you@example.com"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 autoComplete="email"
+                aria-invalid={error ? true : undefined}
+                aria-describedby={error ? 'login-error' : undefined}
               />
             </div>
 
-            <div className="fw" style={{ position: 'relative' }}>
-              <label className="flbl">PASSWORD</label>
+            <div className="fw">
+              <label className="flbl" htmlFor="login-password">
+                PASSWORD
+              </label>
               <input
+                id="login-password"
                 className="finput"
                 type={showPw ? 'text' : 'password'}
                 placeholder="••••••••"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 autoComplete="current-password"
-                style={{ marginBottom: 0 }}
+                aria-invalid={error ? true : undefined}
+                aria-describedby={error ? 'login-error' : undefined}
+                style={{ marginBottom: 0, paddingRight: '58px' }}
               />
               <button
                 type="button"
+                className="auth-pw-toggle"
                 onClick={() => setShowPw(!showPw)}
-                style={{
-                  position: 'absolute',
-                  right: '14px',
-                  top: '32px',
-                  background: 'none',
-                  border: 'none',
-                  color: 'var(--text-muted)',
-                  cursor: 'pointer',
-                  fontSize: '11px',
-                  fontWeight: 700,
-                  letterSpacing: '.05em',
-                  fontFamily: 'inherit',
-                }}
+                aria-pressed={showPw}
+                aria-controls="login-password"
               >
                 {showPw ? 'HIDE' : 'SHOW'}
               </button>
@@ -202,17 +193,7 @@ export default function LoginForm() {
 
             {/* Error */}
             {error && (
-              <div
-                style={{
-                  padding: '11px 14px',
-                  background: 'var(--danger-bg)',
-                  border: '1px solid var(--danger-border)',
-                  borderRadius: '10px',
-                  fontSize: '13px',
-                  color: 'var(--danger-color)',
-                  margin: '12px 0',
-                }}
-              >
+              <div id="login-error" className="auth-error" role="alert">
                 {error}
               </div>
             )}

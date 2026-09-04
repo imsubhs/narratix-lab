@@ -16,12 +16,21 @@ const SECTIONS = [
   { id: 'notifications', label: 'Notifications',   icon: '🔔' },
   { id: 'billing',       label: 'Billing',         icon: '💳' },
   { id: 'usage',         label: 'Usage & Limits',  icon: '📊' },
-  { id: 'integrations',  label: 'Integrations',    icon: '🔗' },
+  { id: 'mcp',           label: 'MCP',             icon: '🔗' },
   { id: 'preferences',   label: 'Preferences',     icon: '⚙️' },
   { id: 'danger',        label: 'Danger Zone',     icon: '⚠️' },
 ] as const;
 
 type SectionId = (typeof SECTIONS)[number]['id'];
+
+/* Planned MCP connections. Order is intentional and matches the product roadmap.
+   Logos are the official supplied brand assets in /public/brand. */
+const MCP_CONNECTIONS = [
+  { name: 'YouTube',   logo: '/brand/youtube.png' },
+  { name: 'Instagram', logo: '/brand/instagram.png' },
+  { name: 'Discord',   logo: '/brand/discord.png' },
+  { name: 'LinkedIn',  logo: '/brand/linkedin.png' },
+] as const;
 
 /* ─────────────────────────────────────────────────────
    Toast Component
@@ -44,18 +53,41 @@ function Toast({ message, type, onClose }: { message: string; type: 'success' | 
 /* ─────────────────────────────────────────────────────
    Toggle Switch
    ───────────────────────────────────────────────────── */
-function Toggle({ checked, onChange, id }: { checked: boolean; onChange: (v: boolean) => void; id: string }) {
+function Toggle({
+  checked,
+  onChange,
+  id,
+  labelledBy,
+  describedBy,
+}: {
+  checked: boolean;
+  onChange: (v: boolean) => void;
+  id: string;
+  labelledBy?: string;
+  describedBy?: string;
+}) {
   return (
-    <button
-      type="button"
-      role="switch"
-      id={id}
-      aria-checked={checked}
-      className={`stg-toggle ${checked ? 'on' : ''}`}
-      onClick={() => onChange(!checked)}
-    >
-      <span className="stg-toggle-thumb" />
-    </button>
+    <span className="stg-toggle-control">
+      <button
+        type="button"
+        role="switch"
+        id={id}
+        aria-checked={checked}
+        aria-labelledby={labelledBy}
+        aria-describedby={describedBy}
+        className={`stg-toggle ${checked ? 'on' : ''}`}
+        onClick={() => onChange(!checked)}
+      >
+        <span className="stg-toggle-track">
+          <span className="stg-toggle-thumb" />
+        </span>
+      </button>
+      {/* State is also carried as text, so it never depends on colour, shadow
+          or thumb position alone. */}
+      <span className="stg-toggle-state" aria-hidden="true">
+        {checked ? 'ON' : 'OFF'}
+      </span>
+    </span>
   );
 }
 
@@ -186,7 +218,8 @@ export default function SettingsPage() {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const params = new URLSearchParams(window.location.search);
-      const tab = params.get('tab');
+      // `integrations` was the previous id for this section; keep old links working.
+      const tab = params.get('tab') === 'integrations' ? 'mcp' : params.get('tab');
       if (tab && SECTIONS.some((s) => s.id === tab)) {
         setActiveSection(tab as SectionId);
       }
@@ -606,26 +639,44 @@ export default function SettingsPage() {
             <div className="stg-card">
               <div className="stg-toggle-row">
                 <div>
-                  <span className="stg-toggle-label">Analysis Complete</span>
-                  <span className="stg-toggle-desc">Get notified when your analysis is ready</span>
+                  <span className="stg-toggle-label" id="notif-analysis-label">Analysis Complete</span>
+                  <span className="stg-toggle-desc" id="notif-analysis-desc">Get notified when your analysis is ready</span>
                 </div>
-                <Toggle checked={notifAnalysis} onChange={setNotifAnalysis} id="notif-analysis" />
+                <Toggle
+                  checked={notifAnalysis}
+                  onChange={setNotifAnalysis}
+                  id="notif-analysis"
+                  labelledBy="notif-analysis-label"
+                  describedBy="notif-analysis-desc"
+                />
               </div>
               <div className="stg-divider" />
               <div className="stg-toggle-row">
                 <div>
-                  <span className="stg-toggle-label">Weekly Summary</span>
-                  <span className="stg-toggle-desc">Receive a weekly digest of your content performance</span>
+                  <span className="stg-toggle-label" id="notif-weekly-label">Weekly Summary</span>
+                  <span className="stg-toggle-desc" id="notif-weekly-desc">Receive a weekly digest of your content performance</span>
                 </div>
-                <Toggle checked={notifWeekly} onChange={setNotifWeekly} id="notif-weekly" />
+                <Toggle
+                  checked={notifWeekly}
+                  onChange={setNotifWeekly}
+                  id="notif-weekly"
+                  labelledBy="notif-weekly-label"
+                  describedBy="notif-weekly-desc"
+                />
               </div>
               <div className="stg-divider" />
               <div className="stg-toggle-row">
                 <div>
-                  <span className="stg-toggle-label">Marketing Emails</span>
-                  <span className="stg-toggle-desc">Tips, product updates, and feature announcements</span>
+                  <span className="stg-toggle-label" id="notif-marketing-label">Marketing Emails</span>
+                  <span className="stg-toggle-desc" id="notif-marketing-desc">Tips, product updates, and feature announcements</span>
                 </div>
-                <Toggle checked={notifMarketing} onChange={setNotifMarketing} id="notif-marketing" />
+                <Toggle
+                  checked={notifMarketing}
+                  onChange={setNotifMarketing}
+                  id="notif-marketing"
+                  labelledBy="notif-marketing-label"
+                  describedBy="notif-marketing-desc"
+                />
               </div>
 
               <div className="stg-actions" style={{ marginTop: '20px' }}>
@@ -755,28 +806,46 @@ export default function SettingsPage() {
           </div>
         )}
 
-        {/* ═══ INTEGRATIONS ═══ */}
-        {activeSection === 'integrations' && (
-          <div className="stg-section" key="integrations">
-            <SectionHeader icon="🔗" title="Integrations" subtitle="Social integrations are Coming Soon after Beta V1" />
+        {/* ═══ MCP ═══ */}
+        {activeSection === 'mcp' && (
+          <div className="stg-section" key="mcp">
+            <SectionHeader icon="🔗" title="MCP" subtitle="Model Context Protocol" />
 
-            <div className="stg-integrations-grid">
-              {[
-                { name: 'YouTube', icon: '▶️', color: 'rgba(255, 0, 0, .12)', border: 'rgba(255, 0, 0, .2)' },
-                { name: 'TikTok', icon: '🎵', color: 'rgba(0, 242, 234, .08)', border: 'rgba(0, 242, 234, .2)' },
-                { name: 'Instagram', icon: '📸', color: 'rgba(225, 48, 108, .08)', border: 'rgba(225, 48, 108, .2)' },
-                { name: 'LinkedIn', icon: '💼', color: 'rgba(10, 102, 194, .1)', border: 'rgba(10, 102, 194, .25)' },
-              ].map((integration) => (
-                <div key={integration.name} className="stg-integration-card">
-                  <div className="stg-integration-icon" style={{ background: integration.color, borderColor: integration.border }}>
-                    <span>{integration.icon}</span>
+            <div className="stg-card stg-mcp-intro">
+              <div className="stg-mcp-intro-head">
+                <h3 className="stg-card-title" style={{ marginBottom: 0 }}>Model Context Protocol</h3>
+                <span className="stg-status-pill">Coming Soon</span>
+              </div>
+              <p className="stg-card-desc" style={{ marginBottom: 0 }}>
+                Connect Narratix intelligence with the AI tools and workflows you already use.
+              </p>
+            </div>
+
+            <h3 className="stg-mcp-group-title" id="mcp-upcoming">Upcoming connections</h3>
+
+            <div className="stg-integrations-grid" role="list" aria-labelledby="mcp-upcoming">
+              {MCP_CONNECTIONS.map((connection) => (
+                <div key={connection.name} className="stg-integration-card" role="listitem">
+                  <div className="stg-integration-logo">
+                    <Image
+                      src={connection.logo}
+                      alt=""
+                      aria-hidden="true"
+                      width={64}
+                      height={64}
+                      style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+                    />
                   </div>
-                  <h4 className="stg-integration-name">{integration.name}</h4>
+                  <h4 className="stg-integration-name">{connection.name}</h4>
                   <span className="stg-coming-soon">Coming Soon</span>
-                  <div className="stg-integration-locked" />
                 </div>
               ))}
             </div>
+
+            <p className="stg-mcp-note">
+              These connections are planned, not active. Nothing is linked to your account yet, and no
+              data leaves Narratix Lab.
+            </p>
           </div>
         )}
 

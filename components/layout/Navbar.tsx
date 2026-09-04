@@ -2,11 +2,13 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
+import BrandMark from '@/components/brand/BrandMark';
 import { usePathname } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
 import { useAuth } from '@/components/auth/AuthProvider';
 import { getDisplayName, getInitials } from '@/lib/account';
 import { BETA_BADGE } from '@/lib/features';
+import { APP_SHELL_ROUTES } from '@/components/layout/SidebarNav';
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -76,6 +78,12 @@ export default function Navbar() {
 
   const navItems = isAuthenticated ? authNavItems : guestNavItems;
 
+  /* On the authenticated app routes the desktop rail owns navigation, so the
+     top bar hides its own links at >=1024px to avoid a duplicate nav. Below
+     that breakpoint the rail is hidden and these links behave as before. */
+  const inAppShell =
+    isAuthenticated && APP_SHELL_ROUTES.some((route) => pathname === route || pathname.startsWith(`${route}/`));
+
   /* ─── Avatar dropdown items ──────────────────── */
   const accountItems = [
     { href: '/settings', label: 'Settings' },
@@ -85,18 +93,14 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className="nav"
+        className={`nav${inAppShell ? ' nav--app' : ''}`}
         style={{
           boxShadow: scrolled ? 'var(--shadow-md)' : 'none',
           borderBottom: scrolled ? '1px solid var(--border-primary)' : '1px solid var(--border-secondary)',
         }}
       >
         <Link href={isAuthenticated ? '/dashboard' : '/'} className="logo">
-          <div className="logo-box">
-            <svg width="13" height="13" viewBox="0 0 20 20" style={{ marginLeft: '1px' }}>
-              <polygon points="4,2 18,10 4,18" fill="#fff" />
-            </svg>
-          </div>
+          <BrandMark size={28} priority />
           <span>Narratix Lab</span>
           <span style={{ fontSize: '10px', fontWeight: 700, padding: '3px 8px', borderRadius: '100px', background: 'var(--bg-secondary)', border: '1px solid var(--border-primary)', color: 'var(--accent)', marginLeft: '8px', letterSpacing: '.04em' }}>🧪 Beta</span>
         </Link>

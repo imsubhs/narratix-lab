@@ -8,6 +8,7 @@ import { useAuth } from '@/components/auth/AuthProvider';
 import { createClient } from '@/lib/supabase-browser';
 import { FEATURES } from '@/lib/features';
 import GoogleIcon from './GoogleIcon';
+import BrandMark from '@/components/brand/BrandMark';
 
 export default function SignupForm() {
   const router = useRouter();
@@ -139,18 +140,8 @@ export default function SignupForm() {
       >
         {/* Header */}
         <div style={{ textAlign: 'center', marginBottom: '30px' }}>
-          <div
-            className="logo-box"
-            style={{
-              width: '48px',
-              height: '48px',
-              borderRadius: '14px',
-              margin: '0 auto 16px',
-            }}
-          >
-            <svg width="20" height="20" viewBox="0 0 20 20" style={{ marginLeft: '2px' }}>
-              <polygon points="4,2 18,10 4,18" fill="#fff" />
-            </svg>
+          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '16px' }}>
+            <BrandMark size={48} priority />
           </div>
           <h1
             style={{
@@ -200,8 +191,11 @@ export default function SignupForm() {
           {/* Form */}
           <form onSubmit={handleSignup}>
             <div className="fw">
-              <label className="flbl">FULL NAME</label>
+              <label className="flbl" htmlFor="signup-name">
+                FULL NAME
+              </label>
               <input
+                id="signup-name"
                 className="finput"
                 placeholder="Jane Smith"
                 value={name}
@@ -211,10 +205,15 @@ export default function SignupForm() {
             </div>
 
             <div className="fw">
-              <label className="flbl">EMAIL</label>
+              <label className="flbl" htmlFor="signup-email">
+                EMAIL
+              </label>
               <input
+                id="signup-email"
                 className="finput"
                 type="email"
+                aria-invalid={error ? true : undefined}
+                aria-describedby={error ? 'signup-error' : undefined}
                 placeholder="you@example.com"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -222,33 +221,27 @@ export default function SignupForm() {
               />
             </div>
 
-            <div className="fw" style={{ position: 'relative' }}>
-              <label className="flbl">PASSWORD</label>
+            <div className="fw">
+              <label className="flbl" htmlFor="signup-password">
+                PASSWORD
+              </label>
               <input
+                id="signup-password"
                 className="finput"
                 type={showPw ? 'text' : 'password'}
                 placeholder="Min 6 characters"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 autoComplete="new-password"
-                style={{ marginBottom: 0 }}
+                aria-describedby="signup-password-strength"
+                style={{ marginBottom: 0, paddingRight: '58px' }}
               />
               <button
                 type="button"
+                className="auth-pw-toggle"
                 onClick={() => setShowPw(!showPw)}
-                style={{
-                  position: 'absolute',
-                  right: '14px',
-                  top: '32px',
-                  background: 'none',
-                  border: 'none',
-                  color: 'var(--text-muted)',
-                  cursor: 'pointer',
-                  fontSize: '11px',
-                  fontWeight: 700,
-                  letterSpacing: '.05em',
-                  fontFamily: 'inherit',
-                }}
+                aria-pressed={showPw}
+                aria-controls="signup-password"
               >
                 {showPw ? 'HIDE' : 'SHOW'}
               </button>
@@ -273,6 +266,8 @@ export default function SignupForm() {
                 />
               </div>
               <p
+                id="signup-password-strength"
+                aria-live="polite"
                 style={{
                   fontSize: '11px',
                   color: password ? strength.color : 'var(--text-muted)',
@@ -285,8 +280,11 @@ export default function SignupForm() {
             </div>
 
             <div className="fw">
-              <label className="flbl">CONFIRM PASSWORD</label>
+              <label className="flbl" htmlFor="signup-confirm">
+                CONFIRM PASSWORD
+              </label>
               <input
+                id="signup-confirm"
                 className="finput"
                 type="password"
                 placeholder="••••••••"
@@ -358,17 +356,7 @@ export default function SignupForm() {
 
             {/* Error */}
             {error && (
-              <div
-                style={{
-                  padding: '11px 14px',
-                  background: 'var(--danger-bg)',
-                  border: '1px solid var(--danger-border)',
-                  borderRadius: '10px',
-                  fontSize: '13px',
-                  color: 'var(--danger-color)',
-                  marginBottom: '14px',
-                }}
-              >
+              <div id="signup-error" className="auth-error" role="alert">
                 {error}
               </div>
             )}

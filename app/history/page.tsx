@@ -1,5 +1,4 @@
-import Navbar from '@/components/layout/Navbar';
-import Footer from '@/components/layout/Footer';
+import AppShell from '@/components/layout/AppShell';
 import { HistoryAccountPage } from '@/components/account/AccountPages';
 
 export const metadata = {
@@ -9,10 +8,8 @@ export const metadata = {
 
 export default function HistoryPage() {
   return (
-    <>
-      <Navbar />
+    <AppShell>
       <HistoryAccountPage />
-      <Footer />
-    </>
+    </AppShell>
   );
 }

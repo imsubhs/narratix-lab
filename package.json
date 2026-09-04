@@ -14,7 +14,8 @@
     "smoke:ai": "tsx scripts/engine-smoke.ts",
     "test:demo": "tsx scripts/demo-tests.ts",
     "test:export": "tsx scripts/export-tests.ts",
-    "build:demo-profiles": "tsx scripts/build-demo-profiles.ts"
+    "build:demo-profiles": "tsx scripts/build-demo-profiles.ts",
+    "review": "node local-review/start.js"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.110.0",

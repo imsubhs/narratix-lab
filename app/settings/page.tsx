@@ -1,6 +1,5 @@
 import SettingsPage from '@/components/settings/SettingsPage';
-import Navbar from '@/components/layout/Navbar';
-import Footer from '@/components/layout/Footer';
+import AppShell from '@/components/layout/AppShell';
 
 export const metadata = {
   title: 'Settings — Narratix Lab',
@@ -9,10 +8,8 @@ export const metadata = {
 
 export default function SettingsRoute() {
   return (
-    <>
-      <Navbar />
+    <AppShell>
       <SettingsPage />
-      <Footer />
-    </>
+    </AppShell>
   );
 }

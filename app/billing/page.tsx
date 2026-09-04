@@ -1,6 +1,5 @@
 import { BillingAccountPage } from '@/components/account/AccountPages';
-import Navbar from '@/components/layout/Navbar';
-import Footer from '@/components/layout/Footer';
+import AppShell from '@/components/layout/AppShell';
 
 export const metadata = {
   title: 'Billing — Narratix Lab',
@@ -9,10 +8,8 @@ export const metadata = {
 
 export default function BillingPage() {
   return (
-    <>
-      <Navbar />
+    <AppShell>
       <BillingAccountPage />
-      <Footer />
-    </>
+    </AppShell>
   );
 }

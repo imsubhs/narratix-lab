@@ -9,6 +9,7 @@ import {
   useState,
 } from 'react';
 import { useRouter } from 'next/navigation';
+import { MotionConfig } from 'framer-motion';
 import type { User } from '@supabase/supabase-js';
 import { createClient } from '@/lib/supabase-browser';
 import {
@@ -186,7 +187,13 @@ export function AuthProvider({
     [accountState, analysesUsed, profile, refreshAccount, signOut, user]
   );
 
-  return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
+  return (
+    <AuthContext.Provider value={value}>
+      <MotionConfig reducedMotion="user">
+        {children}
+      </MotionConfig>
+    </AuthContext.Provider>
+  );
 }
 
 export function useAuth() {

@@ -84,10 +84,10 @@ export default function ResourcesPage() {
           <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#a78bfa', display: 'block' }} />
           Resources
         </div>
-        <h1 style={{ fontSize: 'clamp(36px,4.5vw,54px)', fontWeight: 800, color: '#fff', letterSpacing: '-.04em', marginBottom: '16px' }}>
+        <h1 style={{ fontSize: 'clamp(36px,4.5vw,54px)', fontWeight: 800, color: 'var(--text-primary)', letterSpacing: '-.04em', marginBottom: '16px' }}>
           Learn to Build<br /><span className="gb">Scripts That Perform</span>
         </h1>
-        <p style={{ fontSize: '16px', color: 'rgba(255,255,255,.42)', lineHeight: 1.85, maxWidth: '520px', marginBottom: '56px' }}>
+        <p style={{ fontSize: '16px', color: 'var(--text-secondary)', lineHeight: 1.85, maxWidth: '520px', marginBottom: '56px' }}>
           Creator guides, masterclasses, templates, and community access are planned resources. No downloads or external links are active during Beta V1.
         </p>
 
@@ -96,8 +96,8 @@ export default function ResourcesPage() {
             <div key={i} className="fc" style={{ padding: '28px', border: '1px solid rgba(255,255,255,0.06)' }}>
               <div style={{ marginBottom: '14px' }}>{r.icon}</div>
               <span style={{ display: 'inline-flex', alignItems: 'center', padding: '3px 10px', borderRadius: '100px', fontSize: '11px', fontWeight: 800, background: r.typeBg, color: r.typeColor, border: `1px solid ${r.typeBorder}`, marginBottom: '12px' }}>{r.type}</span>
-              <h3 style={{ fontSize: '17px', fontWeight: 700, color: '#fff', marginBottom: '8px' }}>{r.title}</h3>
-              <p style={{ fontSize: '14px', color: 'rgba(255,255,255,.42)', lineHeight: 1.75, marginBottom: '16px' }}>{r.desc}</p>
+              <h3 style={{ fontSize: '17px', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '8px' }}>{r.title}</h3>
+              <p style={{ fontSize: '14px', color: 'var(--text-secondary)', lineHeight: 1.75, marginBottom: '16px' }}>{r.desc}</p>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: 'auto' }}>
                 <span style={{ fontSize: '12px', fontWeight: 800, padding: '3px 8px', borderRadius: '4px', background: 'rgba(124,58,237,0.1)', color: '#c4b5fd', border: '1px solid rgba(124,58,237,0.15)' }}>COMING SOON</span>
               </div>

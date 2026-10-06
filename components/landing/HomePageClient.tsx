@@ -60,7 +60,7 @@ export default function HomePageClient() {
               Paste your script or upload a document. Narratix Lab analyzes hook, pacing, structure, and emotional resonance — giving you exact feedback before you publish.
             </p>
             <div className="ibar" style={{ marginBottom: '20px' }}>
-              <input placeholder="Paste your script or content description..." value={heroUrl} onChange={(e) => setHeroUrl(e.target.value)} onKeyDown={(e) => { if (e.key === 'Enter') handleHeroAnalyze(); }} />
+              <input id="hero-script-input" aria-label="Paste your script or content description" placeholder="Paste your script or content description..." value={heroUrl} onChange={(e) => setHeroUrl(e.target.value)} onKeyDown={(e) => { if (e.key === 'Enter') handleHeroAnalyze(); }} />
               <div style={{ display: 'flex', gap: '12px', padding: '0 12px', color: 'var(--text-muted)' }}>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" style={{ cursor: 'pointer' }}>
                   <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />

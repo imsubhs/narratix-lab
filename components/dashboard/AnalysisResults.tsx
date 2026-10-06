@@ -237,7 +237,7 @@ function ScoreBreakdownBlock({ moduleKey, score }: { moduleKey: string; score: n
           }}>
             <span style={{ fontSize: '11px', fontWeight: 600, color: 'var(--text-secondary)' }}>{m.name}</span>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <span style={{ fontSize: '13px', fontWeight: 700, color: '#fff' }}>
+              <span style={{ fontSize: '13px', fontWeight: 700, color: 'var(--text-primary)' }}>
                 {m.score}
                 <span style={{ fontSize: '10px', color: 'var(--text-muted)', fontWeight: 500 }}>/{m.max}</span>
               </span>
@@ -543,7 +543,7 @@ function EvidenceEngineBlock({ moduleKey, results, transcript }: { moduleKey: st
             textAlign: 'center'
           }}>
             <span style={{ fontSize: '9px', color: 'var(--text-muted)', marginBottom: '2px' }}>{item.label}</span>
-            <span style={{ fontSize: '14px', fontWeight: 800, color: '#fff' }}>{item.val}</span>
+            <span style={{ fontSize: '14px', fontWeight: 800, color: 'var(--text-primary)' }}>{item.val}</span>
           </div>
         ))}
       </div>
@@ -565,15 +565,15 @@ function EvidenceEngineBlock({ moduleKey, results, transcript }: { moduleKey: st
         }}>
           <div>
             <span style={{ fontSize: '9px', color: 'var(--text-muted)', display: 'block' }}>Detected opening type:</span>
-            <span style={{ fontSize: '11px', fontWeight: 600, color: '#fff' }}>{openingType}</span>
+            <span style={{ fontSize: '11px', fontWeight: 600, color: 'var(--text-primary)' }}>{openingType}</span>
           </div>
           <div>
             <span style={{ fontSize: '9px', color: 'var(--text-muted)', display: 'block' }}>Detected pacing:</span>
-            <span style={{ fontSize: '11px', fontWeight: 600, color: '#fff' }}>{pacing}</span>
+            <span style={{ fontSize: '11px', fontWeight: 600, color: 'var(--text-primary)' }}>{pacing}</span>
           </div>
           <div>
             <span style={{ fontSize: '9px', color: 'var(--text-muted)', display: 'block' }}>Detected CTA:</span>
-            <span style={{ fontSize: '11px', fontWeight: 600, color: '#fff' }}>{ctaSignal}</span>
+            <span style={{ fontSize: '11px', fontWeight: 600, color: 'var(--text-primary)' }}>{ctaSignal}</span>
           </div>
         </div>
       </div>
@@ -1187,17 +1187,17 @@ export default function AnalysisResults({ results: rawResults, transcript, onRes
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '12px', background: 'var(--bg-tertiary)', padding: '12px', borderRadius: '12px' }}>
             <div style={{ textAlign: 'center', padding: '8px' }}>
               <p style={{ fontSize: '9px', color: 'var(--text-muted)', margin: '0 0 2px 0', textTransform: 'uppercase' }}>Comment Potential</p>
-              <p style={{ fontSize: '13px', fontWeight: 700, color: '#fff', margin: '0 0 2px 0' }}>{mapToConfidence(results.creator_strategist.comment_potential, results.overall_score, 'comment').label}</p>
+              <p style={{ fontSize: '13px', fontWeight: 700, color: 'var(--text-primary)', margin: '0 0 2px 0' }}>{mapToConfidence(results.creator_strategist.comment_potential, results.overall_score, 'comment').label}</p>
               <span style={{ fontSize: '9.5px', color: 'var(--text-muted)', display: 'block', lineHeight: 1.3 }}>{mapToConfidence(results.creator_strategist.comment_potential, results.overall_score, 'comment').evidence}</span>
             </div>
             <div style={{ textAlign: 'center', padding: '8px', borderLeft: '1px solid rgba(255,255,255,0.06)', borderRight: '1px solid rgba(255,255,255,0.06)' }}>
               <p style={{ fontSize: '9px', color: 'var(--text-muted)', margin: '0 0 2px 0', textTransform: 'uppercase' }}>Save Potential</p>
-              <p style={{ fontSize: '13px', fontWeight: 700, color: '#fff', margin: '0 0 2px 0' }}>{mapToConfidence(results.creator_strategist.save_potential, results.overall_score, 'save').label}</p>
+              <p style={{ fontSize: '13px', fontWeight: 700, color: 'var(--text-primary)', margin: '0 0 2px 0' }}>{mapToConfidence(results.creator_strategist.save_potential, results.overall_score, 'save').label}</p>
               <span style={{ fontSize: '9.5px', color: 'var(--text-muted)', display: 'block', lineHeight: 1.3 }}>{mapToConfidence(results.creator_strategist.save_potential, results.overall_score, 'save').evidence}</span>
             </div>
             <div style={{ textAlign: 'center', padding: '8px' }}>
               <p style={{ fontSize: '9px', color: 'var(--text-muted)', margin: '0 0 2px 0', textTransform: 'uppercase' }}>Follower Conversion Potential</p>
-              <p style={{ fontSize: '13px', fontWeight: 700, color: '#fff', margin: '0 0 2px 0' }}>{mapToConfidence(results.creator_strategist.follower_conversion_potential, results.overall_score, 'conversion').label}</p>
+              <p style={{ fontSize: '13px', fontWeight: 700, color: 'var(--text-primary)', margin: '0 0 2px 0' }}>{mapToConfidence(results.creator_strategist.follower_conversion_potential, results.overall_score, 'conversion').label}</p>
               <span style={{ fontSize: '9.5px', color: 'var(--text-muted)', display: 'block', lineHeight: 1.3 }}>{mapToConfidence(results.creator_strategist.follower_conversion_potential, results.overall_score, 'conversion').evidence}</span>
             </div>
           </div>
@@ -1453,7 +1453,7 @@ export default function AnalysisResults({ results: rawResults, transcript, onRes
                       padding: '10px 12px', borderRadius: '0 8px 8px 0', display: 'flex', flexDirection: 'column', gap: '4px'
                     }}>
                       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                        <span style={{ fontSize: '11px', fontWeight: 700, color: '#fff' }}>{item.timestamp}</span>
+                        <span style={{ fontSize: '11px', fontWeight: 700, color: 'var(--text-primary)' }}>{item.timestamp}</span>
                         <div style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
                           {item.engagement_level && (
                             <span style={{
@@ -1630,7 +1630,7 @@ export default function AnalysisResults({ results: rawResults, transcript, onRes
                   <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
                   <path d="M7 11V7a5 5 0 0 1 10 0v4" />
                 </svg>
-                <h4 style={{ fontSize: '15px', fontWeight: 800, color: '#fff', margin: '0 0 4px 0' }}>Editing Intelligence</h4>
+                <h4 style={{ fontSize: '15px', fontWeight: 800, color: 'var(--text-primary)', margin: '0 0 4px 0' }}>Editing Intelligence</h4>
                 <p style={{ fontSize: '12px', color: 'rgba(255, 255, 255, 0.75)', margin: '0 0 16px 0', maxWidth: '380px' }}>
                   Coming Soon in V2. Video-based cuts, B-roll timing, visual pacing, and frame-level editing diagnostics are not part of Beta V1.
                 </p>
@@ -1731,7 +1731,7 @@ export default function AnalysisResults({ results: rawResults, transcript, onRes
                   <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
                   <path d="M7 11V7a5 5 0 0 1 10 0v4" />
                 </svg>
-                <h4 style={{ fontSize: '15px', fontWeight: 800, color: '#fff', margin: '0 0 4px 0' }}>Locked: Emotional Journey Mapping</h4>
+                <h4 style={{ fontSize: '15px', fontWeight: 800, color: 'var(--text-primary)', margin: '0 0 4px 0' }}>Locked: Emotional Journey Mapping</h4>
                 <p style={{ fontSize: '12px', color: 'rgba(255, 255, 255, 0.75)', margin: '0 0 16px 0', maxWidth: '380px' }}>
                   Upgrade to Pro to unlock precise curiosity peaks, authority trust builders, and retention emotional drop zones.
                 </p>
@@ -1836,7 +1836,7 @@ export default function AnalysisResults({ results: rawResults, transcript, onRes
                   <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
                   <path d="M7 11V7a5 5 0 0 1 10 0v4" />
                 </svg>
-                <h4 style={{ fontSize: '15px', fontWeight: 800, color: '#fff', margin: '0 0 4px 0' }}>Locked: Search & Captions Optimizer</h4>
+                <h4 style={{ fontSize: '15px', fontWeight: 800, color: 'var(--text-primary)', margin: '0 0 4px 0' }}>Locked: Search & Captions Optimizer</h4>
                 <p style={{ fontSize: '12px', color: 'rgba(255, 255, 255, 0.75)', margin: '0 0 16px 0', maxWidth: '380px' }}>
                   Upgrade to Pro to unlock optimized description captions, specific hashtags suggestions, and distribution strategies.
                 </p>
@@ -2072,7 +2072,7 @@ export default function AnalysisResults({ results: rawResults, transcript, onRes
               </div>
               <div style={{
                 background: 'rgba(99, 102, 241, 0.05)', border: '1px solid rgba(99, 102, 241, 0.25)',
-                borderRadius: '8px', padding: '14px', fontSize: '12.5px', color: '#fff',
+                borderRadius: '8px', padding: '14px', fontSize: '12.5px', color: 'var(--text-primary)',
                 lineHeight: 1.6, flexGrow: 1, minHeight: '80px', fontWeight: 500
               }}>
                 {results.rewrite_engine.improved_version}

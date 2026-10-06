@@ -56,20 +56,20 @@ export default function AboutPage() {
           <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#a78bfa', display: 'block' }} />
           About
         </div>
-        <h1 style={{ fontSize: 'clamp(36px,4.5vw,56px)', fontWeight: 800, color: '#fff', letterSpacing: '-.04em', marginBottom: '18px' }}>
+        <h1 style={{ fontSize: 'clamp(36px,4.5vw,56px)', fontWeight: 800, color: 'var(--text-primary)', letterSpacing: '-.04em', marginBottom: '18px' }}>
           Built by Creators.<br /><span className="gp">For Creators.</span>
         </h1>
-        <p style={{ fontSize: '17px', color: 'rgba(255,255,255,.48)', lineHeight: 1.9, maxWidth: '600px', marginBottom: '56px' }}>
+        <p style={{ fontSize: '17px', color: 'var(--text-secondary)', lineHeight: 1.9, maxWidth: '600px', marginBottom: '56px' }}>
           We built Narratix Lab because we were frustrated by vague advice, useless analytics, and endless guesswork that wastes creator time.
         </p>
 
         <div className="about-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px', marginBottom: '60px', alignItems: 'start' }}>
           <div>
-            <h2 style={{ fontSize: '24px', fontWeight: 800, color: '#fff', marginBottom: '16px' }}>Our Mission</h2>
-            <p style={{ fontSize: '15px', color: 'rgba(255,255,255,.5)', lineHeight: 1.9, marginBottom: '16px' }}>
+            <h2 style={{ fontSize: '24px', fontWeight: 800, color: 'var(--text-primary)', marginBottom: '16px' }}>Our Mission</h2>
+            <p style={{ fontSize: '15px', color: 'var(--text-secondary)', lineHeight: 1.9, marginBottom: '16px' }}>
               Creators don&apos;t fail because they lack talent. They fail because they lack structured feedback. Most analytics tools tell you <em>what</em> happened — but none tell you <em>why</em> or <em>how to fix it</em>.
             </p>
-            <p style={{ fontSize: '15px', color: 'rgba(255,255,255,.5)', lineHeight: 1.9 }}>
+            <p style={{ fontSize: '15px', color: 'var(--text-secondary)', lineHeight: 1.9 }}>
               Narratix Lab brings Creator Intelligence diagnostics to every creator. We analyze what&apos;s broken before you post.
             </p>
           </div>
@@ -80,8 +80,8 @@ export default function AboutPage() {
                   {v.icon}
                 </div>
                 <div>
-                  <p style={{ fontSize: '14px', fontWeight: 700, color: '#fff', marginBottom: '4px' }}>{v.title}</p>
-                  <p style={{ fontSize: '13px', color: 'rgba(255,255,255,.4)', lineHeight: 1.65 }}>{v.desc}</p>
+                  <p style={{ fontSize: '14px', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '4px' }}>{v.title}</p>
+                  <p style={{ fontSize: '13px', color: 'var(--text-muted)', lineHeight: 1.65 }}>{v.desc}</p>
                 </div>
               </div>
             ))}
@@ -89,8 +89,8 @@ export default function AboutPage() {
         </div>
 
         <div style={{ textAlign: 'center', padding: '52px', background: 'rgba(124,58,237,.06)', border: '1px solid rgba(124,58,237,.2)', borderRadius: '22px' }}>
-          <h3 style={{ fontSize: '26px', fontWeight: 800, color: '#fff', marginBottom: '12px' }}>Ready to fix your scripts?</h3>
-          <p style={{ fontSize: '15px', color: 'rgba(255,255,255,.42)', marginBottom: '24px' }}>3 free analyses. No credit card. Results in 60 seconds.</p>
+          <h3 style={{ fontSize: '26px', fontWeight: 800, color: 'var(--text-primary)', marginBottom: '12px' }}>Ready to fix your scripts?</h3>
+          <p style={{ fontSize: '15px', color: 'var(--text-secondary)', marginBottom: '24px' }}>3 free analyses. No credit card. Results in 60 seconds.</p>
           <Link href="/analyze" className="btn bp xl-btn">Analyze My Script →</Link>
         </div>
       </div>

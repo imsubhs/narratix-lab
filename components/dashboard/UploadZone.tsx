@@ -72,6 +72,8 @@ export default function UploadZone({ file, onFileSelected, onRemove, disabled }:
       >
         <input
           ref={inputRef}
+          id="video-upload-input"
+          aria-label="Upload video file"
           type="file"
           accept="video/mp4,video/quicktime,video/x-msvideo,video/webm,.mp4,.mov,.avi,.webm,.mkv"
           onChange={handleChange}
@@ -91,10 +93,10 @@ export default function UploadZone({ file, onFileSelected, onRemove, disabled }:
                 🎬
               </div>
               <div style={{ textAlign: 'left' }}>
-                <p style={{ fontSize: '14px', fontWeight: 700, color: '#fff', marginBottom: '2px' }}>
+                <p style={{ fontSize: '14px', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '2px' }}>
                   {file.name}
                 </p>
-                <p style={{ fontSize: '12px', color: 'rgba(255,255,255,.4)' }}>
+                <p style={{ fontSize: '12px', color: 'var(--text-secondary)' }}>
                   {(file.size / 1024 / 1024).toFixed(1)} MB
                 </p>
               </div>
@@ -125,10 +127,10 @@ export default function UploadZone({ file, onFileSelected, onRemove, disabled }:
             }}>
               📁
             </div>
-            <p style={{ fontSize: '16px', fontWeight: 700, color: '#fff', marginBottom: '6px' }}>
+            <p style={{ fontSize: '16px', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '6px' }}>
               Drop your video here
             </p>
-            <p style={{ fontSize: '13px', color: 'rgba(255,255,255,.35)', marginBottom: '16px' }}>
+            <p style={{ fontSize: '13px', color: 'var(--text-secondary)', marginBottom: '16px' }}>
               or click to browse · MP4, MOV, AVI, WebM · Max {MAX_SIZE_MB}MB · Under 60s
             </p>
             <div style={{ display: 'flex', gap: '8px', justifyContent: 'center', flexWrap: 'wrap' as const }}>

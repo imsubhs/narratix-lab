@@ -5,7 +5,7 @@
 import { jsPDF } from 'jspdf';
 import type { ReportModel } from '../types';
 
-const RED: [number, number, number] = [213, 33, 34];
+const RED: [number, number, number] = [124, 58, 237]; // Narratix Lab Violet #7C3AED
 const INK: [number, number, number] = [15, 23, 42];
 const MUTED: [number, number, number] = [71, 85, 105];
 const LINE: [number, number, number] = [229, 231, 235];

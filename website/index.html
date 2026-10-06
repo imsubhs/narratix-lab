@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Narratix Lab — Creator Intelligence &amp; Video Retention Diagnostics</title>
+  <meta name="description" content="Official public project and documentation portal for Narratix Lab: Creator Intelligence, video retention diagnostics, multi-provider AI waterfall, and export engineering.">
+  <meta name="theme-color" content="#0B0B0C">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://imsubhs.github.io/narratix-lab/">
+  <meta property="og:title" content="Narratix Lab — Public Architecture &amp; Showcase">
+  <meta property="og:description" content="Engineering-grade creator intelligence and video retention diagnostics. Explore product features, design systems, architecture, and roadmap.">
+  <meta property="og:image" content="./assets/brand/narratix-labs-logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./assets/favicon.png">
+  <link rel="apple-touch-icon" href="./assets/brand/narratix-labs-mark.png">
+
+  <!-- Typography: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <!-- Background Glow & Grid -->
+  <div class="bg-mesh" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <!-- Primary Header / Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      <a href="./" class="brand-link" aria-label="Narratix Lab Home">
+        <img src="./assets/brand/narratix-labs-mark.png" alt="Narratix Lab Logo" class="brand-mark" width="30" height="30">
+        <span class="brand-text">Narratix <strong>Lab</strong></span>
+        <span class="badge badge-subtle">Beta V1 Live</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="#product" class="nav-item">Product</a>
+        <a href="#design-system" class="nav-item">Design System</a>
+        <a href="#architecture" class="nav-item">Architecture</a>
+        <a href="#roadmap" class="nav-item">Roadmap</a>
+        <a href="#technology" class="nav-item">Tech Stack</a>
+        <a href="#repository" class="nav-item">Repository</a>
+      </nav>
+
+      <!-- Header CTAs -->
+      <div class="header-actions">
+        <a href="https://github.com/imsubhs/narratix-lab" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" aria-label="View on GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+          </svg>
+          <span class="btn-text">GitHub</span>
+        </a>
+        <a href="https://narratix-lab.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="header-cta-app">
+          <span>Launch Web App</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobile-drawer" hidden>
+      <nav class="mobile-nav" aria-label="Mobile Navigation">
+        <a href="#product" class="mobile-nav-link">Product</a>
+        <a href="#design-system" class="mobile-nav-link">Design System</a>
+        <a href="#architecture" class="mobile-nav-link">Architecture</a>
+        <a href="#roadmap" class="mobile-nav-link">Roadmap</a>
+        <a href="#technology" class="mobile-nav-link">Tech Stack</a>
+        <a href="#repository" class="mobile-nav-link">Repository</a>
+        <div class="mobile-drawer-cta">
+          <a href="https://narratix-lab.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">Launch Web App</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="content-container">
+        <div class="hero-badge-wrap">
+          <span class="badge badge-pill badge-primary">
+            <span class="status-dot"></span>
+            Phase 0.7 · Public Repository &amp; Static Architecture Portal
+          </span>
+        </div>
+
+        <h1 class="hero-title">
+          Engineering-Grade <br class="br-desktop">
+          <span class="text-gradient">Creator Intelligence</span> &amp; Retention Diagnostics
+        </h1>
+
+        <p class="hero-subtitle">
+          Narratix Lab transforms qualitative scripts into quantitative retention forecasts. Featuring multi-layered pacing diagnostics, calibrated hook scoring, multi-format export engines, and an autonomous AI waterfall built for high-throughput video creators.
+        </p>
+
+        <div class="hero-actions">
+          <a href="https://narratix-lab.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" id="hero-cta-launch">
+            <span>Open Production SaaS App</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#architecture" class="btn btn-secondary btn-lg">
+            <span>Explore Architecture</span>
+          </a>
+        </div>
+
+        <!-- System Capabilities Banner (Verified & Truthful) -->
+        <div class="stats-ribbon">
+          <div class="stat-cell">
+            <span class="stat-number">6</span>
+            <span class="stat-label">Export Formats (PDF, DOCX, MD, HTML, TXT, RTF)</span>
+          </div>
+          <div class="stat-cell">
+            <span class="stat-number">10</span>
+            <span class="stat-label">Curated Calibration Profiles (Offline Validated)</span>
+          </div>
+          <div class="stat-cell">
+            <span class="stat-number">3</span>
+            <span class="stat-label">AI Waterfall Providers (Claude, GPT-4o, OpenRouter)</span>
+          </div>
+          <div class="stat-cell">
+            <span class="stat-number">0</span>
+            <span class="stat-label">Lock-in Canonical Report Model Architecture</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Capabilities Section -->
+    <section class="section" id="product">
+      <div class="content-container">
+        <div class="section-header">
+          <span class="section-tag">Product Core</span>
+          <h2 class="section-title">Built for Serious Video Storytellers</h2>
+          <p class="section-desc">
+            An audit of actual capabilities in the Narratix Lab Beta V1 codebase. Every module operates with verifiable schemas and deterministic safety guards.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <!-- Card 1: Creator Intelligence -->
+          <div class="nl-card">
+            <div class="card-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+            </div>
+            <h3 class="card-title">Creator Intelligence</h3>
+            <p class="card-text">
+              Examines text transcripts and outlines for narrative cohesion, hook urgency, structural cadence, and thematic delivery before rendering frames or recording audio.
+            </p>
+            <ul class="feature-bullets">
+              <li>Hook strength scoring across 0–100 rubric</li>
+              <li>Pacing and cognitive fatigue warnings</li>
+              <li>Readability metric calculation (Flesch-Kincaid)</li>
+            </ul>
+          </div>
+
+          <!-- Card 2: Retention Diagnostics -->
+          <div class="nl-card">
+            <div class="card-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <h3 class="card-title">Retention Intelligence</h3>
+            <p class="card-text">
+              Maps structural inflection points against predicted drop-off markers. Surfaces exact timestamps where exposition flags or conversational lulls jeopardize viewer watch time.
+            </p>
+            <ul class="feature-bullets">
+              <li>Structural drop-off hazard detection</li>
+              <li>Curated benchmark profiles by content genre</li>
+              <li>Personalized actionable remediation tasks</li>
+            </ul>
+          </div>
+
+          <!-- Card 3: Multi-Format Professional Export -->
+          <div class="nl-card">
+            <div class="card-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <h3 class="card-title">Multi-Format Export Suite</h3>
+            <p class="card-text">
+              Stage 8B verified export engine converts a single canonical report model into 6 deterministic output formats for production teams, editors, and client presentations.
+            </p>
+            <ul class="feature-bullets">
+              <li>Vector PDF with high-contrast typography</li>
+              <li>Structured Microsoft Word (.docx) &amp; RTF</li>
+              <li>Markdown, standalone HTML, and plain text</li>
+            </ul>
+          </div>
+
+          <!-- Card 4: AI Waterfall & Demo Resilience -->
+          <div class="nl-card">
+            <div class="card-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <h3 class="card-title">Multi-Provider AI Waterfall</h3>
+            <p class="card-text">
+              Zero-downtime inference engine: Claude 3.5 Sonnet leads, OpenAI GPT-4o provides secondary failover, and OpenRouter serves as tertiary fallback.
+            </p>
+            <ul class="feature-bullets">
+              <li>Automatic timeout &amp; exponential backoff retry</li>
+              <li>Stage 7A zero-cost Demo Mode for sandbox runs</li>
+              <li>Strict secret sanitization in logging &amp; telemetry</li>
+            </ul>
+          </div>
+
+          <!-- Card 5: Operational Pro Settings & MCP -->
+          <div class="nl-card">
+            <div class="card-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+            </div>
+            <h3 class="card-title">Phase 0.5B Operational UI</h3>
+            <p class="card-text">
+              Collapsible sidebar rail, tactile settings toggles, MCP (Model Context Protocol) integration surface, and high-performance glass surfaces designed for extended focus.
+            </p>
+            <ul class="feature-bullets">
+              <li>Unified brand mark with normalized icon bounds</li>
+              <li>Liquid-glass authentication and pricing tables</li>
+              <li>Persistent user preferences across dark &amp; light modes</li>
+            </ul>
+          </div>
+
+          <!-- Card 6: Future YouTube Integration (Explicitly Marked Future) -->
+          <div class="nl-card border-future">
+            <div class="card-header-badge">
+              <span class="badge badge-warning">Future Phase · Beta V2</span>
+            </div>
+            <div class="card-icon-wrap icon-future">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+            </div>
+            <h3 class="card-title">YouTube Analytics Integration</h3>
+            <p class="card-text">
+              Planned Beta V2 architecture: Connect channel OAuth 2.0 to ingest raw retention graphs, correlating second-by-second drop-offs directly with script timeline transcripts.
+            </p>
+            <ul class="feature-bullets text-muted">
+              <li>YouTube Data &amp; Analytics API ingestion</li>
+              <li>Temporal alignment engine (script ↔ graph)</li>
+              <li>AI Copilot for iterative script restructuring</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Design System Section -->
+    <section class="section section-alt" id="design-system">
+      <div class="content-container">
+        <div class="section-header">
+          <span class="section-tag">Visual Identity</span>
+          <h2 class="section-title">Narratix Modern Dark Design System</h2>
+          <p class="section-desc">
+            A purposeful, restrained visual framework built for high visual endurance. Prioritizes data readability, cinematic hierarchy, and tactile clarity over generic SaaS decoration.
+          </p>
+        </div>
+
+        <!-- Design Principles -->
+        <div class="grid-3 mb-12">
+          <div class="principle-card">
+            <h4 class="principle-heading">1. Deep Space Canvas</h4>
+            <p class="principle-text">
+              The fundamental backdrop is calibrated at <code>#0B0B0C</code>, not pitch black or washed-out navy. This deep matte tone eliminates eye strain during multi-hour script analysis.
+            </p>
+          </div>
+          <div class="principle-card">
+            <h4 class="principle-heading">2. Electric Violet Identity</h4>
+            <p class="principle-text">
+              Primary brand accents use Electric Violet (<code>#7C3AED</code>) with optical balance against emerald (<code>#34D399</code>) and amber (<code>#FBBF24</code>) for quantitative telemetry.
+            </p>
+          </div>
+          <div class="principle-card">
+            <h4 class="principle-heading">3. Restrained Luminescence</h4>
+            <p class="principle-text">
+              Zero neon overload or gratuitous glassmorphism. Borders remain at 8%–12% opacity with precise 1px micro-dividers that guide visual navigation naturally.
+            </p>
+          </div>
+        </div>
+
+        <!-- Color Token Palette -->
+        <div class="token-board">
+          <h3 class="board-title">Core Token Spectrum</h3>
+          <div class="token-grid">
+            <div class="token-chip">
+              <div class="swatch" style="background: #0B0B0C; border: 1px solid #26262B;"></div>
+              <span class="token-name">--nl-bg</span>
+              <span class="token-val">#0B0B0C</span>
+              <span class="token-role">Deep Space Base</span>
+            </div>
+            <div class="token-chip">
+              <div class="swatch" style="background: #141416;"></div>
+              <span class="token-name">--nl-panel</span>
+              <span class="token-val">#141416</span>
+              <span class="token-role">Card &amp; Surface</span>
+            </div>
+            <div class="token-chip">
+              <div class="swatch" style="background: #1A1A1D;"></div>
+              <span class="token-name">--nl-panel-soft</span>
+              <span class="token-val">#1A1A1D</span>
+              <span class="token-role">Elevated Surface</span>
+            </div>
+            <div class="token-chip">
+              <div class="swatch" style="background: rgba(255, 255, 255, 0.08);"></div>
+              <span class="token-name">--nl-border</span>
+              <span class="token-val">rgba(255,255,255,0.08)</span>
+              <span class="token-role">Micro Border</span>
+            </div>
+            <div class="token-chip">
+              <div class="swatch" style="background: #7C3AED;"></div>
+              <span class="token-name">--nl-primary</span>
+              <span class="token-val">#7C3AED</span>
+              <span class="token-role">Electric Violet</span>
+            </div>
+            <div class="token-chip">
+              <div class="swatch" style="background: #34D399;"></div>
+              <span class="token-name">--nl-success</span>
+              <span class="token-val">#34D399</span>
+              <span class="token-role">Telemetry Emerald</span>
+            </div>
+            <div class="token-chip">
+              <div class="swatch" style="background: #FBBF24;"></div>
+              <span class="token-name">--nl-warning</span>
+              <span class="token-val">#FBBF24</span>
+              <span class="token-role">Alert Amber</span>
+            </div>
+            <div class="token-chip">
+              <div class="swatch" style="background: #F5F5F7;"></div>
+              <span class="token-name">--nl-text</span>
+              <span class="token-val">#F5F5F7</span>
+              <span class="token-role">Primary High-Key Text</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Typography & Accessibility Card -->
+        <div class="grid-2 mt-8">
+          <div class="nl-card">
+            <h4 class="card-title">Typography Hierarchy</h4>
+            <p class="card-text">
+              Driven by <strong>Plus Jakarta Sans</strong> for fluid readability across interface headers and body paragraphs, complemented by <strong>JetBrains Mono</strong> for analytical readouts.
+            </p>
+            <div class="type-specimen">
+              <div class="type-row">
+                <span class="type-label">Display</span>
+                <span class="type-sample sample-display">Narratix 48px / 1.1</span>
+              </div>
+              <div class="type-row">
+                <span class="type-label">Heading</span>
+                <span class="type-sample sample-h">Quantitative Pacing 20px / 1.3</span>
+              </div>
+              <div class="type-row">
+                <span class="type-label">Mono</span>
+                <span class="type-sample sample-mono">FK-INDEX: 8.42 · PROMPT_V2.1</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="nl-card">
+            <h4 class="card-title">Accessibility &amp; Honest Standards</h4>
+            <p class="card-text">
+              The interface implements high-contrast light and dark themes, visible focus rings (<code>#7C3AED</code>), semantic form labelling (<code>htmlFor</code>, <code>aria-label</code>), and keyboard escape triggers.
+            </p>
+            <div class="a11y-callout">
+              <span class="callout-badge">Engineering Transparency</span>
+              <p class="callout-text">
+                We design and test for high visual contrast and semantic navigable landmarks. We do not claim formal third-party WCAG certification where ongoing audits remain in progress.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Architecture & Deployment Boundaries Section -->
+    <section class="section" id="architecture">
+      <div class="content-container">
+        <div class="section-header">
+          <span class="section-tag">System Architecture</span>
+          <h2 class="section-title">Dual-Target Deployment Boundaries</h2>
+          <p class="section-desc">
+            Clear structural separation guarantees that server-dependent SaaS operations never collide with public documentation availability.
+          </p>
+        </div>
+
+        <!-- Dual Target Comparison Cards -->
+        <div class="grid-2 mb-12">
+          <!-- Target A: Production SaaS (Vercel) -->
+          <div class="boundary-card boundary-prod">
+            <div class="boundary-badge">
+              <span class="platform-icon vercel-icon">▲</span>
+              <span>Target A · Production Application</span>
+            </div>
+            <h3 class="boundary-title">Vercel Server Runtime</h3>
+            <p class="boundary-url">URL: <code>https://narratix-lab.vercel.app/</code></p>
+            <p class="boundary-desc">
+              Executes the full dynamic Next.js App Router application with full access to secrets, database connections, and background server pipelines.
+            </p>
+            <div class="boundary-specs">
+              <span class="spec-tag">Next.js 14 App Router</span>
+              <span class="spec-tag">Node.js Server Runtime</span>
+              <span class="spec-tag">Supabase SSR Auth</span>
+              <span class="spec-tag">Stripe Webhooks &amp; Checkout</span>
+              <span class="spec-tag">55MB Server Actions</span>
+              <span class="spec-tag">Live Claude / GPT-4o SDKs</span>
+              <span class="spec-tag">FFmpeg / Cloudinary Ingestion</span>
+              <span class="spec-tag">Private Environment Secrets</span>
+            </div>
+          </div>
+
+          <!-- Target B: Public Project Site (GitHub Pages) -->
+          <div class="boundary-card boundary-pages">
+            <div class="boundary-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              <span>Target B · Public Project Site</span>
+            </div>
+            <h3 class="boundary-title">GitHub Pages Static Portal</h3>
+            <p class="boundary-url">URL: <code>https://imsubhs.github.io/narratix-lab/</code></p>
+            <p class="boundary-desc">
+              Dedicated zero-dependency static presentation of Narratix Lab. Serves high-speed public documentation with no runtime or database dependencies.
+            </p>
+            <div class="boundary-specs">
+              <span class="spec-tag spec-safe">Static HTML5 / CSS3 / Vanilla JS</span>
+              <span class="spec-tag spec-safe">Subpath Safe (/narratix-lab/)</span>
+              <span class="spec-tag spec-safe">Zero Secrets Committed</span>
+              <span class="spec-tag spec-safe">No Node.js Server Required</span>
+              <span class="spec-tag spec-safe">No DB / Auth Dependency</span>
+              <span class="spec-tag spec-safe">Independent GitHub Actions CI</span>
+              <span class="spec-tag spec-safe">Instant Global Edge Delivery</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Architecture Flow Diagrams -->
+        <div class="diagram-container">
+          <h3 class="diagram-title">Current Production Architecture Flow (Beta V1)</h3>
+          <div class="flow-tree">
+            <div class="flow-step">
+              <div class="step-box">Client Browser (User UI)</div>
+              <div class="step-sub">Dashboard · Analyzer · Export Modal</div>
+            </div>
+            <div class="flow-arrow">↓ HTTPS / SSE</div>
+            <div class="flow-step">
+              <div class="step-box">Next.js Edge &amp; Node Runtime (Vercel)</div>
+              <div class="step-sub">Middleware Host Validation · CSP Headers · Server Actions</div>
+            </div>
+            <div class="flow-arrow">↓ Authenticated Server Calls</div>
+            <div class="flow-grid-3">
+              <div class="flow-substep">
+                <strong>Supabase Cloud</strong>
+                <span>SSR Cookie Auth · Postgres Schema · Row-Level Security</span>
+              </div>
+              <div class="flow-substep">
+                <strong>AI Provider Waterfall</strong>
+                <span>Claude Sonnet 3.5 → GPT-4o → OpenRouter → Demo Engine</span>
+              </div>
+              <div class="flow-substep">
+                <strong>Stripe &amp; Media</strong>
+                <span>Webhooks · Subscription Tiers · Cloudinary Uploads</span>
+              </div>
+            </div>
+            <div class="flow-arrow">↓ Canonical Model</div>
+            <div class="flow-step">
+              <div class="step-box">Professional Export Engine (Stage 8B)</div>
+              <div class="step-sub">Deterministic serializers: PDF · DOCX · Markdown · HTML · TXT · RTF</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Future V2 Architecture Pipeline -->
+        <div class="diagram-container mt-8 border-future-subtle">
+          <div class="diagram-future-tag">
+            <span class="badge badge-warning">Future Beta V2 Architecture Pipeline</span>
+          </div>
+          <h3 class="diagram-title">YouTube Retention Intelligence (Phase 0.2+)</h3>
+          <div class="flow-tree">
+            <div class="flow-step future-step">
+              <div class="step-box">YouTube Channel OAuth 2.0</div>
+              <div class="step-sub">Read-only YouTube Analytics &amp; Reporting Scopes</div>
+            </div>
+            <div class="flow-arrow">↓ Authenticated API Ingestion</div>
+            <div class="flow-step future-step">
+              <div class="step-box">Retention Normalization Pipeline</div>
+              <div class="step-sub">Second-by-second audience watch curves · Relative retention baseline vs YouTube benchmark</div>
+            </div>
+            <div class="flow-arrow">↓ Temporal Timecode Sync</div>
+            <div class="flow-step future-step">
+              <div class="step-box">Temporal Alignment &amp; Diagnostic Engine</div>
+              <div class="step-sub">Aligns video timestamps with script transcripts → Correlates drop-offs with specific narrative flaws</div>
+            </div>
+            <div class="flow-arrow">↓ Structured Intelligence</div>
+            <div class="flow-step future-step">
+              <div class="step-box">AI Interactive Copilot</div>
+              <div class="step-sub">Provides surgical line rewrites, pacing alterations, and hook improvements for future videos</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section class="section section-alt" id="roadmap">
+      <div class="content-container">
+        <div class="section-header">
+          <span class="section-tag">Evolution Roadmap</span>
+          <h2 class="section-title">Transparent Project Milestones</h2>
+          <p class="section-desc">
+            We maintain strict truth in advertising: clearly separating completed releases from active phases and future roadmap objectives.
+          </p>
+        </div>
+
+        <div class="roadmap-track">
+          <!-- Phase 1: Completed -->
+          <div class="milestone-card completed">
+            <div class="milestone-header">
+              <span class="milestone-status">Completed</span>
+              <span class="milestone-tag">Beta V1 &amp; Stages 7–8</span>
+            </div>
+            <h3 class="milestone-title">Core Engine &amp; Modern Dark Foundation</h3>
+            <ul class="milestone-list">
+              <li>Stage 7A Curated Profile Engine (10 schema-valid profiles)</li>
+              <li>Stage 8B Professional Export Suite (PDF, Word, MD, HTML, TXT, RTF)</li>
+              <li>Phase 0.5B UI Integration: Liquid-glass auth cards, MCP settings surface, BrandMark normalization</li>
+              <li>Dual-tier theme tokens (<code>--nl-*</code>) with verified accessible contrast</li>
+            </ul>
+          </div>
+
+          <!-- Phase 2: Current -->
+          <div class="milestone-card current">
+            <div class="milestone-header">
+              <span class="milestone-status">Current Phase</span>
+              <span class="milestone-tag">Phase 0.7</span>
+            </div>
+            <h3 class="milestone-title">Repository Modernization &amp; Public Static Site</h3>
+            <ul class="milestone-list">
+              <li>Comprehensive repository forensic audit (P0–D taxonomy)</li>
+              <li>Isolated static showcase site on GitHub Pages with subpath safety</li>
+              <li>Clean GitHub Actions CI pipeline separating test verification from Pages deploy</li>
+              <li>Upgraded repository documentation, security policy, and contribution guides</li>
+            </ul>
+          </div>
+
+          <!-- Phase 3: Next -->
+          <div class="milestone-card next">
+            <div class="milestone-header">
+              <span class="milestone-status">Next Step</span>
+              <span class="milestone-tag">Phase 0.8 / V2 Prep</span>
+            </div>
+            <h3 class="milestone-title">Data Contract Formalization &amp; Schema Expansion</h3>
+            <ul class="milestone-list">
+              <li>Database schema expansion for video retention profiles</li>
+              <li>YouTube Analytics data contract validation and rate-limit guardrails</li>
+              <li>Multi-account creator team management schemas in Supabase</li>
+              <li>Enhanced export templates with brand customizer presets</li>
+            </ul>
+          </div>
+
+          <!-- Phase 4: Future -->
+          <div class="milestone-card future">
+            <div class="milestone-header">
+              <span class="milestone-status">Future Vision</span>
+              <span class="milestone-tag">Beta V2</span>
+            </div>
+            <h3 class="milestone-title">YouTube OAuth &amp; Temporal Retention Copilot</h3>
+            <ul class="milestone-list">
+              <li>YouTube OAuth 2.0 direct channel integration</li>
+              <li>Temporal curve alignment engine (second-by-second script sync)</li>
+              <li>Interactive generative Copilot for iterative script rewriting</li>
+              <li>Continuous learning loop correlating published results with retention forecasts</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Verified Technology Stack Section -->
+    <section class="section" id="technology">
+      <div class="content-container">
+        <div class="section-header">
+          <span class="section-tag">Technology Foundation</span>
+          <h2 class="section-title">Verified Technical Stack</h2>
+          <p class="section-desc">
+            Directly corroborated against <code>package.json</code> and repository source code. Zero speculative or unverified dependencies.
+          </p>
+        </div>
+
+        <div class="tech-grid">
+          <div class="tech-card">
+            <span class="tech-cat">Core Framework</span>
+            <h4 class="tech-name">Next.js 14.2 &amp; React 18.3</h4>
+            <p class="tech-meta">App Router · Server Actions · Streaming SSR</p>
+          </div>
+          <div class="tech-card">
+            <span class="tech-cat">Language</span>
+            <h4 class="tech-name">TypeScript 5.9</h4>
+            <p class="tech-meta">Strict Mode · Zero-error compile · Type validation</p>
+          </div>
+          <div class="tech-card">
+            <span class="tech-cat">Styling System</span>
+            <h4 class="tech-name">Tailwind CSS 3.4 + CSS Variables</h4>
+            <p class="tech-meta">Curated <code>--nl-*</code> tokens · Modern Dark palette</p>
+          </div>
+          <div class="tech-card">
+            <span class="tech-cat">Authentication &amp; DB</span>
+            <h4 class="tech-name">Supabase SSR 0.5 &amp; Postgres</h4>
+            <p class="tech-meta">Row-Level Security · Cookie-based sessions</p>
+          </div>
+          <div class="tech-card">
+            <span class="tech-cat">AI Infrastructure</span>
+            <h4 class="tech-name">Anthropic SDK 0.110 &amp; OpenAI SDK 4.57</h4>
+            <p class="tech-meta">Multi-provider waterfall with OpenRouter failover</p>
+          </div>
+          <div class="tech-card">
+            <span class="tech-cat">Billing &amp; Payments</span>
+            <h4 class="tech-name">Stripe 17.5</h4>
+            <p class="tech-meta">Subscription checkouts &amp; verified webhook listeners</p>
+          </div>
+          <div class="tech-card">
+            <span class="tech-cat">Document Generation</span>
+            <h4 class="tech-name">jsPDF 4.2 &amp; docx 9.7</h4>
+            <p class="tech-meta">Client &amp; server vector document compilation</p>
+          </div>
+          <div class="tech-card">
+            <span class="tech-cat">Testing &amp; QA</span>
+            <h4 class="tech-name">Playwright 1.61 &amp; tsx 4.23</h4>
+            <p class="tech-meta">E2E test harness &amp; offline regression test suites</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Repository & Local Development Section -->
+    <section class="section section-alt" id="repository">
+      <div class="content-container">
+        <div class="section-header">
+          <span class="section-tag">Repository &amp; Local Dev</span>
+          <h2 class="section-title">Open Source Development Guide</h2>
+          <p class="section-desc">
+            Exact, verified terminal instructions for contributors and maintainers.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <!-- Terminal Snippet Card -->
+          <div class="code-card">
+            <div class="code-header">
+              <span class="code-dot red"></span>
+              <span class="code-dot yellow"></span>
+              <span class="code-dot green"></span>
+              <span class="code-title">Terminal · Local Setup</span>
+            </div>
+            <pre class="code-block"><code><span class="c-comment"># 1. Clone repository</span>
+git clone https://github.com/imsubhs/narratix-lab.git
+cd narratix-lab
+
+<span class="c-comment"># 2. Install exact locked dependencies</span>
+npm ci
+
+<span class="c-comment"># 3. Configure local environment variables</span>
+cp .env.example .env.local
+
+<span class="c-comment"># 4. Start local development server</span>
+npm run dev
+
+<span class="c-comment"># 5. Run offline regression test suites</span>
+npm run test:demo
+npm run test:export</code></pre>
+          </div>
+
+          <!-- Documentation Directory Links -->
+          <div class="nl-card">
+            <h3 class="card-title">Repository Documentation Index</h3>
+            <p class="card-text">
+              Key engineering documents available in the repository root and <code>docs/</code> tree:
+            </p>
+            <ul class="doc-links-list">
+              <li>
+                <a href="https://github.com/imsubhs/narratix-lab/blob/main/docs/deployment/GITHUB_PAGES_ARCHITECTURE.md" target="_blank" rel="noopener noreferrer" class="doc-link">
+                  <strong>GITHUB_PAGES_ARCHITECTURE.md</strong>
+                  <span>Why full SaaS runs on Vercel and showcase runs on Pages</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/imsubhs/narratix-lab/blob/main/docs/REPOSITORY_ARCHITECTURE.md" target="_blank" rel="noopener noreferrer" class="doc-link">
+                  <strong>REPOSITORY_ARCHITECTURE.md</strong>
+                  <span>Folder organization, dual-target boundary and security isolation</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/imsubhs/narratix-lab/blob/main/docs/REPOSITORY_UPGRADE_REPORT.md" target="_blank" rel="noopener noreferrer" class="doc-link">
+                  <strong>REPOSITORY_UPGRADE_REPORT.md</strong>
+                  <span>Phase 0.7 forensic audit findings, changes, and verification report</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/imsubhs/narratix-lab/blob/main/SECURITY.md" target="_blank" rel="noopener noreferrer" class="doc-link">
+                  <strong>SECURITY.md</strong>
+                  <span>Responsible disclosure policy and server secret protection</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="cta-banner">
+      <div class="content-container text-center">
+        <h2 class="cta-title">Experience Narratix Lab Live</h2>
+        <p class="cta-sub">
+          Test the interactive Beta V1 application in production on Vercel with active Stage 7 Demo Mode.
+        </p>
+        <div class="hero-actions justify-center">
+          <a href="https://narratix-lab.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" id="footer-cta-app">
+            <span>Launch Web App</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="https://github.com/imsubhs/narratix-lab" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">
+            <span>GitHub Repository</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="content-container">
+      <div class="footer-grid">
+        <div class="footer-col-brand">
+          <div class="brand-link">
+            <img src="./assets/brand/narratix-labs-mark.png" alt="Narratix Labs Mark" class="brand-mark" width="24" height="24">
+            <span class="brand-text">Narratix <strong>Lab</strong></span>
+          </div>
+          <p class="footer-tagline">
+            Creator Intelligence &amp; Retention Diagnostics for high-retention video creators.
+          </p>
+          <p class="footer-legal">
+            &copy; <span id="copyright-year">2026</span> Narratix Labs. All rights reserved.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Deployments</h4>
+          <ul class="footer-links">
+            <li><a href="https://narratix-lab.vercel.app/" target="_blank" rel="noopener noreferrer">Production SaaS (Vercel)</a></li>
+            <li><a href="https://imsubhs.github.io/narratix-lab/">Public Site (GitHub Pages)</a></li>
+            <li><a href="https://github.com/imsubhs/narratix-lab" target="_blank" rel="noopener noreferrer">GitHub Repository</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Architecture &amp; Docs</h4>
+          <ul class="footer-links">
+            <li><a href="#product">Product Capabilities</a></li>
+            <li><a href="#design-system">Design System</a></li>
+            <li><a href="#architecture">Architecture Boundaries</a></li>
+            <li><a href="#roadmap">Project Roadmap</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Repository Hygiene</h4>
+          <ul class="footer-links">
+            <li><a href="https://github.com/imsubhs/narratix-lab/blob/main/docs/REPOSITORY_UPGRADE_REPORT.md" target="_blank" rel="noopener noreferrer">Phase 0.7 Upgrade Report</a></li>
+            <li><a href="https://github.com/imsubhs/narratix-lab/blob/main/SECURITY.md" target="_blank" rel="noopener noreferrer">Security Policy</a></li>
+            <li><a href="https://github.com/imsubhs/narratix-lab/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">Contributing Guide</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./js/main.js"></script>
+</body>
+</html>

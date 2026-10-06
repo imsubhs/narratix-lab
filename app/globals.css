@@ -13,6 +13,7 @@
   --accent-hover: #6d28d9;
   --accent-light: rgba(124, 58, 237, 0.06);
   --accent-border: rgba(124, 58, 237, 0.18);
+  --focus-ring: #7c3aed;
   --font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 
   /* ─── Typography Scale ──────────────────────────── */
@@ -96,6 +97,18 @@
   --danger-color: #f87171;
   --danger-bg: rgba(239, 68, 68, 0.06);
   --danger-border: rgba(239, 68, 68, 0.18);
+
+  /* ─── Narratix Lab Tokens (--nl-*) ───────────────── */
+  --nl-bg: #0B0B0C;
+  --nl-panel: #141416;
+  --nl-panel-soft: #1A1A1D;
+  --nl-border: rgba(255, 255, 255, 0.08);
+  --nl-text: #F5F5F7;
+  --nl-muted: #A1A1A6;
+  --nl-primary: #7c3aed;
+  --nl-primary-dark: #6d28d9;
+  --nl-success: #34d399;
+  --nl-warning: #fbbf24;
 }
 
 /* ─── Light Theme ─────────────────────────────────── */
@@ -128,6 +141,19 @@
   --danger-color: #dc2626;
   --danger-bg: rgba(220, 38, 38, 0.06);
   --danger-border: rgba(220, 38, 38, 0.18);
+
+  /* ─── Narratix Lab Tokens (--nl-*) Light ─────────── */
+  --nl-bg: #FFF7E5;
+  --nl-panel: #FFFFFF;
+  --nl-panel-soft: #F5EDD8;
+  --nl-border: rgba(28, 25, 23, 0.1);
+  --nl-text: #1C1917;
+  --nl-muted: #57534E;
+  --nl-primary: #7c3aed;
+  --nl-primary-dark: #6d28d9;
+  --nl-success: #059669;
+  --nl-warning: #d97706;
+  --focus-ring: #7c3aed;
 }
 
 /* ─── High Contrast Theme ─────────────────────────── */
@@ -149,6 +175,19 @@
   --success-color: #4ade80;
   --warning-color: #facc15;
   --danger-color: #f87171;
+  --focus-ring: #FFFF00;
+
+  /* ─── Narratix Lab Tokens (--nl-*) High Contrast ─── */
+  --nl-bg: #000000;
+  --nl-panel: #0F0F0F;
+  --nl-panel-soft: #1A1A1A;
+  --nl-border: rgba(255, 255, 255, 0.25);
+  --nl-text: #FFFFFF;
+  --nl-muted: #CCCCCC;
+  --nl-primary: #FFFF00;
+  --nl-primary-dark: #E6E600;
+  --nl-success: #4ade80;
+  --nl-warning: #facc15;
 }
 
 /* ─── System Preference Fallbacks ─────────────────── */

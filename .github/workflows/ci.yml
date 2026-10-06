@@ -1,0 +1,60 @@
+name: CI — Production Application Validation
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'website/**'
+      - 'docs/**'
+      - '**.md'
+  pull_request:
+    branches:
+      - main
+    paths-ignore:
+      - 'website/**'
+      - 'docs/**'
+      - '**.md'
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Typecheck, Lint, Offline Tests & Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: TypeScript Compile Check
+        run: npx tsc --noEmit
+
+      - name: Next.js ESLint Check
+        run: npm run lint
+
+      - name: Offline Demo Mode Regression Tests (Stage 7A)
+        run: npm run test:demo
+
+      - name: Offline Professional Export System Tests (Stage 8B)
+        run: npm run test:export
+
+      - name: Validate Next.js Production Build
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: "https://placeholder-project.supabase.co"
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: "placeholder-anon-key"
+          SUPABASE_SERVICE_ROLE_KEY: "placeholder-service-role-key"
+          NEXT_PUBLIC_APP_URL: "https://narratix-lab.vercel.app"
+          DEMO_MODE: "true"
+        run: npm run build

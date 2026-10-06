@@ -402,8 +402,9 @@ export default function AnalyzerClient() {
           {/* Switcher Content */}
           {activeTab === 'text' ? (
             <div style={{ marginBottom: '8px' }}>
-              <label className="flbl" style={{ marginBottom: '8px', display: 'block' }}>SCRIPT OR CONTENT DESCRIPTION *</label>
+              <label htmlFor="analyzer-script-content" className="flbl" style={{ marginBottom: '8px', display: 'block' }}>SCRIPT OR CONTENT DESCRIPTION *</label>
               <textarea
+                id="analyzer-script-content"
                 className="finput"
                 placeholder="Paste your script, outline, voiceover, or describe the planned content scene-by-scene..."
                 value={script}
@@ -443,22 +444,21 @@ export default function AnalyzerClient() {
                 border: dragActive
                   ? '2px dashed rgba(167, 139, 250, 0.6)'
                   : uploadedFile
-                    ? '2px dashed rgba(16, 185, 129, 0.4)'
-                    : '2px dashed rgba(255, 255, 255, 0.15)',
-                borderRadius: '14px',
+                    ? '1px solid rgba(16, 185, 129, 0.3)'
+                    : '1px dashed rgba(255, 255, 255, 0.12)',
+                borderRadius: '16px',
                 padding: '36px 20px',
                 textAlign: 'center',
                 cursor: 'pointer',
                 transition: 'all 0.2s ease',
-                marginBottom: '8px',
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                justifyContent: 'center'
+                outline: 'none',
+                position: 'relative'
               }}
             >
               <input
                 ref={fileInputRef}
+                id="analyzer-file-input"
+                aria-label="Upload document script (.pdf, .docx, .txt, .md)"
                 type="file"
                 accept=".pdf,.docx,.txt,.md"
                 style={{ display: 'none' }}
@@ -616,8 +616,9 @@ export default function AnalyzerClient() {
 
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '14px', opacity: autoDetect ? 0.6 : 1, transition: 'opacity 0.2s ease' }}>
             <div>
-              <label className="flbl">YOUR NICHE {!autoDetect && '*'}</label>
+              <label htmlFor="analyzer-niche" className="flbl">YOUR NICHE {!autoDetect && '*'}</label>
               <select
+                id="analyzer-niche"
                 className="finput"
                 value={autoDetect ? 'Auto-Detect' : niche}
                 onChange={(e) => setNiche(e.target.value)}
@@ -636,8 +637,9 @@ export default function AnalyzerClient() {
             </div>
 
             <div>
-              <label className="flbl">PLATFORM {!autoDetect && '*'}</label>
+              <label htmlFor="analyzer-platform" className="flbl">PLATFORM {!autoDetect && '*'}</label>
               <select
+                id="analyzer-platform"
                 className="finput"
                 value={autoDetect ? 'Auto-Detect' : platform}
                 onChange={(e) => setPlatform(e.target.value)}
@@ -656,8 +658,9 @@ export default function AnalyzerClient() {
             </div>
 
             <div>
-              <label className="flbl">ESTIMATED LENGTH</label>
+              <label htmlFor="analyzer-video-length" className="flbl">ESTIMATED LENGTH</label>
               <input
+                id="analyzer-video-length"
                 className="finput"
                 type="text"
                 placeholder="e.g. 45 seconds"
@@ -667,8 +670,8 @@ export default function AnalyzerClient() {
             </div>
 
             <div>
-              <label className="flbl">YOUR GOAL</label>
-              <select className="finput" value={goal} onChange={(e) => setGoal(e.target.value)}>
+              <label htmlFor="analyzer-goal" className="flbl">YOUR GOAL</label>
+              <select id="analyzer-goal" className="finput" value={goal} onChange={(e) => setGoal(e.target.value)}>
                 {GOALS.map(g => <option key={g} value={g}>{g}</option>)}
               </select>
             </div>
@@ -676,8 +679,9 @@ export default function AnalyzerClient() {
 
 
           <div style={{ marginTop: '14px' }}>
-            <label className="flbl">BIGGEST CONCERN <span style={{ color: 'rgba(255,255,255,.2)', fontWeight: 400 }}>(optional)</span></label>
+            <label htmlFor="analyzer-concern" className="flbl">BIGGEST CONCERN <span style={{ color: 'rgba(255,255,255,.2)', fontWeight: 400 }}>(optional)</span></label>
             <textarea
+              id="analyzer-concern"
               className="finput"
               placeholder="e.g. Low completion rate, hook not strong enough, unclear message..."
               value={concern}

@@ -486,18 +486,18 @@ export default function SettingsPage() {
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
                   <span>Upload</span>
                 </div>
-                <input ref={avatarInputRef} type="file" accept="image/*" onChange={handleAvatarChange} style={{ display: 'none' }} />
+                <input ref={avatarInputRef} id="settings-avatar-input" aria-label="Upload avatar image" type="file" accept="image/*" onChange={handleAvatarChange} style={{ display: 'none' }} />
               </div>
               <p style={{ fontSize: '11px', color: 'var(--text-muted)', textAlign: 'center', marginTop: '8px' }}>Max 2MB · JPG, PNG, or WebP</p>
 
               <div className="stg-form-grid">
                 <div className="stg-field">
-                  <label className="stg-label">Full Name</label>
-                  <input className="finput" value={fullName} onChange={(e) => setFullName(e.target.value)} placeholder="Your full name" />
+                  <label htmlFor="settings-fullname" className="stg-label">Full Name</label>
+                  <input id="settings-fullname" className="finput" value={fullName} onChange={(e) => setFullName(e.target.value)} placeholder="Your full name" />
                 </div>
                 <div className="stg-field">
-                  <label className="stg-label">Display Name</label>
-                  <input className="finput" value={displayNameInput} onChange={(e) => setDisplayNameInput(e.target.value)} placeholder="Display name" />
+                  <label htmlFor="settings-displayname" className="stg-label">Display Name</label>
+                  <input id="settings-displayname" className="finput" value={displayNameInput} onChange={(e) => setDisplayNameInput(e.target.value)} placeholder="Display name" />
                 </div>
               </div>
 
@@ -568,16 +568,16 @@ export default function SettingsPage() {
               <p className="stg-card-desc">Update your password to keep your account secure.</p>
               <div className="stg-form-stack">
                 <div className="stg-field">
-                  <label className="stg-label">Current Password</label>
-                  <input className="finput" type="password" value={currentPw} onChange={(e) => setCurrentPw(e.target.value)} placeholder="••••••••" />
+                  <label htmlFor="settings-current-pw" className="stg-label">Current Password</label>
+                  <input id="settings-current-pw" className="finput" type="password" value={currentPw} onChange={(e) => setCurrentPw(e.target.value)} placeholder="••••••••" />
                 </div>
                 <div className="stg-field">
-                  <label className="stg-label">New Password</label>
-                  <input className="finput" type="password" value={newPw} onChange={(e) => setNewPw(e.target.value)} placeholder="Minimum 8 characters" />
+                  <label htmlFor="settings-new-pw" className="stg-label">New Password</label>
+                  <input id="settings-new-pw" className="finput" type="password" value={newPw} onChange={(e) => setNewPw(e.target.value)} placeholder="Minimum 8 characters" />
                 </div>
                 <div className="stg-field">
-                  <label className="stg-label">Confirm New Password</label>
-                  <input className="finput" type="password" value={confirmPw} onChange={(e) => setConfirmPw(e.target.value)} placeholder="••••••••" />
+                  <label htmlFor="settings-confirm-pw" className="stg-label">Confirm New Password</label>
+                  <input id="settings-confirm-pw" className="finput" type="password" value={confirmPw} onChange={(e) => setConfirmPw(e.target.value)} placeholder="••••••••" />
                 </div>
               </div>
               {pwError && <div className="stg-error">{pwError}</div>}
@@ -879,8 +879,8 @@ export default function SettingsPage() {
             <div className="stg-card">
               <div className="stg-form-grid">
                 <div className="stg-field">
-                  <label className="stg-label">Language</label>
-                  <select className="finput" value={language} onChange={(e) => setLanguage(e.target.value)}>
+                  <label htmlFor="settings-language" className="stg-label">Language</label>
+                  <select id="settings-language" className="finput" value={language} onChange={(e) => setLanguage(e.target.value)}>
                     <option value="en">English</option>
                     <option value="es">Español</option>
                     <option value="fr">Français</option>
@@ -890,8 +890,8 @@ export default function SettingsPage() {
                   </select>
                 </div>
                 <div className="stg-field">
-                  <label className="stg-label">Timezone</label>
-                  <select className="finput" value={timezone} onChange={(e) => setTimezone(e.target.value)}>
+                  <label htmlFor="settings-timezone" className="stg-label">Timezone</label>
+                  <select id="settings-timezone" className="finput" value={timezone} onChange={(e) => setTimezone(e.target.value)}>
                     <option value="America/New_York">Eastern (ET)</option>
                     <option value="America/Chicago">Central (CT)</option>
                     <option value="America/Denver">Mountain (MT)</option>
@@ -962,6 +962,8 @@ export default function SettingsPage() {
                     This will permanently delete your account and all data including analyses, profile, and settings. Type <strong style={{ color: 'var(--text-primary)' }}>DELETE</strong> to confirm.
                   </p>
                   <input
+                    id="settings-delete-confirm-input"
+                    aria-label="Type DELETE to confirm account deletion"
                     className="finput"
                     placeholder="Type DELETE to confirm"
                     value={deleteInput}

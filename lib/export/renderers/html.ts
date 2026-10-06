@@ -4,7 +4,7 @@
  */
 import type { ReportBlock, ReportModel } from '../types';
 
-const BRAND_RED = '#D52122';
+const BRAND_RED = '#7C3AED'; // Narratix Lab Electric Violet
 
 function esc(s: string): string {
   return String(s)
@@ -40,6 +40,8 @@ function block(b: ReportBlock): string {
       );
     case 'callout':
       return `<div class="callout ${b.tone}">${b.title ? `<strong>${esc(b.title)}</strong> ` : ''}${esc(b.text)}</div>`;
+    default:
+      return '';
   }
 }
 
@@ -73,9 +75,9 @@ export function renderHtml(model: ReportModel): string {
   .tagline { color:var(--muted); font-size:14px; }
   h1 { font-size:20px; margin:8px 0 0; }
   h2 { font-size:16px; color:var(--red); border-bottom:1px solid var(--line); padding-bottom:6px; margin-top:32px; }
-  .badge { display:inline-block; background:rgba(213,33,34,.1); color:var(--red);
-    border:1px solid rgba(213,33,34,.3); border-radius:999px; padding:3px 12px; font-size:12px; font-weight:700; margin-top:8px; }
-  .score-card { background:#fff7e5; border:1px solid var(--red); border-radius:10px; padding:18px 22px; margin:18px 0; }
+  .badge { display:inline-block; background:rgba(124,58,237,.1); color:var(--red);
+    border:1px solid rgba(124,58,237,.3); border-radius:999px; padding:3px 12px; font-size:12px; font-weight:700; margin-top:8px; }
+  .score-card { background:#fbf7ff; border:1px solid var(--red); border-radius:10px; padding:18px 22px; margin:18px 0; }
   .score-card .num { color:var(--red); font-size:40px; font-weight:800; line-height:1; }
   .kv { display:grid; grid-template-columns:1fr 1fr; gap:8px 24px; margin:8px 0; }
   .kv div { display:flex; justify-content:space-between; border-bottom:1px dashed var(--line); padding:4px 0; }

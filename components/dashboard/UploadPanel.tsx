@@ -59,6 +59,8 @@ export default function UploadPanel({
       >
         <input
           ref={fileInputRef}
+          id="upload-panel-file-input"
+          aria-label="Upload video file"
           type="file"
           accept="video/*"
           className="hidden"
@@ -71,7 +73,7 @@ export default function UploadPanel({
             <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-[20px] border border-purple-500/30 bg-purple-500/15 text-2xl text-purple-300">
               ⬆
             </div>
-            <p className="mb-1 text-base font-bold text-white">
+            <p className="mb-1 text-base font-bold text-[var(--text-primary)]">
               Drop your video here or click to upload
             </p>
             <p className="text-sm text-white/45">
